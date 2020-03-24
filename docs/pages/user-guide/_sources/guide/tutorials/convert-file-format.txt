@@ -1,0 +1,23 @@
+====================
+Convert File Formats
+====================
+
+Datavyu currently supports video through QT and VLC.
+
+If your data source is not directly supported by Datavyu, you
+may be able to convert it to a readable format using Datavyu's Convert
+Videos tool.
+
+#. From the Spreadsheet, select the :guilabel:`Controller` menu,
+   and then choose :guilabel:`Convert Videos`.
+
+#. Select a source video. This will be the video you are converting.
+
+#. Select a target video. This is the video that Datavyu will output
+   or convert your source video into.
+   
+#. Select :guilabel:`Convert Video`, and your video will be converted.
+
+For help with
+data source conversion or other import issues, see `Datavyu's Support
+site <http://datavyu.org/support/>`_.

@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>Introduction to Scripting || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="current">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/support" title="Forum Archive">Archive</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_user-guide_api_introduction-to-scripting" class="hentry page page_user-guide_api_introduction-to-scripting page_sphinx">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>Introduction to Scripting</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+
+				
+        
+  <div class="section" id="introduction-to-scripting">
+<h1>Introduction to Scripting<a class="headerlink" href="#introduction-to-scripting" title="Permalink to this headline">¶</a></h1>
+<p>This detailed guide describes how to write Ruby scripts to automate
+tasks in Datavyu and to ensure reliable <a class="reference internal" href="../guide/reference/glossary.html#term-code"><em class="xref std std-term">coding</em></a>.</p>
+<p><a class="reference internal" href="overview.html"><em>Classes, Methods, and Parameters</em></a> provides an overview of the <a class="reference internal" href="../guide/reference/glossary.html#term-method"><em class="xref std std-term">methods</em></a> and <a class="reference internal" href="../guide/reference/glossary.html#term-class"><em class="xref std std-term">classes</em></a> of the Datavyu API. For a more
+in-depth discussion of each particular method and function, refer to
+the <a class="reference internal" href="reference.html"><em>Reference</em></a> documentation.</p>
+<div class="section" id="recommended-text-editors">
+<h2>Recommended Text Editors<a class="headerlink" href="#recommended-text-editors" title="Permalink to this headline">¶</a></h2>
+<p>Ruby scripts are simply text files with a <code class="docutils literal"><span class="pre">.rb</span></code> file extension. You
+can write scripts in any text editor, including built-in ones like
+Notepad or TextEdit.  However, while those programs are adequate for
+scripting purposes, modern text editors make scripts much easier to
+read by providing syntax highlighting, which can make a world of
+difference when attempting to debug an issue.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/syntax-highlighting-comparison.png"><img alt="comparison of Ruby scripts viewed in TextEdit (Mac OS X) and TextMate 2" src="../_images/syntax-highlighting-comparison.png" style="width: 1100px;" /></a>
+<p class="caption">At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with &#8220;Mac
+Classic&#8221; theme. Note that <code class="docutils literal"><span class="pre">add-cells-to-variable.rb</span></code> is open in
+each editor.</p>
+</div>
+<p>To take advantage of syntax highlighting and coding support, we
+recommend installing and using one of the following programs for
+editing Ruby scripts:</p>
+<ul class="simple">
+<li>Windows:<ul>
+<li><a class="reference external" href="http://notepad-plus-plus.org/">Notepad++</a> (free and open-source)</li>
+<li><a class="reference external" href="http://www.flos-freeware.ch/notepad2.html">Notepad2</a> (free and open-source)</li>
+</ul>
+</li>
+<li>Mac OSX:<ul>
+<li><a class="reference external" href="https://api.textmate.org/downloads/beta">TextMate 2</a> (free and open-source)</li>
+<li><a class="reference external" href="http://projects.gnome.org/gedit/">gedit</a> (free and open-source)</li>
+<li><a class="reference external" href="http://www.barebones.com/products/TextWrangler/">TextWrangler</a> (free)</li>
+</ul>
+</li>
+<li>Linux:<ul>
+<li><a class="reference external" href="http://projects.gnome.org/gedit/">gedit</a> (free and open-source)</li>
+<li><a class="reference external" href="http://kate-editor.org/">kate</a> (free and open-source)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Most text editors determine what kind of syntax highlighting to use
+based on the file extension. Please ensure that your Ruby script files
+end with the &#8221;.rb&#8221; extension so you see syntax highlighting.</p>
+</div>
+</div>
+<div class="section" id="general-principles">
+<h2>General Principles<a class="headerlink" href="#general-principles" title="Permalink to this headline">¶</a></h2>
+<p>Each cell that you create with the Datavyu API has three inherent
+<a class="reference internal" href="../guide/reference/glossary.html#term-code"><em class="xref std std-term">codes</em></a>: <code class="docutils literal"><span class="pre">onset</span></code>, <code class="docutils literal"><span class="pre">offset</span></code>, and <code class="docutils literal"><span class="pre">ordinal</span></code>. Each
+cell also has at least one user-specified code.</p>
+<p><code class="docutils literal"><span class="pre">onset</span></code>, <code class="docutils literal"><span class="pre">offset</span></code>, and <code class="docutils literal"><span class="pre">ordinal</span></code> are all <a class="reference internal" href="../guide/reference/glossary.html#term-integer"><em class="xref std std-term">Integers</em></a>, while the user-specified codes are <a class="reference internal" href="../guide/reference/glossary.html#term-string"><em class="xref std std-term">Strings</em></a>.</p>
+<p><code class="docutils literal"><span class="pre">onset</span></code> and <code class="docutils literal"><span class="pre">offset</span></code> are measured in <strong>milliseconds from the
+beginning of the video</strong>, starting from 0.  For
+instance, an <code class="docutils literal"><span class="pre">onset</span></code> time of 00:02:20 translates to 140000ms.</p>
+<p>Since user-specified codes are strings, you must convert any codes that you wish to
+perform calculations on to a numeric type. This is easily done with Ruby
+using the <a class="reference external" href="http://ruby-doc.org/core-2.0.0/String.html#method-i-to_i">to_i</a> method for integers,
+or the <a class="reference external" href="http://ruby-doc.org/core-2.0.0/String.html#method-i-to_f">to_f</a> method for floating point numbers.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>Create a variable, <code class="docutils literal"><span class="pre">var1</span></code> whose value is &#8220;5&#8221;. Since the number 5 has
+quotation marks around it, it is a string.</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="n">var1</span> <span class="o">=</span> <span class="s2">&quot;5&quot;</span>
+</pre></div>
+</div>
+<p>If you print <code class="docutils literal"><span class="pre">var</span></code>, you&#8217;d see that it is &#8220;5&#8221;. Now,create a new
+variable, <code class="docutils literal"><span class="pre">var2</span></code> from <code class="docutils literal"><span class="pre">var1</span></code> using <code class="docutils literal"><span class="pre">to_i</span></code> to convert the &#8220;5&#8221; to
+a <code class="docutils literal"><span class="pre">5</span></code>.</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="n">var2</span> <span class="o">=</span> <span class="n">var1</span><span class="o">.</span><span class="n">to_i</span>
+</pre></div>
+</div>
+<p>Print <code class="docutils literal"><span class="pre">var2</span></code> and see that it is a <code class="docutils literal"><span class="pre">5</span></code> without quotation marks:</p>
+<div class="last highlight-ruby"><div class="highlight"><pre><span class="nb">print</span> <span class="n">var2</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Ruby provides two options for printing to the console: the <code class="docutils literal"><span class="pre">p</span></code>
+command and the <code class="docutils literal"><span class="pre">puts</span></code> command. When in doubt, use <code class="docutils literal"><span class="pre">p</span></code>, as it
+prints arrays and lists in a more readable format, rather than
+mashing them all together like <code class="docutils literal"><span class="pre">puts</span></code> does. Try printing a list
+such as <code class="docutils literal"><span class="pre">[5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9]</span></code> using both <code class="docutils literal"><span class="pre">p</span></code> and <code class="docutils literal"><span class="pre">puts</span></code> to
+see the difference.</p>
+<div class="last highlight-ruby"><div class="highlight"><pre><span class="nb">p</span> <span class="o">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="o">]</span>
+<span class="nb">puts</span> <span class="o">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="o">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="basic-script-format">
+<h2>Basic Script Format<a class="headerlink" href="#basic-script-format" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Scripts are very sensitive! When programming, every quotation mark,
+underscore, period, and slash serve a purpose. You must
+use the correct syntax, or the script will not work.</p>
+<p>Code and column names are also case sensitive. If you have a column
+in a spreadsheet called &#8220;trial&#8221;, requesting &#8220;Trial&#8221; will not work.</p>
+<p class="last">All code names in Ruby must be lowercase. Codes with uppercases have special meanings.</p>
+</div>
+<p>All Datavyu API scripts must include the following
+line at the top:</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+</pre></div>
+</div>
+<p>This <code class="docutils literal"><span class="pre">require</span></code> statement loads all of the helper functions that enable
+your scripts to interact with the Datavyu spreadsheet.</p>
+<p>In general, the rest of the script code goes between <code class="docutils literal"><span class="pre">begin</span></code> and
+<code class="docutils literal"><span class="pre">end</span></code> tags, making the general format as follows:</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<span class="k">begin</span>
+  <span class="c1"># Get the columns that we want to work with</span>
+
+  <span class="c1"># Do something to those columns</span>
+
+  <span class="c1"># Write any changes to those columns back to the spreadsheet</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Anything that comes after a <code class="docutils literal"><span class="pre">#</span></code> character on a line in Ruby is a
+comment, which means it will not execute any specific task. Comments are useful for
+leaving notes that explain what the code is doing so that when you return to an old script,
+you remember what you&#8217;re looking at. The examples in this documentation
+use comments extensively.</p>
+</div>
+<p>Now that you are grounded in the Datavyu Ruby API mechanics,
+consider the <a class="reference internal" href="tutorials.html"><em>API Tutorials</em></a> or <a class="reference internal" href="reference.html"><em>Datavyu Ruby API Reference</em></a>.</p>
+</div>
+</div>
+
+
+    
+
+				
+    <div class="cf trail">
+        <div class="leftie">
+            <span class="btn-arrow-left">&larr;&nbsp;</span>
+            <a href="overview.html" title="Previous Section: Classes, Methods, and Parameters"><span>Classes, Methods, and Parameters</span></a>
+        </div>
+        <div class="rightie_bottom">
+            <a href="tutorials.html" title="Next Section: API Tutorials"><span>API Tutorials</span></a>
+            <span class="btn-arrow-right">&nbsp;&rarr;</span>
+        </div>
+    </div>
+
+
+        </div>
+
+				<nav class="col_nav page_sidebar">
+					
+<h2><a href="../index.html">Datavyu</a></h2>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../guide.html">Software Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">Ruby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction-to-apis.html">Introduction to APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Classes, Methods, and Parameters</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Introduction to Scripting</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html">API Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference.html">Datavyu Ruby API Reference</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/databrary/Datavyu-Example-Scripts">Example Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../walkthrough-videos.html">Walkthrough Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding-example.html">Coding Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practices.html">Best Practices for Coding Behavioral Data from Video</a></li>
+</ul>
+
+
+<div class="getit">
+    <p><a href="/docs/user-guide.pdf">Download the docs</a> for offline viewing.</p>
+</div>
+
+				</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<ul class="inline">
+					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
+					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
+					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
+				</ul>
+				<figure class="footer_fig"><a href="http://databrary.org:8001" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+
+			<p>
+				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

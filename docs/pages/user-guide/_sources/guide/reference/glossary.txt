@@ -1,0 +1,144 @@
+========
+Glossary
+========
+
+.. glossary::
+   :sorted:
+
+   coding manual
+      Documentation for codes in a Datavyu spreadsheet. Should be written as if
+      instructing someone with no prior information about the spreadsheet or
+      project.
+
+   coding pass
+      A pass intended to fill in all fillable codes in a column. Coding passes
+      can be aided by previous passes so that work is not repeated.
+
+   Controller
+      The Controller is a core Datavyu window that enables
+      you to control playback of data sources, and to record
+      observations. See: :doc:`/guide/controller`
+
+   data
+      The audio or video files that are being studied.
+
+   onset
+   cell onset
+      The start time of a cell.
+
+   offset
+   cell offset
+      The end time of a cell.
+ 
+   spreadsheet
+      The core Datavyu window where coders record observations. See:
+      :doc:`/guide/spreadsheet`
+
+   playhead
+      The playhead indicates the current point of playback in the
+      :term:`timeslider` of the Controller.
+
+   observation
+      An instance of the :term:`column` that is being coded.
+
+   code
+      Datavyu codes are column components that researchers are observing.
+      Each Datavyu :term:`column` may have multiple codes
+      for which a coder will record observations. For instance, a
+      column called "step", which refers to walking, might have
+      a "foot" code that would differentiate between left or right
+      feet, and a "direction" code that indicated if the person
+      was stepping forward or backward.
+
+   comment
+      A code that consists of freeform text. Useful for recording unique
+      observations in the data.
+
+   Integer
+      A whole number. Integers are numbers that are not fractions,
+      and thus, which have no numbers after a decimal point.
+
+   String
+      In computing, a string is a linear sequence of characters. Strings
+      can be random characters, words, or sentences.
+
+   timeslider
+      The timeslider represents the length of the data source, and
+      enables users to visualize where the :term:`playhead` is with
+      respect to the entirety of the data source.
+
+   key-value pair
+      A data representation that pairs "keys" (some thing you have data
+      about) with "values" (the data itself). A key-value pair could be
+      "telephone" and "555-123-4567", for instance. Sometimes, values
+      are represented as a list of values, or as an array.
+
+   frame rate
+      Frame rate (also known as frame frequency) is the
+      frequency (rate) at which an imaging device produces unique
+      consecutive images called frames. The three main frame rate
+      standards are: 24p, 25p, and 30p.
+
+   region
+      The area of the :term:`timeslider` that has been brought into
+      focus using the timeslider's brackets.
+
+   API
+      An API (Application Programming Interface) enables disparate software
+      components to interact with each other by specifying functions or
+      routines to perform tasks. Datavyu's API uses the
+      `Ruby <https://www.ruby-lang.org/en/>`_ programming language.
+
+   reliability column
+      A Datavyu column that is a copy of an original column
+      used to ensure that the coded observations are accurate.
+
+   column
+      Datavyu columns are phenomena or events that observations are
+      collected about. Columns are :term:`key-value pairs <key-value
+      pair>` that associate a column name with a variety of
+      :term:`codes <code>`. Columns can be general, such as "trial" or
+      "ID", or can be specific, such as "step" or "hand".  Datavyu
+      represents columns as a column in the :guilabel:`Spreadsheet`.
+
+   cell
+      A cell is a graphical representation of an observation. Cells
+      are rectangles that stack in the columns of Datavyu's
+      spreadsheet and contain the observation data that a coder
+      inputs when coding a data source.
+
+   class
+      A pre-defined object type, that has associated attributes and
+      methods. See: :doc:`/api/overview`.
+
+   method
+      A defined action that you can perform. Methods may accept
+      arguments in order to perform their specified tasks.
+      See: :doc:`/api/overview`.
+
+   standalone method
+      A :term:`method` that does not belong to a specific
+      :term:`class`. See: :doc:`/api/overview`.
+
+   script
+      A program that performs a specific task.
+
+   class method
+      A :term:`method` that belongs to a :term:`class` and must be
+      invoked on an instance of that :term:`class`. See:
+      :doc:`/api/overview`.
+
+   ordinal
+      The position of a :term:`cell` within its :term:`column`. The
+      ordinal is indicated in the top left corner of each cell in
+      Datavyu.
+
+   parameter
+      The information that is methods use to perform their
+      tasks. Parameters can be required or optional.  See:
+      :doc:`/api/overview`.
+
+   argument
+      The information the user specifies to a method for a given
+      parameter. For instance, "charlie" might be the argument
+      specified for the ``name`` parameter. See: :doc:`/api/overview`.

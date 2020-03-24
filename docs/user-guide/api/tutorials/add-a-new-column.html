@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>Add a New Column || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="current">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/support" title="Forum Archive">Archive</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_user-guide_api_tutorials_add-a-new-column" class="hentry page page_user-guide_api_tutorials_add-a-new-column page_sphinx">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/tutorials.html" class="">API Tutorials</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>Add a New Column</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+
+				
+        
+  <div class="section" id="add-a-new-column">
+<h1>Add a New Column<a class="headerlink" href="#add-a-new-column" title="Permalink to this headline">¶</a></h1>
+<p>Much like <a class="reference internal" href="add-cells-to-a-column.html"><em>Add Cells to a Column</em></a> or <a class="reference internal" href="add-codes-to-a-column.html"><em>Add Codes to a Column</em></a>,
+the Datavyu API allows you to create a completely
+new column using the <a class="reference internal" href="../reference/1.3.4/createColumn.html#createColumn" title="createColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">createColumn()</span></code></a> method.
+<a class="reference internal" href="../reference/1.3.4/createColumn.html#createColumn" title="createColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">createColumn()</span></code></a> takes at least two parameters: first, the name of the new column,
+followed by a list of the names of the new codes contained in the column.</p>
+<p>For example, suppose you wanted to add a column called &#8220;look&#8221; to your
+spreadsheet. And you wanted &#8220;look&#8221; to contain two codes: <em>direction</em> and
+<em>target</em>.</p>
+<ol class="arabic">
+<li><p class="first">Set up the script, and create a new column with its two codes.
+You will need to create a Ruby object to hold the
+data until you are ready to write it back to the spreadsheet. In
+this example, the Ruby object is called <code class="docutils literal"><span class="pre">look</span></code>:</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<span class="k">begin</span>
+   <span class="c1"># Create new column</span>
+   <span class="n">look</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;look&quot;</span><span class="p">,</span> <span class="s2">&quot;direction&quot;</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Write the new column back to the spreadsheet and <code class="docutils literal"><span class="pre">end</span></code> the script:</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<span class="k">begin</span>
+   <span class="n">look</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;look&quot;</span><span class="p">,</span> <span class="s2">&quot;direction&quot;</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">)</span>
+
+   <span class="c1"># Write the new column to Datavyu&#39;s spreadsheet.</span>
+   <span class="n">setColumn</span><span class="p">(</span><span class="n">look</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+
+
+    
+
+				
+    <div class="cf trail">
+        <div class="leftie">
+            <span class="btn-arrow-left">&larr;&nbsp;</span>
+            <a href="../tutorials.html" title="Previous Section: API Tutorials"><span>API Tutorials</span></a>
+        </div>
+        <div class="rightie_bottom">
+            <a href="add-codes-to-a-column.html" title="Next Section: Add Codes to a Column"><span>Add Codes to a Column</span></a>
+            <span class="btn-arrow-right">&nbsp;&rarr;</span>
+        </div>
+    </div>
+
+
+        </div>
+
+				<nav class="col_nav page_sidebar">
+					
+<h2><a href="../../index.html">Datavyu</a></h2>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../guide.html">Software Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api.html">Ruby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction-to-apis.html">Introduction to APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Classes, Methods, and Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction-to-scripting.html">Introduction to Scripting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../tutorials.html">API Tutorials</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Add a New Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add-codes-to-a-column.html">Add Codes to a Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add-cells-to-a-column.html">Add Cells to a Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="check-for-coding-errors.html">Check for Coding Errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-reliability-coding-to-check-data-accuracy.html">Check Inter-rater Reliability to Improve Data Accuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="export-data-using-scripts.html">Use Scripts to Export Data from Datavyu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="convert-openshapa-script-to-datavyu.html">Convert an OpenSHAPA Script to the Datavyu Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="perform-operations-on-multiple-files.html">Batch Operations on Multiple Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="convert-macshapa-to-datavyu.html">Convert MacSHAPA Files to Work in Datavyu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html">Datavyu Ruby API Reference</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/databrary/Datavyu-Example-Scripts">Example Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../walkthrough-videos.html">Walkthrough Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding-example.html">Coding Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../best-practices.html">Best Practices for Coding Behavioral Data from Video</a></li>
+</ul>
+
+
+<div class="getit">
+    <p><a href="/docs/user-guide.pdf">Download the docs</a> for offline viewing.</p>
+</div>
+
+				</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<ul class="inline">
+					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
+					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
+					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
+				</ul>
+				<figure class="footer_fig"><a href="http://databrary.org:8001" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+
+			<p>
+				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

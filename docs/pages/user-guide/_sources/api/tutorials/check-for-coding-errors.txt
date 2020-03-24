@@ -1,0 +1,187 @@
+=======================
+Check for Coding Errors
+=======================
+
+.. default-domain:: rb
+
+.. begin-content
+
+Datavyu scripts have the ability to check for coding errors to make up
+for potential human error. Inputting invalid codes is a common coding 
+mistake. For example, a coder might accidentally input an "h", when only 
+"j" or "k" are acceptable values. Using scripts, coders can double-check  
+their work for errors and fix them early on.
+
+Datavyu API provides the :meth:`checkValidCodes` method to check for
+coder errors. :meth:`checkValidCodes` requires at least three
+arguments: the name of the column it will verify, the location that it
+will output the results to, and at least one :term:`key-value pair`.
+Key-value pairs consist of a "key", the name of a Datavyu code, and a
+"value", which is an array of valid values for that code.
+:meth:`checkValidCodes` then checks each code (key) against its list
+of valid values (the values).
+
+The following examples check the ``look`` column against its codes. You
+can download the sample data used in this tutorial from :download:`here
+</resources/SampleData-checkValidCodes.opf>`.
+
+.. end-intro
+
+.. _checkValidCodes-basic-format:
+
+.. begin-basic
+
+Check Code Validity and Output to the Console
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Basic Format
+````````````
+
+.. admonition:: Example
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         # Check for errors. Notice the square brackets. These denote
+         # lists. The basic format is: "columnName", "dumpFile",
+         # "codename", ["validcode1", "validcode2", etc], 
+         # "code2", [ "validcode1", "validcode2", etc], ...
+
+         checkValidCodes("look", "", "direction", ["l", "r"], "target", ["a", "b"])
+      end
+
+   Breaking down the function call makes it easier to follow what is
+   happening. Recall that :meth:`checkValidCodes` takes (at least) three
+   arguments: the name of the Datavyu variable it will be checking, the
+   location that it should direct the output to, and at least one key-value
+   pair.
+
+In the example, we have:
+
+.. code-block:: ruby
+
+   checkValidCodes("look", "", "direction", ["l", "r"], "target", ["a", "b"])
+
+- ``"look"`` is the name of the variable to check. 
+
+- ``""`` is the location that we want to export the output to. Using
+  ``""`` indicates that we do not want to write the results to a file,
+  and that it should instead display in the console.
+
+- ``"direction", ["l", "r"]`` is the first key-value pair, which specifies
+  that the "direction" Datavyu code should only have the values "l" or "r".
+   
+- ``"target" , ["a", "b"]`` is the second key-value pair, which specifies
+  that the "target" Datavyu code should only have the values "a" or "b".
+
+.. end-basic
+
+.. _checkValidCodes-advanced-format:
+
+.. begin-advanced
+
+Advanced Format
+```````````````
+
+You can perform the same verification by first assigning the valid codes
+to objects. This makes it is easier for human readers to parse the
+script, and makes it easy to modify or update 
+in the future.
+
+#. Set up the script
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+
+#. Assign each list of valid codes to a variable:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         # Store each of the valid code arrays into a object first
+         # so that it is easier to read
+         directionCodes = ["l", "r"]
+         targetCodes = ["a", "b"]
+
+#. Check for coding errors using :meth:`checkValidCodes`, replacing
+   the lists with your newly-created objects, and end the script:
+   
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         directionCodes = ["l", "r"]
+         targetCodes = ["h", "t"]
+
+         # Check for typos, replacing the code arrays with your new variables:
+         checkValidCodes("look", "", "direction", directionCodes, "target", targetCodes)
+      end
+
+Check Code Validity and Output to a File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:meth:`checkValidCodes` can write the results of its verification to a
+"dump file". Datavyu will create an output file if you specify a path
+in the ``dumpFile`` parameter.
+
+#. Create an object that holds the path that it should output to using
+   Ruby's `File.expand_path 
+   <http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path>`_ 
+   method, which converts a relative path,
+   like ``~/Desktop/file.txt`` to an absolute path name, which contains
+   the root directory, and all sub-directories, like
+   ``/Users/alice/Desktop/file.txt``
+
+   The following commands create a variable called ``output`` that
+   holds the absolute path to a file on the Desktop called
+   ``output.txt``.
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+      
+         output = File.expand_path("~/Desktop/output.txt")
+
+#. Call :meth:`checkValidCodes` on the "step" column, passing ``output``
+   as the argument for the ``dumpFile`` parameter:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         directionCodes = ["l", "r"]
+         targetCodes = ["a", "b"]
+
+         output = File.expand_path("~/Desktop/output.txt")
+
+         # Check for errors, specifying the output variable as the dumpFile parameter 
+         checkValidCodes("look", output, "direction", directionCodes, "target", targetCodes)
+      end
+
+When the script ends, the output.txt file will be created on the
+Desktop, containing the results of the code checking. For the
+:download:`sample data </resources/SampleData-checkValidCodes.opf>`, 
+it should find one error, and the output should resemble:
+
+   .. code-block:: sh
+   
+      Code ERROR: Var: look   Ordinal: 2      Arg: direction     Val: rj
+
+.. end-content
+
+Video Example of Checking for Errors 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This video displays one way to check for errors (typos, impossible values, etc.) within a spreadsheet. 
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../../_static/video/check-typo-script.mp4" type="video/mp4">
+   </video>
+

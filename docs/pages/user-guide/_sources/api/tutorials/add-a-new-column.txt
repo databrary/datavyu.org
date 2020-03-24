@@ -1,0 +1,43 @@
+================
+Add a New Column
+================
+
+.. default-domain:: rb
+
+.. begin-content
+
+Much like :doc:`/api/tutorials/add-cells-to-a-column` or :doc:`/api/tutorials/add-codes-to-a-column`, 
+the Datavyu API allows you to create a completely
+new column using the :meth:`createColumn()` method.
+:meth:`createColumn()` takes at least two parameters: first, the name of the new column,
+followed by a list of the names of the new codes contained in the column.
+
+For example, suppose you wanted to add a column called "look" to your
+spreadsheet. And you wanted "look" to contain two codes: *direction* and
+*target*.
+
+#. Set up the script, and create a new column with its two codes.
+   You will need to create a Ruby object to hold the
+   data until you are ready to write it back to the spreadsheet. In
+   this example, the Ruby object is called ``look``:
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         # Create new column
+         look = createColumn("look", "direction", "target")
+
+#. Write the new column back to the spreadsheet and ``end`` the script:
+   
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+         look = createColumn("look", "direction", "target")
+
+         # Write the new column to Datavyu's spreadsheet.
+         setColumn(look)
+      end
+
+.. end-content

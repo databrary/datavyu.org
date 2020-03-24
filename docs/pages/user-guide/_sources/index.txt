@@ -1,0 +1,46 @@
+.. Datavyu Manual documentation master file, created by
+   sphinx-quickstart on Thu Sep 26 09:24:56 2013.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+===================================
+Welcome to Datavyu's documentation!
+===================================
+
+.. image:: /img/annotated-datavyu-desktop.png
+   :align: center
+
+Datavyu is a complete software package for visualizing and coding
+behavioral observations from video data sources. Designed
+by - and for - behavioral scientists, Datavyu facilitates data
+coding and sharing through the ongoing `Databrary <http://databrary.org/>`_
+data library project.
+
+.. note:: 
+
+   Datavyu is an open source software package.
+   You should familiarize yourself with previous
+   version's `release notes <http://datavyu.org/download/>`_, to be
+   aware of each version's features and potential issues. If you encounter a bug, you can report
+   it and get help by posting to the `support forum
+   <http://datavyu.org/support>`_.
+
+In addition to the powerful software package, Datavyu provides a
+Ruby-based API to help you automate common tasks and ensure accuracy
+in your data. The API greatly enhances
+the Datavyu experience, and is well worth the effort of learning some
+programming fundamentals.
+
+When you are ready to start using Datavyu, the following chapters
+outline everything you need to know to become an expert Datavyu user,
+from first principles to advanced strategies.
+
+.. toctree::
+   :maxdepth: 1
+
+   /guide
+   /api
+   /faq
+   /walkthrough-videos
+   /coding-example
+   /best-practices

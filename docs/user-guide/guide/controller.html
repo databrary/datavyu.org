@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>Controller Overview || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="current">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/support" title="Forum Archive">Archive</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_user-guide_guide_controller" class="hentry page page_user-guide_guide_controller page_sphinx">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/guide.html" class="">Software Guide</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>Controller Overview</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+
+				
+        
+  <div class="section" id="controller-overview">
+<h1>Controller Overview<a class="headerlink" href="#controller-overview" title="Permalink to this headline">¶</a></h1>
+<p>The Controller enables users to manipulate the playback of
+their data source, and create new cells as they record their observations.</p>
+<img alt="Image of the Controller indicating the track and keypad area" class="align-center" src="../_images/controller-annotated.png" />
+<p>The Controller has two main areas: the keypad on the left,
+which maps directly to your keyboard, and the <em class="guilabel">Timeslider</em> on
+the right, which represents the current playback position.</p>
+<p>The following sections describe the two areas in detail, and provide
+a useful reference for working with the Controller.</p>
+<div class="section" id="keypad">
+<h2>Keypad<a class="headerlink" href="#keypad" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">You cannot use the number keypad for inputting numbers into Datavyu: it will
+only perform the actions described here.</p>
+</div>
+<p>The Controller&#8217;s keypad maps directly to the number pad
+on your keyboard or external keypad and the on-screen representation
+helps users remember what key performs what function. When you press
+a key on the keypad, a visual indicator onscreen mirrors the
+keystrokes. Some keypads may change the ordering of certain keys: for
+instance, some keypads may have a <code class="docutils literal"><span class="pre">Num</span> <span class="pre">Lock</span></code> key
+rather than a <code class="docutils literal"><span class="pre">clear</span></code> button but the Controller takes different
+keyboards into account and simplifies the keys as much as possible.
+Familiarize yourself with both the Datavyu controls and your
+keypad to maximize coding efficiency.</p>
+<div class="section" id="playback-controls">
+<span id="id1"></span><h3>Playback Controls<a class="headerlink" href="#playback-controls" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em class="guilabel">jog left</em> (<code class="docutils literal"><span class="pre">1</span></code>): moves the playhead back one frame. If the
+<a class="reference internal" href="reference/glossary.html#term-frame-rate"><em class="xref std std-term">frame rate</em></a> is not set, <em class="guilabel">jog</em> will move the playhead
+in one second increments. Holding down <em class="guilabel">jog left</em> plays
+backward slowly.</li>
+<li><em class="guilabel">pause</em> (<code class="docutils literal"><span class="pre">2</span></code>): pauses playback. Pressing
+<em class="guilabel">pause</em> again resumes playback. <em class="guilabel">Pause</em>
+only works if <em class="guilabel">play</em> (<code class="docutils literal"><span class="pre">8</span></code>) has first been pressed.</li>
+<li><em class="guilabel">jog right</em> (<code class="docutils literal"><span class="pre">3</span></code>): moves the playhead forward one frame. If the
+<a class="reference internal" href="reference/glossary.html#term-frame-rate"><em class="xref std std-term">frame rate</em></a> is not set, <em class="guilabel">jog</em> will move the playhead
+in one second increments. Holding down <em class="guilabel">jog right</em> plays
+the source forward slowly.</li>
+<li><em class="guilabel">shuttle left</em> (<code class="docutils literal"><span class="pre">4</span></code>): rewinds, initially at 1/32 of playback speed.
+Repeatedly pressing the <em class="guilabel">shuttle left</em> key increases the rewind
+speed to a maximum of 32 times playback speed.</li>
+<li><em class="guilabel">stop</em> (<code class="docutils literal"><span class="pre">5</span></code>): stops playback.</li>
+<li><em class="guilabel">shuttle right</em> (<code class="docutils literal"><span class="pre">6</span></code>): fast forwards initially at 1/32 of playback
+speed. Repeatedly pressing the <em class="guilabel">shuttle right</em> key increases
+the fast forward speed to a maximum of 32 times playback speed.</li>
+<li><em class="guilabel">play</em> (<code class="docutils literal"><span class="pre">8</span></code>): starts playback.</li>
+</ul>
+<p>In addition, <code class="docutils literal"><span class="pre">shift</span></code> <em class="guilabel">find</em> (<code class="docutils literal"><span class="pre">+</span></code>): jumps to the time of cell
+<a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>For users of Mac OS X: recent versions of OS X do not allow you to
+hold down a key as a default, instead it brings up a
+mini-menu to help you select common accents for that letter. If you
+want to be able to <em class="guilabel">jog</em> by holding down the <code class="docutils literal"><span class="pre">1</span></code> or
+<code class="docutils literal"><span class="pre">3</span></code> keys, you will need to open your Terminal and run the
+following command:</p>
+<div class="highlight-python"><div class="highlight"><pre>defaults write -g ApplePressAndHoldEnabled -bool false
+</pre></div>
+</div>
+<p class="last">To undo the change, run the same command but with <code class="docutils literal"><span class="pre">-bool</span> <span class="pre">true</span></code>
+rather than <code class="docutils literal"><span class="pre">-bool</span> <span class="pre">false</span></code>.</p>
+</div>
+<div class="figure align-right" style="width: 300px">
+<img alt="../_images/keypad-annotated.png" src="../_images/keypad-annotated.png" />
+<p class="caption">The keys highlighted in green are <em>playback controls</em>. The keys
+highlighted in blue are <em>coding-controls</em>.</p>
+</div>
+</div>
+<div class="section" id="coding-controls">
+<span id="id2"></span><h3>Coding Controls<a class="headerlink" href="#coding-controls" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em class="guilabel">set cell onset</em> (7): sets the <a class="reference internal" href="reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> for the current
+cell.</li>
+<li><em class="guilabel">point cell</em> (=): creates a new cell whose <a class="reference internal" href="reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> and
+<a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a> values are the playhead&#8217;s current position.</li>
+<li><em class="guilabel">set cell offset</em> (9 and <code class="docutils literal"><span class="pre">.</span></code>): sets the <a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a> for the current
+cell.</li>
+<li><em class="guilabel">find</em> (<code class="docutils literal"><span class="pre">+</span></code>): moves the playhead to the onset time of
+the current cell, which is shown in the box to the bottom right of the
+<em class="guilabel">find</em> button. Selecting a different cell will update this
+time.</li>
+<li><em class="guilabel">go back</em> (<code class="docutils literal"><span class="pre">-</span></code>): moves the playhead back by the amount
+of time set in the <cite>Jump back by</cite> box to the right of the <em class="guilabel">go back</em>
+button. You can change the increment by selecting that box and editing
+the value.</li>
+<li><em class="guilabel">new cell and set previous offset</em> (<code class="docutils literal"><span class="pre">0</span></code>): creates a new
+cell and sets its <a class="reference internal" href="reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> to the playhead&#8217;s current
+time. If the previous cell does not have a <a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a>,
+adding a new cell with this key sets the previous cell&#8217;s
+<a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a> to the current playhead time, minus one millisecond.</li>
+<li><em class="guilabel">new cell and set current onset</em> (<code class="docutils literal"><span class="pre">Enter</span></code>): creates a new cell and sets
+its <a class="reference internal" href="reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> to the playhead&#8217;s current time.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="tracks">
+<h2>Tracks<a class="headerlink" href="#tracks" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The tracks walkthrough video
+is a good way to familiarize yourself with this area of the
+Controller:</p>
+</div>
+<video controls width="100%" height="auto">
+<source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
+<source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
+</video><p>The <em class="guilabel">Tracks</em> area of the Controller helps you
+visualize where you are within a data source&#8217;s playback. You can
+control the scale using the slider bar in the top right: moving it to
+the right zooms in, allowing you to manipulate smaller time periods
+than would otherwise be feasible. You can also zoom in on a selected
+region by clicking on the <em class="guilabel">magnifying glass</em> icon next to
+the slider bar. The red <a class="reference internal" href="reference/glossary.html#term-playhead"><em class="xref std std-term">playhead</em></a> shows the current playback
+position.</p>
+<div class="figure align-center">
+<img alt="annotated image of the Controller&#x27;s tracks region" src="../_images/tracks-region-annotated.png" />
+</div>
+<p>You can choose to focus on a single region by moving the green region
+boundaries. Datavyu will start playback from the leftmost boundary&#8217;s position,
+and stop at the rightmost boundary.</p>
+<p>The <em class="guilabel">Tracks</em> area of the Controller also
+includes five buttons:</p>
+<ul class="simple">
+<li><em class="guilabel">Lock All</em>: locks the tracks to prevent the user from
+changing the synchronization between multiple tracks.</li>
+<li><em class="guilabel">Add Bookmark</em>: adds a bookmark at the playhead.</li>
+<li><em class="guilabel">Snap Region</em>: sets the <a class="reference internal" href="reference/glossary.html#term-region"><em class="xref std std-term">region</em></a> to the length of the selected
+cell: the left boundary is placed at the cell&#8217;s <a class="reference internal" href="reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a>, and the
+right boundary at the cell&#8217;s <a class="reference internal" href="reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a>. You can also use the
+<code class="docutils literal"><span class="pre">ctrl</span> <span class="pre">+</span></code> keyboard shortcut to snap the region.</li>
+<li><em class="guilabel">Clear Region</em>: removes the region boundaries. You can
+also use the <code class="docutils literal"><span class="pre">ctrl</span> <span class="pre">-</span></code> keyboard shortcut to clear the region.</li>
+<li><em class="guilabel">Magnifying Glass</em> icon: zooms in on the
+timeslider to focus exclusively on the snapped region.</li>
+</ul>
+</div>
+<div class="section" id="add-data">
+<span id="add-data-source"></span><span id="id3"></span><h2>Add Data<a class="headerlink" href="#add-data" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/keypad-add-data-button.png"><img alt="image of keypad with arrow indicating the &quot;add data&quot; button" class="align-right" src="../_images/keypad-add-data-button.png" style="width: 300px;" /></a>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Do not use the VLC plugin because it is not fully implemented and tested. It has frame accuracy problems and therefore is not suggested. Please use Quicktime instead. If your videos do not play smoothly in Quicktime, please convert your videos if you would still like to use Datavyu.</p>
+</div>
+<p>Datavyu currently supports video through QT. To convert video file types, see:
+<a class="reference internal" href="tutorials/convert-file-format.html"><em>Convert File Formats</em></a>. If you are going to be working with
+multiple data sources see: <a class="reference internal" href="tutorials/code-multiple-data-sources.html"><em>Code Multiple Data Sources at Once</em></a>.</p>
+<p>Providing you have adequate processing power and a
+sufficiently strong graphics card, you should be able to work with
+high-resolution video files without challenge.</p>
+<p>To add a data source:</p>
+<ol class="arabic">
+<li><p class="first">Click the <em class="guilabel">Add Data…</em> button in the top left corner of the
+Controller.</p>
+</li>
+<li><p class="first">A file selection window will open. Select the data file you will be
+coding.</p>
+</li>
+<li><p class="first">If the data source is a video file and Datavyu is unable to determine its
+<a class="reference internal" href="reference/glossary.html#term-frame-rate"><em class="xref std std-term">frame rate</em></a>. It will ask you what the video&#8217;s frame rate is. You can
+determine the frame rate by opening the video in QuickTime Player,
+and selecting <em class="guilabel">Show Movie Inspector</em> from the
+<em class="guilabel">Window</em> menu. The Inspector presents information about
+the video. The frame rate is labeled <em class="guilabel">FPS</em>, or
+frames-per-second.</p>
+<p>Datavyu uses the frame rate to accurately play and <a class="reference internal" href="#playback-controls"><em>jog</em></a> through videos, so it is important that you set the correct
+frame rate.</p>
+</li>
+<li><p class="first">If Datavyu cannot read your video&#8217;s frame rate or if it reads the wrong frame rate. You
+can manually set the frame rate by double clicking on <cite>Steps per second</cite> and writing the correct
+frame rate. Please press <cite>Enter</cite> and Datavyu will use your new frame rate.</p>
+</li>
+</ol>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference internal" href="spreadsheet.html"><em>Spreadsheet Overview</em></a></li>
+<li><a class="reference internal" href="tutorials.html"><em>Tutorials</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+    
+
+				
+    <div class="cf trail">
+        <div class="leftie">
+            <span class="btn-arrow-left">&larr;&nbsp;</span>
+            <a href="getting-started.html" title="Previous Section: Getting Started"><span>Getting Started</span></a>
+        </div>
+        <div class="rightie_bottom">
+            <a href="spreadsheet.html" title="Next Section: Spreadsheet Overview"><span>Spreadsheet Overview</span></a>
+            <span class="btn-arrow-right">&nbsp;&rarr;</span>
+        </div>
+    </div>
+
+
+        </div>
+
+				<nav class="col_nav page_sidebar">
+					
+<h2><a href="../index.html">Datavyu</a></h2>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../guide.html">Software Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="getting-started.html">Getting Started</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Controller Overview</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spreadsheet.html">Spreadsheet Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference.html">Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Ruby API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../walkthrough-videos.html">Walkthrough Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding-example.html">Coding Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best-practices.html">Best Practices for Coding Behavioral Data from Video</a></li>
+</ul>
+
+
+<div class="getit">
+    <p><a href="/docs/user-guide.pdf">Download the docs</a> for offline viewing.</p>
+</div>
+
+				</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<ul class="inline">
+					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
+					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
+					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
+				</ul>
+				<figure class="footer_fig"><a href="http://databrary.org:8001" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+
+			<p>
+				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

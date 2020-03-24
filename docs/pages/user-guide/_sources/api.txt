@@ -1,0 +1,54 @@
+========
+Ruby API
+========
+
+The Datavyu scripting API provides a scriptable interface to Datavyu's
+spreadsheet, allowing you to manipulate your data, export in any format
+you'd like, or check your data for errors.
+
+.. image:: /img/script-and-datavyu-api-landing.png
+   :align: center
+
+Getting Started with APIs and Scripting
+---------------------------------------
+
+.. image:: /img/check-valid-codes.png
+   :align: center
+
+APIs, Application Program Interfaces, are collections of code that
+specify how software components communicate with each other. Datavyu's
+API uses Ruby programming language, a popular object-oriented language. Ruby is
+reasonably easy to learn, and novice programmers can start writing
+scripts with minimal programming knowledge.
+
+Before you dive into the :doc:`/api/tutorials`, though, you should
+familiarize yourself with :doc:`what an API is
+</api/introduction-to-apis>`, learn about Ruby's :term:`classes
+<class>` and :term:`methods <method>` and how they differ, and
+follow the :doc:`/api/introduction-to-scripting`.
+
+.. toctree::
+   :maxdepth: 1
+
+   /api/introduction-to-apis
+   /api/overview
+   /api/introduction-to-scripting
+
+
+Core Documentation
+------------------
+
+The Datavyu Ruby API's core documentation is organized into tutorials
+and reference pages. Tutorials provide step-by-step instructions for
+accomplishing common tasks with Ruby scripts. The Reference
+documentation provides a detailed reference for every :term:`class`
+and :term:`method` included in the API. This can be useful if you are
+uncertain about how to use a specific method, or want an example of
+its use.
+
+.. toctree::
+   :maxdepth: 1
+
+   /api/tutorials
+   /api/reference
+   Example Scripts <https://github.com/databrary/Datavyu-Example-Scripts>

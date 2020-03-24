@@ -1,0 +1,233 @@
+===============================
+Controller Overview
+===============================
+
+The Controller enables users to manipulate the playback of
+their data source, and create new cells as they record their observations.
+
+.. image:: /img/controller-annotated.png
+   :alt: Image of the Controller indicating the track and keypad area
+   :align: center
+
+The Controller has two main areas: the keypad on the left,
+which maps directly to your keyboard, and the :guilabel:`Timeslider` on
+the right, which represents the current playback position.
+
+The following sections describe the two areas in detail, and provide
+a useful reference for working with the Controller.
+
+Keypad
+------
+
+.. important::
+
+   You cannot use the number keypad for inputting numbers into Datavyu: it will
+   only perform the actions described here.
+
+The Controller's keypad maps directly to the number pad
+on your keyboard or external keypad and the on-screen representation
+helps users remember what key performs what function. When you press
+a key on the keypad, a visual indicator onscreen mirrors the
+keystrokes. Some keypads may change the ordering of certain keys: for
+instance, some keypads may have a ``Num Lock`` key
+rather than a ``clear`` button but the Controller takes different
+keyboards into account and simplifies the keys as much as possible. 
+Familiarize yourself with both the Datavyu controls and your 
+keypad to maximize coding efficiency.
+
+.. _playback-controls:
+
+Playback Controls
+~~~~~~~~~~~~~~~~~
+
+- :guilabel:`jog left` (``1``): moves the playhead back one frame. If the
+  :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
+  in one second increments. Holding down :guilabel:`jog left` plays
+  backward slowly.
+
+- :guilabel:`pause` (``2``): pauses playback. Pressing
+  :guilabel:`pause` again resumes playback. :guilabel:`Pause`
+  only works if :guilabel:`play` (``8``) has first been pressed.
+
+- :guilabel:`jog right` (``3``): moves the playhead forward one frame. If the
+  :term:`frame rate` is not set, :guilabel:`jog` will move the playhead
+  in one second increments. Holding down :guilabel:`jog right` plays
+  the source forward slowly.
+
+- :guilabel:`shuttle left` (``4``): rewinds, initially at 1/32 of playback speed.
+  Repeatedly pressing the :guilabel:`shuttle left` key increases the rewind
+  speed to a maximum of 32 times playback speed.
+
+- :guilabel:`stop` (``5``): stops playback.
+
+- :guilabel:`shuttle right` (``6``): fast forwards initially at 1/32 of playback
+  speed. Repeatedly pressing the :guilabel:`shuttle right` key increases
+  the fast forward speed to a maximum of 32 times playback speed.
+
+- :guilabel:`play` (``8``): starts playback.
+
+In addition, ``shift`` :guilabel:`find` (``+``): jumps to the time of cell
+:term:`offset`.
+
+.. note::
+
+   For users of Mac OS X: recent versions of OS X do not allow you to
+   hold down a key as a default, instead it brings up a
+   mini-menu to help you select common accents for that letter. If you
+   want to be able to :guilabel:`jog` by holding down the ``1`` or
+   ``3`` keys, you will need to open your Terminal and run the
+   following command::
+
+      defaults write -g ApplePressAndHoldEnabled -bool false
+
+   To undo the change, run the same command but with ``-bool true``
+   rather than ``-bool false``.
+
+.. figure:: /img/keypad-annotated.png
+   :align: right
+   :figwidth: 300px
+
+   The keys highlighted in green are *playback controls*. The keys
+   highlighted in blue are *coding-controls*.
+
+
+.. _coding-controls:
+
+Coding Controls
+~~~~~~~~~~~~~~~
+
+- :guilabel:`set cell onset` (7): sets the :term:`onset` for the current
+  cell.
+
+- :guilabel:`point cell` (=): creates a new cell whose :term:`onset` and
+  :term:`offset` values are the playhead's current position.
+
+- :guilabel:`set cell offset` (9 and ``.``): sets the :term:`offset` for the current
+  cell.
+
+- :guilabel:`find` (``+``): moves the playhead to the onset time of
+  the current cell, which is shown in the box to the bottom right of the
+  :guilabel:`find` button. Selecting a different cell will update this
+  time.
+
+
+- :guilabel:`go back` (``-``): moves the playhead back by the amount
+  of time set in the `Jump back by` box to the right of the :guilabel:`go back`
+  button. You can change the increment by selecting that box and editing
+  the value.
+
+- :guilabel:`new cell and set previous offset` (``0``): creates a new
+  cell and sets its :term:`onset` to the playhead's current
+  time. If the previous cell does not have a :term:`offset`,
+  adding a new cell with this key sets the previous cell's
+  :term:`offset` to the current playhead time, minus one millisecond.
+
+- :guilabel:`new cell and set current onset` (``Enter``): creates a new cell and sets
+  its :term:`onset` to the playhead's current time.
+
+Tracks
+------
+
+.. note::
+
+   The tracks walkthrough video
+   is a good way to familiarize yourself with this area of the
+   Controller:
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
+   <source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
+   </video>
+
+The :guilabel:`Tracks` area of the Controller helps you
+visualize where you are within a data source's playback. You can
+control the scale using the slider bar in the top right: moving it to
+the right zooms in, allowing you to manipulate smaller time periods
+than would otherwise be feasible. You can also zoom in on a selected
+region by clicking on the :guilabel:`magnifying glass` icon next to
+the slider bar. The red :term:`playhead` shows the current playback
+position.
+
+.. figure:: /img/tracks-region-annotated.png
+   :alt: annotated image of the Controller's tracks region
+   :align: center
+
+
+You can choose to focus on a single region by moving the green region
+boundaries. Datavyu will start playback from the leftmost boundary's position,
+and stop at the rightmost boundary.
+
+The :guilabel:`Tracks` area of the Controller also
+includes five buttons:
+
+- :guilabel:`Lock All`: locks the tracks to prevent the user from
+  changing the synchronization between multiple tracks.
+
+- :guilabel:`Add Bookmark`: adds a bookmark at the playhead.
+
+- :guilabel:`Snap Region`: sets the :term:`region` to the length of the selected
+  cell: the left boundary is placed at the cell's :term:`onset`, and the
+  right boundary at the cell's :term:`offset`. You can also use the
+  ``ctrl +`` keyboard shortcut to snap the region.
+
+- :guilabel:`Clear Region`: removes the region boundaries. You can
+  also use the ``ctrl -`` keyboard shortcut to clear the region.
+
+- :guilabel:`Magnifying Glass` icon: zooms in on the
+  timeslider to focus exclusively on the snapped region.
+
+.. _add-data-source:
+.. _add-data:
+
+Add Data
+--------
+
+.. image:: /img/keypad-add-data-button.png
+   :alt: image of keypad with arrow indicating the "add data" button
+   :align: right
+   :width: 300px
+
+.. important::
+
+   Do not use the VLC plugin because it is not fully implemented and tested. It has frame accuracy problems and therefore is not suggested. Please use Quicktime instead. If your videos do not play smoothly in Quicktime, please convert your videos if you would still like to use Datavyu. 
+
+Datavyu currently supports video through QT. To convert video file types, see:
+:doc:`/guide/tutorials/convert-file-format`. If you are going to be working with
+multiple data sources see: :doc:`/guide/tutorials/code-multiple-data-sources`.
+
+Providing you have adequate processing power and a
+sufficiently strong graphics card, you should be able to work with
+high-resolution video files without challenge.
+
+To add a data source:
+
+#. Click the :guilabel:`Add Data…` button in the top left corner of the
+   Controller.
+
+#. A file selection window will open. Select the data file you will be
+   coding.
+
+#. If the data source is a video file and Datavyu is unable to determine its 
+   :term:`frame rate`. It will ask you what the video's frame rate is. You can
+   determine the frame rate by opening the video in QuickTime Player,
+   and selecting :guilabel:`Show Movie Inspector` from the
+   :guilabel:`Window` menu. The Inspector presents information about
+   the video. The frame rate is labeled :guilabel:`FPS`, or
+   frames-per-second.
+
+   Datavyu uses the frame rate to accurately play and :ref:`jog
+   <playback-controls>` through videos, so it is important that you set the correct
+   frame rate.
+ 
+#. If Datavyu cannot read your video's frame rate or if it reads the wrong frame rate. You 
+   can manually set the frame rate by double clicking on `Steps per second` and writing the correct
+   frame rate. Please press `Enter` and Datavyu will use your new frame rate. 
+
+
+.. seealso::
+
+   - :doc:`/guide/spreadsheet`
+
+   - :doc:`/guide/tutorials`

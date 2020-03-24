@@ -1,0 +1,124 @@
+=====================
+Add Cells to a Column
+=====================
+
+.. default-domain:: rb
+
+.. begin-content
+
+Populating a Datavyu column with :term:`cells <cell>` is another
+common task that you can use scripts to automate.
+
+Suppose that you want to code behaviors within 1-minute long blocks. 
+Rather than have the coder manually insert each cell, you can write a script
+that will insert a "block" cell every minute, with the :term:`onset` 
+set to the correct trial start time.
+
+#. Set up the script and create the Datavyu column you will be working
+   with into a Ruby variable. We'll call it ``block`` here, but you can
+   call it whatever you want to:
+
+   .. code-block:: ruby
+
+      require 'Datavyu_API.rb'
+      begin
+         # Creste the block column
+         block = createColumn("block", "code")
+
+#. Create the five cells using a loop. 
+   
+   .. _loops:
+   
+   .. admonition:: Programming 101
+   
+      **Loops** are types of code that tell Ruby to do something multiple
+      times. Let's break down the ``for`` loop from the following
+      example for those who aren't familiar with loops:
+   
+      .. code-block:: ruby
+
+         for i in 0..4
+            <do stuff>
+         end
+   
+      Essentially, this says, "let ``i`` = 0, <do stuff>, then, for
+      ``i`` = 1, <do stuff>. Then again for ``i`` = 2, for ``i`` = 3, and for
+      ``i`` = 4. Once i = 4, stop doing stuff." The ``0..4``
+      represents "from 0 to 4, inclusive".
+      
+      If you wanted to do something ten times, your loop could read
+      ``for i in 0..9`` or ``for i in 1..10``, or ``for i in 99..108``.
+
+      In this case, you will use the value of ``i`` to set the
+      :term:`onset` time of each cell, so having it start at 0 and go to
+      4 makes sense.
+   
+   Loop 5 times from 0 to 4, calculating the :term:`onset` time to
+   set for each new cell. 
+   
+   a. Since Datavyu API uses times in milliseconds,
+      convert ``i`` (the minute marker) to milliseconds:
+
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+            block = createColumn("block", "code")
+
+            for i in 0..4
+               # Calculate the onset time in milliseconds
+               time = i * 1000 * 60
+
+   #. Then, create the new cell using :meth:`make_new_cell()` and
+      store the cell as a Ruby object. For simplicity, we'll call it
+      ``cell``:
+
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+             block = createColumn("block", "code")
+
+            for i in 0..4
+               time = i * 1000 * 60
+         
+               # Create a new cell, called ``cell``
+               cell = block.make_new_cell()
+
+   #. Set the onset of ``cell`` to the value of the ``time`` variable
+      using :meth:`change_code()`, and ``end`` the for loop:
+
+      .. code-block:: ruby
+   
+         require 'Datavyu_API.rb'
+         begin
+             block = createColumn("block", "code")
+
+            for i in 0..4
+               time = i * 1000 * 60
+               cell = block.make_new_cell()
+            
+               # Set "onset" to the value of the ``time`` variable
+               cell.change_code("onset", time)
+            end
+
+#. Now that the loop is complete, write the changes back to the Datavyu
+   spreadsheet and ``end`` the script:
+
+   .. code-block:: ruby
+   
+      require 'Datavyu_API.rb'
+      begin
+          block = createColumn("block", "code")
+
+         for i in 0..4
+            time = i * 1000 * 60
+            cell = block.make_new_cell()
+            cell.change_code("onset", time)
+         end
+         
+         # Write change back to the Datavyu spreadsheet
+         setColumn(block)
+      end
+
+.. end-content

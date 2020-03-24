@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>RColumn Class || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="current">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/support" title="Forum Archive">Archive</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_user-guide_api_reference_1.3.4_class_RColumn" class="hentry page page_user-guide_api_reference_1.3.4_class_RColumn page_sphinx">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/reference.html" class="">Datavyu Ruby API Reference</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/reference/1.3.4.html" class="">Version 1.3.4</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>RColumn Class</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+
+				
+        
+  <div class="section" id="rcolumn-class">
+<h1>RColumn Class<a class="headerlink" href="#rcolumn-class" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="RColumn">
+<em class="property">class </em><code class="descname">RColumn</code><a class="headerlink" href="#RColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Ruby container for Datavyu columns.</p>
+<dl class="classmethod">
+<dt id="RColumn.make_new_cell">
+<em class="property">classmethod RColumn.</em><code class="descname">make_new_cell</code><big>(</big><big>)</big><a class="headerlink" href="#RColumn.make_new_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new blank cell at the end of the column&#8217;s cell array.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>None</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-returns admonition">
+<p class="first admonition-title">Returns</p>
+<p class="last">Reference to the cell that was just created. Modify the cell using
+this reference.</p>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>The following example creates a new cell at the end of the &#8220;trial&#8221;
+column&#8217;s cell array and assigns its reference to the variable
+<code class="docutils literal"><span class="pre">newcell</span></code>. It then changes <code class="docutils literal"><span class="pre">newcell's</span></code> <a class="reference internal" href="../../../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> to 1000ms using
+<code class="xref rb rb-meth docutils literal"><span class="pre">change_code()</span></code> and writes the change back to the spreadsheet
+using <a class="reference internal" href="../setColumn.html#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a>.</p>
+<div class="last highlight-ruby"><div class="highlight"><pre><span class="n">trial</span> <span class="o">=</span> <span class="n">getColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">)</span>
+<span class="n">newcell</span> <span class="o">=</span> <span class="n">trial</span><span class="o">.</span><span class="n">make_new_cell</span><span class="p">()</span>
+<span class="n">newcell</span><span class="o">.</span><span class="n">change_code</span><span class="p">(</span><span class="s2">&quot;onset&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">setColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">,</span> <span class="n">trial</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="RColumn.change_code_name">
+<em class="property">classmethod RColumn.</em><code class="descname">change_code_name</code><big>(</big><em>old_name</em>, <em>new_name</em><big>)</big><a class="headerlink" href="#RColumn.change_code_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renames a code.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">old_name</span></code></td>
+<td>String</td>
+<td>Current name of the code</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">new_name</span></code></td>
+<td>String</td>
+<td>New name for the code, which will replace <code class="docutils literal"><span class="pre">old_name</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-returns admonition">
+<p class="first admonition-title">Returns</p>
+<p class="last">Nothing.</p>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>The following example renames the &#8220;trial&#8221; column&#8217;s
+<em>bad_code_name</em> code to <em>awesome_code_name</em> and then writes the
+changes back to the Datavyu spreadsheet:</p>
+<div class="last highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<span class="k">begin</span>
+   <span class="n">trial</span> <span class="o">=</span> <span class="n">getColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">)</span>
+   <span class="n">trial</span><span class="o">.</span><span class="n">change_code_name</span><span class="p">(</span><span class="s2">&quot;bad_code_name&quot;</span><span class="p">,</span> <span class="s2">&quot;awesome_code_name&quot;</span><span class="p">)</span>
+   <span class="n">setColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">,</span> <span class="n">trial</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="RColumn.add_code">
+<em class="property">classmethod RColumn.</em><code class="descname">add_code</code><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#RColumn.add_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a code to a column.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">name</span></code></td>
+<td>String</td>
+<td>The name of the code you are adding to the column</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-returns admonition">
+<p class="first admonition-title">Returns</p>
+<p class="last">Nothing.</p>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>The following example adds the <em>unit</em> code to the &#8220;trial&#8221;
+column and then writes the changes back to the spreadsheet
+using <a class="reference internal" href="../setColumn.html#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn()</span></code></a>.</p>
+<div class="last highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<span class="k">begin</span>
+   <span class="n">trial</span> <span class="o">=</span> <span class="n">getColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">)</span>
+   <span class="n">trial</span><span class="o">.</span><span class="n">add_code</span><span class="p">(</span><span class="s2">&quot;unit&quot;</span><span class="p">)</span>
+   <span class="n">setColumn</span><span class="p">(</span><span class="n">trial</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="RColumn.remove_code">
+<em class="property">classmethod RColumn.</em><code class="descname">remove_code</code><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#RColumn.remove_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a code from a column.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">name</span></code></td>
+<td>String</td>
+<td>The name of the code you wish to delete from the column</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-returns admonition">
+<p class="first admonition-title">Returns</p>
+<p class="last">Nothing.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    
+
+				
+    <div class="cf trail">
+        <div class="leftie">
+            <span class="btn-arrow-left">&larr;&nbsp;</span>
+            <a href="RCell.html" title="Previous Section: RCell Class"><span>RCell Class</span></a>
+        </div>
+        <div class="rightie_bottom">
+            <a href="../add_codes_to_column.html" title="Next Section: add_codes_to_column()"><span>add_codes_to_column()</span></a>
+            <span class="btn-arrow-right">&nbsp;&rarr;</span>
+        </div>
+    </div>
+
+
+        </div>
+
+				<nav class="col_nav page_sidebar">
+					
+<h2><a href="../../../../index.html">Datavyu</a></h2>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../guide.html">Software Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../api.html">Ruby API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../introduction-to-apis.html">Introduction to APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html">Classes, Methods, and Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../introduction-to-scripting.html">Introduction to Scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tutorials.html">API Tutorials</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../reference.html">Datavyu Ruby API Reference</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../1.3.4.html">Version 1.3.4</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="CTable.html">CTable Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RCell.html">RCell Class</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">RColumn Class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../add_codes_to_column.html">add_codes_to_column()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../checkReliability.html">checkReliability()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../checkValidCodes.html">checkValidCodes()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../combine_columns.html">combine_columns()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../computeKappa.html">computeKappa()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../createColumn.html">createColumn()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../create_mutually_exclusive.html">create_mutually_exclusive()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deleteCell.html">deleteCell()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deleteVariable.html">deleteVariable()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getCellFromTime.html">getCellFromTime()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getColumn.html">getColumn()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getColumnList.html">getColumnList()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../load_db.html">load_db()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../load_macshapa_db.html">load_macshapa_db()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../makeDurationBlockRel.html">makeDurationBlockRel()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../makeReliability.html">makeReliability()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../printAllNested.html">printAllNested()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../printCellCodes.html">printCellCodes()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../print_codes.html">print_codes()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../save_db.html">save_db()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setColumn.html">setColumn()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../smoothColumn.html">smoothColumn()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../transfer_columns.html">transfer_columns</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../1.3.6.html">Version 1.3.6</a></li>
+<li class="toctree-l3"><a class="reference external" href="http://databrary.github.io/datavyu-docs/frames.html">Full API Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/databrary/Datavyu-Example-Scripts">Example Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../walkthrough-videos.html">Walkthrough Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coding-example.html">Coding Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../best-practices.html">Best Practices for Coding Behavioral Data from Video</a></li>
+</ul>
+
+
+<div class="getit">
+    <p><a href="/docs/user-guide.pdf">Download the docs</a> for offline viewing.</p>
+</div>
+
+				</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<ul class="inline">
+					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
+					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
+					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
+				</ul>
+				<figure class="footer_fig"><a href="http://databrary.org:8001" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+
+			<p>
+				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

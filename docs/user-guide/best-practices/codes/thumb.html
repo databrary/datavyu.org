@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>Rule of Thumb: Minimize Pain, Maximize Gain || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="current">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/support" title="Forum Archive">Archive</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_user-guide_best-practices_codes_thumb" class="hentry page page_user-guide_best-practices_codes_thumb page_sphinx">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices.html" class="">Best Practices for Coding Behavioral Data from Video</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices/codes.html" class="">Step 2: Codes—Design a Formal Coding Scheme</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>Rule of Thumb: Minimize Pain, Maximize Gain</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+
+				
+        
+  <div class="section" id="rule-of-thumb-minimize-pain-maximize-gain">
+<h1>Rule of Thumb: Minimize Pain, Maximize Gain<a class="headerlink" href="#rule-of-thumb-minimize-pain-maximize-gain" title="Permalink to this headline">¶</a></h1>
+<p>Coding is a repetitive activity: Coders look for particular behaviors and score them over and over across different participants and sessions for hours at a time.
+So, minimize the requirements on coders’ attention and short-term memory.
+Design your codes so that coders’ visual attention is directed toward a coherent set of behaviors that occur at the same relative places in the video frame.
+For example, if the coder is scoring the person’s manual actions, they can easily attend to the objects touched at the same time.
+Indeed, they cannot determine whether a reach occurred without also noting the target of the reach.
+Do not ask coders to divide their attention between two regions of the screen simultaneously.
+It is very difficult to attend to a person’s face, for example, while simultaneously attending to the rest of the body; this would divide the coders’ attention.</p>
+<p>Do not over code.
+You can always go back and add detail (and Datavyu’s scripts will facilitate this process).
+So, start simple with the behaviors you are most interested in.
+Do not agonize over frame accuracy if you do not care about the exact durations of an event.
+Just code what you want to analyze.</p>
+<p id="seen-it-code-it">A related rule of thumb: If you have already seen it, you may as well code it.
+That is, if the coder already knows something of interest without doing additional work, looking at additional video frames, or giving the problem additional thought, then the coder may as well code that behavior.
+For example, if the coders are scoring grasping actions, they also know what object is being grasped without the coders having to think about it or look at any additional video frames; so they may as well code the target object.
+If the coders are scoring the first frame when a child starts to walk and the last frame in the walking bout, the coders know “for free” which foot the child used to begin walking and which foot the child used to end the bout.
+However, the coders do not know without additional coding the timing of the other steps within the walking bout.</p>
+<p>Reciprocally, do not design codes that require a mental struggle to decide whether something has occurred or not.
+The more a coder can’t decide whether a behavior occurred or which behavior occurred, the more tiring and grueling is the coding process, and the less likely you are to get good, clean data.</p>
+<p>Minimize “back-tracking” through the video.
+Coding is least taxing if the coders can move linearly through an entire video, stopping only to identify the frames to mark onsets and offsets and fill in variable codes within a cell.
+Thus, the coder might need to wiggle within a few frames to find the target frames, but you do not want your coders to have to backtrack through the same segments of video repeatedly; they should not need to view the same several seconds or minutes of video repeatedly to score variables.</p>
+<p>Reduce short-term memory load.
+Make the prompts for each code transparent and accessible.
+When possible, do not require your coders to remember the letters for codes (what you set in your coding manual).
+In Datavyu, you can reduce the memory load by prompting the codes in the code name (e.g., <code class="docutils literal"><span class="pre">&lt;touch_t_m_b_o&gt;</span></code> might prompt the coder to score whether the child touched a toy, the mother, self, or other object).
+You can also reduce coders’ memory load by turning codes into yes-no options (e.g., <code class="docutils literal"><span class="pre">&lt;toy-yn&gt;</span> <span class="pre">&lt;mother-yn&gt;</span> <span class="pre">&lt;body-yn&gt;</span> <span class="pre">&lt;other-yn&gt;</span></code> can be very quickly scored as <code class="docutils literal"><span class="pre">y</span></code>, <code class="docutils literal"><span class="pre">n</span></code>, <code class="docutils literal"><span class="pre">n</span></code>, <code class="docutils literal"><span class="pre">n</span></code> by tabbing through the codes if the child touched a toy).
+Do not require coders to type 0-1 codes.
+No one can remember whether <code class="docutils literal"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">yes</span></code> and <code class="docutils literal"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">no</span></code> or the other way around (or <code class="docutils literal"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">male</span></code> and <code class="docutils literal"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">female</span></code>, or <code class="docutils literal"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">left</span></code> and <code class="docutils literal"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">right</span></code>).
+Use letters instead.
+Everyone can remember that <code class="docutils literal"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">yes</span></code> and <code class="docutils literal"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">no</span></code> (and <code class="docutils literal"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">male</span></code> and <code class="docutils literal"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">female</span></code>, etc).</p>
+<p>Keep in mind that coding requires motor actions: Coders press keys over and over for hours.
+Thus, exploit the features of Datavyu that minimize strain on coders’ eyes, hands, and brains.
+In general, you want coders to move their hands as little as possible and their eyes as little as possible.
+Coders should avoid moving their eyes down to the keyboard and avoid moving their hands from place to place on the keyboard.
+Use letters that are accessible without moving the hand from a resting position.
+An example hand position would be using the “home keys” because keyboards are designed to allow the greatest access from that position.
+Avoid using the mouse! Mousing requires coders to move hands and eyes a lot.
+Another good reason to avoid numerical codes is that in Datavyu, numbers must be typed using the number row at the top of the keyboard because the number pad is reserved for controlling the video and the spreadsheet.
+So to type a number, the coders have to move their hands to the top of the keyboard.</p>
+<p>Minimize keystrokes by making your codes single letters.
+You can reuse the same letters in Datavyu because each code stands alone (e.g., you can have 10 codes in a column that are all yes-no variables).
+Never ever use capital letters.
+This adds a needless extra key press.</p>
+<p>Set up the critical components of Datavyu (video images, Data Viewer Controller, spreadsheet) on your computer screen in the way that best fits your personal preference and minimizes the need to move your eyes and hands.</p>
+<p>You will likely appreciate the temporal alignment feature of Datavyu that allows coders to immediately see how one code is nested within another or aligns temporally with another.
+The alignment feature conserves coders’ motor and psychological energy by providing them with an immediate visualization of the data they are coding.</p>
+</div>
+
+
+    
+
+				
+    <div class="cf trail">
+        <div class="leftie">
+            <span class="btn-arrow-left">&larr;&nbsp;</span>
+            <a href="plan.html" title="Previous Section: Plan Coding Passes"><span>Plan Coding Passes</span></a>
+        </div>
+        <div class="rightie_bottom">
+            <a href="design.html" title="Next Section: Design the Coding Spreadsheet"><span>Design the Coding Spreadsheet</span></a>
+            <span class="btn-arrow-right">&nbsp;&rarr;</span>
+        </div>
+    </div>
+
+
+        </div>
+
+				<nav class="col_nav page_sidebar">
+					
+<h2><a href="../../index.html">Datavyu</a></h2>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../guide.html">Software Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">Ruby API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../walkthrough-videos.html">Walkthrough Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding-example.html">Coding Example</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../best-practices.html">Best Practices for Coding Behavioral Data from Video</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">Overview of Coding Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recordings.html">Step 1: Recordings—Verify That You Can See the Behaviors of Interest</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../codes.html">Step 2: Codes—Design a Formal Coding Scheme</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="theory.html">Coding Theory and Practice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plan.html">Plan Coding Passes</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Rule of Thumb: Minimize Pain, Maximize Gain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="design.html">Design the Coding Spreadsheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="draft.html">Draft a Coding Manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">Test Your Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../checks.html">Step 3: Checks—Check for Careless Errors, Inter-Rater Reliability, and Design the Format to Export Your Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow.html">Step 4: Workflow—Establish a Workflow and Code Videos</a></li>
+</ul>
+</li>
+</ul>
+
+
+<div class="getit">
+    <p><a href="/docs/user-guide.pdf">Download the docs</a> for offline viewing.</p>
+</div>
+
+				</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<ul class="inline">
+					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
+					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
+					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
+				</ul>
+				<figure class="footer_fig"><a href="http://databrary.org:8001" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+
+			<p>
+				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

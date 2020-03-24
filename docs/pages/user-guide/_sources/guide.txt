@@ -1,0 +1,38 @@
+==============
+Software Guide
+==============
+
+Datavyu is a Java-based application that runs on Windows, Mac, and on Linux
+operating systems. Its primary goal is to link behavioral researchers
+with their video and to provide a way for researchers 
+to record their observations, extract their data for
+analysis, and share their work. Using a spreadsheet template that
+specifies which categories of events you’re interested in coding,
+Datavyu enables researchers to record events and build on prior analyses.
+
+.. raw:: html
+
+   <video controls width="100%" height="auto">
+   <source src="_static/video/coding-example.mp4" type="video/mp4">
+   <source src="_static/video/coding-example.webm" type="video/webm">
+   </video>
+
+This guide provides all the information you need to start using Datavyu,
+with installation instructions, an in-depth description
+of the software components, and a series of tutorials that target common
+operations. The reference section lists terms and
+definitions, as well as detailing any file format requirements and
+limitations.
+
+.. toctree:: 
+   :maxdepth: 1
+
+   /guide/install
+   /guide/getting-started
+   /guide/tutorials
+   /guide/reference
+
+If you're new to coding, or want to bone up on advice from the experts,
+consider the :doc:`Best Practices Guide </best-practices>` for
+instruction on how best to harness Datavyu's capabilities,
+and tips for starting to code behavioral videos.

@@ -1,0 +1,19 @@
+============================================================================================================
+Step 3: Checks—Check for Careless Errors, Inter-Rater Reliability, and Design the Format to Export Your Data
+============================================================================================================
+
+Overview
+--------
+
+Check that the spreadsheets are free of careless coding errors and that inter-rater reliability is acceptable.
+Test your initial plan on a small but representative subset of the video data (4-6 participants from each cell of your design).
+At this point, you can get an idea of whether your coders and codes are likely to be reliable and you can satisfy yourself that you can export your data in the format you need for statistical analyses.
+
+.. toctree::
+  :titlesonly:
+
+  /best-practices/checks/script
+  /best-practices/checks/careless
+  /best-practices/checks/reliability
+  /best-practices/checks/export
+  /best-practices/checks/test
