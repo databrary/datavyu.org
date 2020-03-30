@@ -137,8 +137,8 @@ Tracks
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
-   <source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
+   <source src="../static/video/dvc-tracks-area.mp4" type="video/mp4">
+   <source src="../static/video/dvc-tracks-area.webm" type="video/webm">
    </video>
 
 The :guilabel:`Tracks` area of the Controller helps you

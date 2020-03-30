@@ -58,7 +58,7 @@ This video displays how easy it is to record videos that miss the behaviors of i
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../../_static/video/bad-recording-combined.mp4" type="video/mp4">
+   <source src="../../static/video/bad-recording-combined.mp4" type="video/mp4">
    </video>
 
 Revise or add more camera views until you can thoroughly see your behaviors of interest.
