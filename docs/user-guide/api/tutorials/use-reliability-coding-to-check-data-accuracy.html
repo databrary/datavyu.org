@@ -183,7 +183,7 @@ the correct locations in the data source, and to code the same
 events as the original coder.</p>
 <p class="last">When making a reliability column, you should also think about how you
 are going to compare the columns. <a class="reference internal" href="../reference/1.3.4/checkReliability.html#checkReliability" title="checkReliability"><code class="xref rb rb-meth docutils literal"><span class="pre">checkReliability</span></code></a>, which
-you use to check reliability. It requires that each pair of cells have a
+you use to check reliability. It requires that each pair of cells has a
 unique identifier that link them together. For example,
 a trial number coded into each cell would match corresponding cells,
 even if only a subset of cells were included in the reliability
@@ -192,7 +192,7 @@ variable.</p>
 <p>The following example uses the <a class="reference download internal" href="../../downloads/Example-Template.opf"><code class="xref download docutils literal"><span class="pre">sample</span> <span class="pre">data</span></code></a> to create a new
 reliability column called &#8220;rel.trial&#8221; from its &#8220;trial&#8221; column, skipping
 every other cell, and copying over the <em>onset</em> and <em>trialnum</em> codes
-so that the reliability coder doesn&#8217;t&#8217; have to recode <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> and
+so that the reliability coder doesn&#8217;t have to recode <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> and
 trial numbers.</p>
 <div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
@@ -274,7 +274,7 @@ the root directory, and all sub-directories, like
 <code class="docutils literal"><span class="pre">/Users/alice/Desktop/file.txt</span></code></p>
 <p>The following commands create a variable called <code class="docutils literal"><span class="pre">dump_file</span></code> that
 holds the absolute path to a file on the Desktop called
-<code class="docutils literal"><span class="pre">relcheck.txt</span></code>.</p>
+<code class="docutils literal"><span class="pre">relcheck.txt</span></code>:</p>
 <div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
 

@@ -115,7 +115,7 @@
 whose codes describe basic information such as <em>subject number</em>,
 <em>test date</em>, <em>birth date</em>, and <em>condition</em>, and &#8220;trial&#8221;, which has two
 codes: <em>trialnum</em> and <em>outcome</em>.</p>
-<p>The example has one <a class="reference internal" href="../guide/reference/glossary.html#term-cell"><em class="xref std std-term">cell</em></a> in the &#8220;id&#8221; column, and no cells
+<p>The example has one <a class="reference internal" href="../guide/reference/glossary.html#term-cell"><em class="xref std std-term">cell</em></a> in the &#8220;id&#8221; column and no cells
 in the &#8220;trial&#8221; column. Most of the Datavyu tutorials use the example
 template as their basis, so if you want to follow along directly,
 you can download it, and then open it with Datavyu (using File &gt;
@@ -128,7 +128,7 @@ list, you should familiarize yourself with loading Datavyu columns.</p>
 <h3>Load Datavyu Columns<a class="headerlink" href="#load-datavyu-columns" title="Permalink to this headline">¶</a></h3>
 <p>To load columns, Datavyu provides the
 <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">getColumn()</span></code></a> method. <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">getColumn()</span></code></a> takes one
-argument: the name of the column in Datavyu, and returns the Ruby
+argument, the name of the column in Datavyu, and returns the Ruby
 representation of the column, which you can work with.</p>
 <p>The following script retrieves the &#8220;trial&#8221; column from the Datavyu
 spreadsheet and assigns it to an <a class="reference internal" href="reference/1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref rb rb-class docutils literal"><span class="pre">RColumn</span></code></a> object called <code class="docutils literal"><span class="pre">trial</span></code>.</p>

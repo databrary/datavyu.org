@@ -183,7 +183,7 @@ LOADED&#8221; when complete:</p>
 </li>
 <li><p class="first">Set up a series of <code class="docutils literal"><span class="pre">for</span></code> loops  to iterate over
 each cell in the relevant columns, and then use an <code class="docutils literal"><span class="pre">if</span></code> to export
-nested cells, following the steps in <a class="reference internal" href="export-data-using-scripts.html"><em>Use Scripts to Export Data from Datavyu</em></a>.</p>
+nested cells, following the steps in <a class="reference internal" href="export-data-using-scripts.html"><em>Use Scripts to Export Data from Datavyu</em></a>:</p>
 <div class="highlight-ruby"><div class="highlight"><pre><span class="n">out_file</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s2">&quot;~/Desktop/DataOutput.txt&quot;</span><span class="p">)</span>
 <span class="n">out</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
 <span class="n">filedir</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s2">&quot;~/Desktop/datafiles/&quot;</span><span class="p">)</span>
@@ -223,7 +223,7 @@ nested cells, following the steps in <a class="reference internal" href="export-
 </li>
 <li><p class="first">Close the filename <code class="docutils literal"><span class="pre">for</span></code> loop  and <code class="docutils literal"><span class="pre">if</span></code> statement and print
 &#8220;FINISHED&#8221; when the script has finished exporting all the
-spreadsheet files&#8217; data to the output file.</p>
+spreadsheet files&#8217; data to the output file:</p>
 <div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
  <span class="k">begin</span>
 
