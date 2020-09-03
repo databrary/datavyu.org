@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -75,9 +74,6 @@
 					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
 				</li>
 				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
-				</li>
-				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
 				</li>
 			</ul>
@@ -104,6 +100,9 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
@@ -168,30 +167,30 @@ consecutive images called frames. The three main frame rate
 standards are: 24p, 25p, and 30p.</dd>
 <dt id="term-integer">integer</dt>
 <dd>A whole number. Integers are numbers that are not fractions,
-and thus, which have no numbers after a decimal point.</dd>
+and therefore do not have decimal points.</dd>
 <dt id="term-key-value-pair">key-value pair</dt>
 <dd>A data representation that pairs &#8220;keys&#8221; (some thing you have data
 about) with &#8220;values&#8221; (the data itself). A key-value pair could be
 &#8220;telephone&#8221; and &#8220;555-123-4567&#8221;, for instance. Sometimes, values
 are represented as a list of values, or as an array.</dd>
 <dt id="term-method">method</dt>
-<dd>A defined action that you can perform. Methods may accept
-arguments in order to perform their specified tasks.
-See: <a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
+<dd>A defined action that you can perform using Ruby :term: &#8216;scripts&#8217;.
+Methods may accept :term: &#8216;parameters&#8217; in order to perform their specified tasks.
+See: :doc: &#8216;/api/overview&#8217;.</dd>
 <dt id="term-observation">observation</dt>
-<dd>An instance of the <a class="reference internal" href="#term-column"><em class="xref std std-term">column</em></a> that is being coded.</dd>
+<dd>An event that is being coded within a :term: &#8216;column&#8217;.
+Linked to the video by a time-stamped :term: &#8216;cell&#8217;.</dd>
 <dt id="term-offset"><span id="term-cell-offset"></span>offset<br />cell offset</dt>
-<dd>The end time of a cell.</dd>
+<dd>The end time-stamp of a cell.</dd>
 <dt id="term-onset"><span id="term-cell-onset"></span>onset<br />cell onset</dt>
-<dd>The start time of a cell.</dd>
+<dd>The start time-stamp of a cell.</dd>
 <dt id="term-ordinal">ordinal</dt>
 <dd>The position of a <a class="reference internal" href="#term-cell"><em class="xref std std-term">cell</em></a> within its <a class="reference internal" href="#term-column"><em class="xref std std-term">column</em></a>. The
 ordinal is indicated in the top left corner of each cell in
 Datavyu.</dd>
 <dt id="term-parameter">parameter</dt>
-<dd>The information that is methods use to perform their
-tasks. Parameters can be required or optional.  See:
-<a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
+<dd>User-specified information used to perform tasks within specific
+:term: &#8216;methods&#8217; while writing Ruby scripts.</dd>
 <dt id="term-playhead">playhead</dt>
 <dd>The playhead indicates the current point of playback in the
 <a class="reference internal" href="#term-timeslider"><em class="xref std std-term">timeslider</em></a> of the Controller.</dd>
@@ -275,30 +274,38 @@ respect to the entirety of the data source.</dd>
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -307,7 +314,8 @@ respect to the entirety of the data source.</dd>
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>
