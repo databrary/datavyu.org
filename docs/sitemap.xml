@@ -47,557 +47,356 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/user-guide/api/reference/1.3.4.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/add_codes_to_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/checkReliability.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/checkValidCodes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/class/CTable.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/class/RCell.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/class/RColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/combine_columns.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/computeKappa.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/createColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/create_mutually_exclusive.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/deleteCell.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/deleteVariable.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/getCellFromTime.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/getColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/getColumnList.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/load_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/load_macshapa_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/makeDurationBlockRel.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/makeReliability.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/printAllNested.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/printCellCodes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/print_codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/save_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/setColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/smoothColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.4/transfer_columns.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/add_codes_to_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/check_datavyu_version.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/check_reliability.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/check_valid_codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/check_valid_codes2.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/class/CTable.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/class/RCell.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/class/RColumn.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/combine_columns.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/compute_kappa.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/create_mutually_exclusive.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/delete_cell.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/delete_variable.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/get_cell_from_time.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/get_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/get_column_list.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/get_datavyu_version.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/load_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/load_macshapa_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/make_duration_block_rel.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/make_reliability.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/merge_columns.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/new_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
@@ -606,834 +405,531 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/user-guide/api/reference/1.3.6/print_all_nested.html</loc>
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/print_cell_codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/print_codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/save_db.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/set_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/smooth_column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/reference/1.3.6/transfer_columns.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/add-a-new-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/add-cells-to-a-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/add-codes-to-a-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/check-for-coding-errors.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/convert-macshapa-to-datavyu.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/convert-openshapa-script-to-datavyu.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/export-data-using-scripts.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/perform-operations-on-multiple-files.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/tutorials/use-reliability-coding-to-check-data-accuracy.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/api/yard.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks/careless.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks/export.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks/reliability.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks/script.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/checks/test.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/design.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/draft.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/plan.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/test.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/theory.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/codes/thumb.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/intro.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/intro/filters.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/intro/steps.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/recordings.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/recordings/optimal.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/recordings/see.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/workflow.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/workflow/coding.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/workflow/organization.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/best-practices/workflow/share.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/coding-example.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/faq.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/genindex.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/controller.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/getting-started.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/install.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/reference.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/reference/available-names.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/reference/glossary.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/spreadsheet.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/add-a-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/add-cells.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/code-multiple-data-sources.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/configure-datavyu-codes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/convert-file-format.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/delete-a-cell.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/delete-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/export-data.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/rename-a-column.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/guide/tutorials/use-scripts-to-automate-tasks.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/index.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/search.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/user-guide/walkthrough-videos.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/features.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/contact/newsletter.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/download.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/download/data-collection-policy.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/download/release-notes.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/redirect-user-guide.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/redirect-scripts.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/redirect-support.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 
 <url>
 <loc>/contact.html</loc>
-<<<<<<< HEAD
 <lastmod>2020-11-06T12:28:07-00:00</lastmod>
-=======
-<lastmod>2020-09-02T20:58:41-00:00</lastmod>
->>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
