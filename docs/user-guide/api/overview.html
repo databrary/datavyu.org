@@ -71,7 +71,11 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
+<<<<<<< HEAD
 					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
+=======
+					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
+>>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -109,10 +113,17 @@
 oriented language.</p>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<<<<<<< HEAD
 <p>Object-oriented languages represent concepts, like
 Datavyu’s columns or cells, for instance, as “objects”. Objects come in
 different types, or “classes”. For example, objects that represent numbers,
 strings (written text), or Datavyu columns have different classes.</p>
+=======
+<p>Object-oriented languages represent concepts—for example, Datavyu columns or
+cells—as &#8220;objects&#8221;. Objects come in different types or &#8220;classes&#8221;.
+For instance, different classes could be numbers, strings, integers, Datavyu columns,
+or Datavyu cells.</p>
+>>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 <p>An object can have a variety of attributes depending on the data that pertains to the
 object. In Datavyu, a cell object’s attributes would be its codes; a column
 object’s attributes might be its cells, its name, and its onset and offset times.
@@ -151,6 +162,7 @@ add one or more codes to a
 column. <a class="reference internal" href="reference/1.3.6/add_codes_to_column.html#add_codes_to_column" title="add_codes_to_column"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_codes_to_column()</span></code></a> has two parameters: <code class="docutils literal notranslate"><span class="pre">column</span></code>,
 the name of the column you want to update, and <code class="docutils literal notranslate"><span class="pre">*codes</span></code>. The <code class="docutils literal notranslate"><span class="pre">*</span></code>
 indicates that the parameter is a list: so you can specify one (or
+<<<<<<< HEAD
 more) codes as a list of <a class="reference internal" href="../guide/reference/glossary.html#term-string"><span class="xref std std-term">Strings</span></a>.</p>
 <p>Suppose you wanted to add two codes, “leftHand” and “rightHand” to the
 “arm” column. “arm” would be your argument for the <code class="docutils literal notranslate"><span class="pre">column</span></code>
@@ -159,6 +171,16 @@ parameter, and <code class="docutils literal notranslate"><span class="pre">&quo
 <a class="reference internal" href="reference/1.3.6/add_codes_to_column.html#add_codes_to_column" title="add_codes_to_column"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_codes_to_column()</span></code></a> method definition, and “arm”, “leftHand”,
 and “rightHand” are your user-specified arguments.</p>
 <img alt="../images/parameters-arguments.png" class="align-center" src="../images/parameters-arguments.png" />
+=======
+more) codes as a list of <a class="reference internal" href="../guide/reference/glossary.html#term-string"><em class="xref std std-term">Strings</em></a>.</p>
+<p>Suppose you wanted to add two codes, &#8220;leftHand&#8221; and &#8220;rightHand&#8221; to the
+&#8220;arm&#8221; column. &#8220;arm&#8221; would be your argument for the <code class="docutils literal"><span class="pre">column</span></code>
+parameter, and <code class="docutils literal"><span class="pre">&quot;leftHand&quot;,</span> <span class="pre">&quot;rightHand&quot;</span></code> your argument for the
+<code class="docutils literal"><span class="pre">*codes</span></code> parameter. <code class="docutils literal"><span class="pre">column</span></code> and <code class="docutils literal"><span class="pre">code</span></code> are specified in the
+<a class="reference internal" href="reference/1.3.6/add_codes_to_column.html#add_codes_to_column" title="add_codes_to_column"><code class="xref rb rb-meth docutils literal"><span class="pre">add_codes_to_column</span></code></a> method definition, and &#8220;arm&#8221;, &#8220;leftHand&#8221;,
+and &#8220;rightHand&#8221; are your user-specified arguments.</p>
+<img alt="../_images/parameters-arguments.png" class="align-center" src="../_images/parameters-arguments.png" />
+>>>>>>> 607742916dc7761ce895a54552146c98161c4a9c
 </div>
 <div class="section" id="standalone-methods-and-class-methods">
 <h2>Standalone Methods and Class Methods<a class="headerlink" href="#standalone-methods-and-class-methods" title="Permalink to this headline">¶</a></h2>
@@ -183,7 +205,7 @@ code to the “trial” <a class="reference internal" href="reference/1.3.6/clas
 </pre></div>
 </div>
 <p>Comparing them side-by-side can help highlight the difference:</p>
-<img alt="../images/standalone-versus-class-methods.png" class="align-center" src="../images/standalone-versus-class-methods.png" />
+<img alt="../_images/standalone-versus-class-methods.png" class="align-center" src="../_images/standalone-versus-class-methods.png" />
 <p>Understanding the difference between standalone and class methods
 will make it easier for you to easily use the methods included in the
 Datavyu API.</p>
