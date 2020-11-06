@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -72,10 +71,7 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
-					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
-				</li>
-				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -107,66 +103,69 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
   <div class="section" id="setcolumn">
 <h1>setColumn()<a class="headerlink" href="#setcolumn" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
+<dl class="py function">
 <dt id="setColumn">
-<code class="descname">setColumn</code><big>(</big><em>name</em>, <em>var</em><big>)</big><a class="headerlink" href="#setColumn" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference internal" href="#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a> writes columns to the spreadsheet: for columns
-that already exist, <a class="reference internal" href="#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a> replaces the data in the
+<code class="sig-name descname">setColumn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">var</span></em><span class="sig-paren">)</span><a class="headerlink" href="#setColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#setColumn" title="setColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setColumn()</span></code></a> writes columns to the spreadsheet: for columns
+that already exist, <a class="reference internal" href="#setColumn" title="setColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setColumn()</span></code></a> replaces the data in the
 spreadsheet with the version updated using the script. For
-instance, if you were to retrieve the &#8220;trial&#8221; column from a
+instance, if you were to retrieve the “trial” column from a
 spreadsheet and then make some changes, you would use
-<a class="reference internal" href="#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a> to write those changes to the spreadsheet,
+<a class="reference internal" href="#setColumn" title="setColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setColumn()</span></code></a> to write those changes to the spreadsheet,
 replacing the old data with your new data.</p>
 <p>If the column does not already exist in the spreadsheet (for
-instance, if you create a new column using <code class="xref rb rb-meth docutils literal"><span class="pre">makeNewColumn</span></code>),
-<a class="reference internal" href="#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a> will instead create a new column in the spreadsheet.</p>
-<table border="1" class="docutils">
+instance, if you create a new column using <code class="xref py py-meth docutils literal notranslate"><span class="pre">makeNewColumn()</span></code>),
+<a class="reference internal" href="#setColumn" title="setColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setColumn()</span></code></a> will instead create a new column in the spreadsheet.</p>
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="18%" />
-<col width="36%" />
-<col width="45%" />
+<col style="width: 18%" />
+<col style="width: 36%" />
+<col style="width: 45%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameter</th>
-<th class="head">Type</th>
-<th class="head">Description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">name</span></code></td>
-<td>String (<strong>optional</strong>)</td>
-<td>Name of the <em>column</em> that you are inserting</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>String (<strong>optional</strong>)</p></td>
+<td><p>Name of the <em>column</em> that you are inserting</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">column</span></code></td>
-<td><a class="reference internal" href="../1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref rb rb-class docutils literal"><span class="pre">RColumn</span></code></a> object (<strong>required</strong>)</td>
-<td>Ruby container of the column that you are inserting into the
-spreadsheet (modified output of <code class="xref rb rb-meth docutils literal"><span class="pre">createNewColumn()</span></code> or
-<a class="reference internal" href="getColumn.html#getColumn" title="getColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">getColumn()</span></code></a>)</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">column</span></code></p></td>
+<td><p><a class="reference internal" href="../1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">RColumn</span></code></a> object (<strong>required</strong>)</p></td>
+<td><p>Ruby container of the column that you are inserting into the
+spreadsheet (modified output of <code class="xref py py-meth docutils literal notranslate"><span class="pre">createNewColumn()</span></code> or
+<a class="reference internal" href="getColumn.html#getColumn" title="getColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getColumn()</span></code></a>)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">You must specify a value for the <code class="docutils literal"><span class="pre">column</span></code> parameter.  If you are
-also passing a value for the <code class="docutils literal"><span class="pre">name</span></code> parameter, the order of
-arguments <strong>must</strong> be <code class="docutils literal"><span class="pre">name</span></code> followed by <code class="docutils literal"><span class="pre">column</span></code>.</p>
+<p class="admonition-title">Important</p>
+<p>You must specify a value for the <code class="docutils literal notranslate"><span class="pre">column</span></code> parameter.  If you are
+also passing a value for the <code class="docutils literal notranslate"><span class="pre">name</span></code> parameter, the order of
+arguments <strong>must</strong> be <code class="docutils literal notranslate"><span class="pre">name</span></code> followed by <code class="docutils literal notranslate"><span class="pre">column</span></code>.</p>
 </div>
 <div class="admonition-returns admonition">
-<p class="first admonition-title">Returns</p>
-<p class="last">None</p>
+<p class="admonition-title">Returns</p>
+<p>None</p>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title">Example</p>
-<p>The following example retrieves the Datavyu column &#8220;trial&#8221; and
-assigns it to a Ruby variable called <code class="docutils literal"><span class="pre">trial</span></code>. After some
+<p class="admonition-title">Example</p>
+<p>The following example retrieves the Datavyu column “trial” and
+assigns it to a Ruby variable called <code class="docutils literal notranslate"><span class="pre">trial</span></code>. After some
 modifications to the trial object, it writes those changes
-back to the spreadsheet using <a class="reference internal" href="#setColumn" title="setColumn"><code class="xref rb rb-meth docutils literal"><span class="pre">setColumn</span></code></a>.</p>
-<div class="last highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+back to the spreadsheet using <a class="reference internal" href="#setColumn" title="setColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setColumn()</span></code></a>.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="n">trial</span> <span class="o">=</span> <span class="n">getColumn</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">)</span>
    <span class="o">&lt;</span><span class="n">some</span> <span class="n">modifications</span> <span class="n">to</span> <span class="n">trial</span><span class="o">&gt;</span>
@@ -233,7 +232,7 @@ back to the spreadsheet using <a class="reference internal" href="#setColumn" ti
 <li class="toctree-l4"><a class="reference internal" href="printCellCodes.html">printCellCodes()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="print_codes.html">print_codes()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="save_db.html">save_db()</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="">setColumn()</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">setColumn()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="smoothColumn.html">smoothColumn()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="transfer_columns.html">transfer_columns</a></li>
 </ul>
@@ -266,30 +265,38 @@ back to the spreadsheet using <a class="reference internal" href="#setColumn" ti
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -298,7 +305,8 @@ back to the spreadsheet using <a class="reference internal" href="#setColumn" ti
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>

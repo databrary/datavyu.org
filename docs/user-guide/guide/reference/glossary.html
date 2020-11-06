@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -72,10 +71,7 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
-					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
-				</li>
-				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -104,118 +100,121 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
   <div class="section" id="glossary">
 <h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
-<dl class="glossary docutils">
-<dt id="term-api">API</dt>
-<dd>An API (Application Programming Interface) enables disparate software
+<dl class="glossary simple">
+<dt id="term-API">API</dt><dd><p>An API (Application Programming Interface) enables disparate software
 components to interact with each other by specifying functions or
-routines to perform tasks. Datavyu&#8217;s API uses the
-<a class="reference external" href="https://www.ruby-lang.org/en/">Ruby</a> programming language.</dd>
-<dt id="term-argument">argument</dt>
-<dd>The information the user specifies to a method for a given
-parameter. For instance, &#8220;charlie&#8221; might be the argument
-specified for the <code class="docutils literal"><span class="pre">name</span></code> parameter. See: <a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-cell">cell</dt>
-<dd>A cell is a graphical representation of an observation. Cells
-are rectangles that stack in the columns of Datavyu&#8217;s
+routines to perform tasks. Datavyu’s API uses the
+<a class="reference external" href="https://www.ruby-lang.org/en/">Ruby</a> programming language.</p>
+</dd>
+<dt id="term-argument">argument</dt><dd><p>The information the user specifies to a method for a given
+parameter. For instance, “charlie” might be the argument
+specified for the <code class="docutils literal notranslate"><span class="pre">name</span></code> parameter. See: <a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-cell">cell</dt><dd><p>A cell is a graphical representation of an observation. Cells
+are rectangles that stack in the columns of Datavyu’s
 spreadsheet and contain the observation data that a coder
-inputs when coding a data source.</dd>
-<dt id="term-class">class</dt>
-<dd>A pre-defined object type, that has associated attributes and
-methods. See: <a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-class-method">class method</dt>
-<dd>A <a class="reference internal" href="#term-method"><em class="xref std std-term">method</em></a> that belongs to a <a class="reference internal" href="#term-class"><em class="xref std std-term">class</em></a> and must be
-invoked on an instance of that <a class="reference internal" href="#term-class"><em class="xref std std-term">class</em></a>. See:
-<a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-code">code</dt>
-<dd>Datavyu codes are column components that researchers are observing.
-Each Datavyu <a class="reference internal" href="#term-column"><em class="xref std std-term">column</em></a> may have multiple codes
+inputs when coding a data source.</p>
+</dd>
+<dt id="term-class">class</dt><dd><p>A pre-defined object type, that has associated attributes and
+methods. See: <a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-class-method">class method</dt><dd><p>A <a class="reference internal" href="#term-method"><span class="xref std std-term">method</span></a> that belongs to a <a class="reference internal" href="#term-class"><span class="xref std std-term">class</span></a> and must be
+invoked on an instance of that <a class="reference internal" href="#term-class"><span class="xref std std-term">class</span></a>. See:
+<a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-code">code</dt><dd><p>Datavyu codes are column components that researchers are observing.
+Each Datavyu <a class="reference internal" href="#term-column"><span class="xref std std-term">column</span></a> may have multiple codes
 for which a coder will record observations. For instance, a
-column called &#8220;step&#8221;, which refers to walking, might have
-a &#8220;foot&#8221; code that would differentiate between left or right
-feet, and a &#8220;direction&#8221; code that indicated if the person
-was stepping forward or backward.</dd>
-<dt id="term-coding-manual">coding manual</dt>
-<dd>Documentation for codes in a Datavyu spreadsheet. Should be written as if
+column called “step”, which refers to walking, might have
+a “foot” code that would differentiate between left or right
+feet, and a “direction” code that indicated if the person
+was stepping forward or backward.</p>
+</dd>
+<dt id="term-coding-manual">coding manual</dt><dd><p>Documentation for codes in a Datavyu spreadsheet. Should be written as if
 instructing someone with no prior information about the spreadsheet or
-project.</dd>
-<dt id="term-coding-pass">coding pass</dt>
-<dd>A pass intended to fill in all fillable codes in a column. Coding passes
-can be aided by previous passes so that work is not repeated.</dd>
-<dt id="term-column">column</dt>
-<dd>Datavyu columns are phenomena or events that observations are
-collected about. Columns are <a class="reference internal" href="#term-key-value-pair"><em class="xref std std-term">key-value pairs</em></a> that associate a column name with a variety of
-<a class="reference internal" href="#term-code"><em class="xref std std-term">codes</em></a>. Columns can be general, such as &#8220;trial&#8221; or
-&#8220;ID&#8221;, or can be specific, such as &#8220;step&#8221; or &#8220;hand&#8221;.  Datavyu
-represents columns as a column in the <em class="guilabel">Spreadsheet</em>.</dd>
-<dt id="term-comment">comment</dt>
-<dd>A code that consists of freeform text. Useful for recording unique
-observations in the data.</dd>
-<dt id="term-controller">Controller</dt>
-<dd>The Controller is a core Datavyu window that enables
+project.</p>
+</dd>
+<dt id="term-coding-pass">coding pass</dt><dd><p>A pass intended to fill in all fillable codes in a column. Coding passes
+can be aided by previous passes so that work is not repeated.</p>
+</dd>
+<dt id="term-column">column</dt><dd><p>Datavyu columns are phenomena or events that observations are
+collected about. Columns are <a class="reference internal" href="#term-key-value-pair"><span class="xref std std-term">key-value pairs</span></a> that associate a column name with a variety of
+<a class="reference internal" href="#term-code"><span class="xref std std-term">codes</span></a>. Columns can be general, such as “trial” or
+“ID”, or can be specific, such as “step” or “hand”.  Datavyu
+represents columns as a column in the <span class="guilabel">Spreadsheet</span>.</p>
+</dd>
+<dt id="term-comment">comment</dt><dd><p>A code that consists of freeform text. Useful for recording unique
+observations in the data.</p>
+</dd>
+<dt id="term-Controller">Controller</dt><dd><p>The Controller is a core Datavyu window that enables
 you to control playback of data sources, and to record
-observations. See: <a class="reference internal" href="../controller.html"><em>Controller Overview</em></a></dd>
-<dt id="term-data">data</dt>
-<dd>The audio or video files that are being studied.</dd>
-<dt id="term-frame-rate">frame rate</dt>
-<dd>Frame rate (also known as frame frequency) is the
+observations. See: <a class="reference internal" href="../controller.html"><span class="doc">Controller Overview</span></a></p>
+</dd>
+<dt id="term-data">data</dt><dd><p>The audio or video files that are being studied.</p>
+</dd>
+<dt id="term-frame-rate">frame rate</dt><dd><p>Frame rate (also known as frame frequency) is the
 frequency (rate) at which an imaging device produces unique
 consecutive images called frames. The three main frame rate
-standards are: 24p, 25p, and 30p.</dd>
-<dt id="term-integer">integer</dt>
-<dd>A whole number. Integers are numbers that are not fractions,
-and thus, which have no numbers after a decimal point.</dd>
-<dt id="term-key-value-pair">key-value pair</dt>
-<dd>A data representation that pairs &#8220;keys&#8221; (some thing you have data
-about) with &#8220;values&#8221; (the data itself). A key-value pair could be
-&#8220;telephone&#8221; and &#8220;555-123-4567&#8221;, for instance. Sometimes, values
-are represented as a list of values, or as an array.</dd>
-<dt id="term-method">method</dt>
-<dd>A defined action that you can perform. Methods may accept
+standards are: 24p, 25p, and 30p.</p>
+</dd>
+<dt id="term-integer">integer</dt><dd><p>A whole number. Integers are numbers that are not fractions,
+and thus, which have no numbers after a decimal point.</p>
+</dd>
+<dt id="term-key-value-pair">key-value pair</dt><dd><p>A data representation that pairs “keys” (some thing you have data
+about) with “values” (the data itself). A key-value pair could be
+“telephone” and “555-123-4567”, for instance. Sometimes, values
+are represented as a list of values, or as an array.</p>
+</dd>
+<dt id="term-method">method</dt><dd><p>A defined action that you can perform. Methods may accept
 arguments in order to perform their specified tasks.
-See: <a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-observation">observation</dt>
-<dd>An instance of the <a class="reference internal" href="#term-column"><em class="xref std std-term">column</em></a> that is being coded.</dd>
-<dt id="term-offset"><span id="term-cell-offset"></span>offset<br />cell offset</dt>
-<dd>The end time of a cell.</dd>
-<dt id="term-onset"><span id="term-cell-onset"></span>onset<br />cell onset</dt>
-<dd>The start time of a cell.</dd>
-<dt id="term-ordinal">ordinal</dt>
-<dd>The position of a <a class="reference internal" href="#term-cell"><em class="xref std std-term">cell</em></a> within its <a class="reference internal" href="#term-column"><em class="xref std std-term">column</em></a>. The
+See: <a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-observation">observation</dt><dd><p>An instance of the <a class="reference internal" href="#term-column"><span class="xref std std-term">column</span></a> that is being coded.</p>
+</dd>
+<dt id="term-offset">offset</dt><dt id="term-cell-offset">cell offset</dt><dd><p>The end time of a cell.</p>
+</dd>
+<dt id="term-onset">onset</dt><dt id="term-cell-onset">cell onset</dt><dd><p>The start time of a cell.</p>
+</dd>
+<dt id="term-ordinal">ordinal</dt><dd><p>The position of a <a class="reference internal" href="#term-cell"><span class="xref std std-term">cell</span></a> within its <a class="reference internal" href="#term-column"><span class="xref std std-term">column</span></a>. The
 ordinal is indicated in the top left corner of each cell in
-Datavyu.</dd>
-<dt id="term-parameter">parameter</dt>
-<dd>The information that is methods use to perform their
+Datavyu.</p>
+</dd>
+<dt id="term-parameter">parameter</dt><dd><p>The information that is methods use to perform their
 tasks. Parameters can be required or optional.  See:
-<a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-playhead">playhead</dt>
-<dd>The playhead indicates the current point of playback in the
-<a class="reference internal" href="#term-timeslider"><em class="xref std std-term">timeslider</em></a> of the Controller.</dd>
-<dt id="term-region">region</dt>
-<dd>The area of the <a class="reference internal" href="#term-timeslider"><em class="xref std std-term">timeslider</em></a> that has been brought into
-focus using the timeslider&#8217;s brackets.</dd>
-<dt id="term-reliability-column">reliability column</dt>
-<dd>A Datavyu column that is a copy of an original column
-used to ensure that the coded observations are accurate.</dd>
-<dt id="term-script">script</dt>
-<dd>A program that performs a specific task.</dd>
-<dt id="term-spreadsheet">spreadsheet</dt>
-<dd>The core Datavyu window where coders record observations. See:
-<a class="reference internal" href="../spreadsheet.html"><em>Spreadsheet Overview</em></a></dd>
-<dt id="term-standalone-method">standalone method</dt>
-<dd>A <a class="reference internal" href="#term-method"><em class="xref std std-term">method</em></a> that does not belong to a specific
-<a class="reference internal" href="#term-class"><em class="xref std std-term">class</em></a>. See: <a class="reference internal" href="../../api/overview.html"><em>Classes, Methods, and Parameters</em></a>.</dd>
-<dt id="term-string">string</dt>
-<dd>In computing, a string is a linear sequence of characters. Strings
-can be random characters, words, or sentences.</dd>
-<dt id="term-timeslider">timeslider</dt>
-<dd>The timeslider represents the length of the data source, and
-enables users to visualize where the <a class="reference internal" href="#term-playhead"><em class="xref std std-term">playhead</em></a> is with
-respect to the entirety of the data source.</dd>
+<a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-playhead">playhead</dt><dd><p>The playhead indicates the current point of playback in the
+<a class="reference internal" href="#term-timeslider"><span class="xref std std-term">timeslider</span></a> of the Controller.</p>
+</dd>
+<dt id="term-region">region</dt><dd><p>The area of the <a class="reference internal" href="#term-timeslider"><span class="xref std std-term">timeslider</span></a> that has been brought into
+focus using the timeslider’s brackets.</p>
+</dd>
+<dt id="term-reliability-column">reliability column</dt><dd><p>A Datavyu column that is a copy of an original column
+used to ensure that the coded observations are accurate.</p>
+</dd>
+<dt id="term-script">script</dt><dd><p>A program that performs a specific task.</p>
+</dd>
+<dt id="term-spreadsheet">spreadsheet</dt><dd><p>The core Datavyu window where coders record observations. See:
+<a class="reference internal" href="../spreadsheet.html"><span class="doc">Spreadsheet Overview</span></a></p>
+</dd>
+<dt id="term-standalone-method">standalone method</dt><dd><p>A <a class="reference internal" href="#term-method"><span class="xref std std-term">method</span></a> that does not belong to a specific
+<a class="reference internal" href="#term-class"><span class="xref std std-term">class</span></a>. See: <a class="reference internal" href="../../api/overview.html"><span class="doc">Classes, Methods, and Parameters</span></a>.</p>
+</dd>
+<dt id="term-string">string</dt><dd><p>In computing, a string is a linear sequence of characters. Strings
+can be random characters, words, or sentences.</p>
+</dd>
+<dt id="term-timeslider">timeslider</dt><dd><p>The timeslider represents the length of the data source, and
+enables users to visualize where the <a class="reference internal" href="#term-playhead"><span class="xref std std-term">playhead</span></a> is with
+respect to the entirety of the data source.</p>
+</dd>
 </dl>
 </div>
 
@@ -246,7 +245,7 @@ respect to the entirety of the data source.</dd>
 <li class="toctree-l2"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../reference.html">Reference</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Glossary</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Glossary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="available-names.html">Naming Restrictions</a></li>
 </ul>
 </li>
@@ -275,30 +274,38 @@ respect to the entirety of the data source.</dd>
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -307,7 +314,8 @@ respect to the entirety of the data source.</dd>
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>

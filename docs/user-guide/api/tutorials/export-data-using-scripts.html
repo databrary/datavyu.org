@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -72,10 +71,7 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
-					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
-				</li>
-				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -104,6 +100,9 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
@@ -111,19 +110,19 @@
 <h1>Use Scripts to Export Data from Datavyu<a class="headerlink" href="#use-scripts-to-export-data-from-datavyu" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="export-methods">
 <h2>Export Methods<a class="headerlink" href="#export-methods" title="Permalink to this headline">¶</a></h2>
-<p>Datavyu supports numerous data export methods. The <a class="reference internal" href="../../guide/tutorials/export-data.html"><em>Export Data from Datavyu</em></a>
+<p>Datavyu supports numerous data export methods. The <a class="reference internal" href="../../guide/tutorials/export-data.html"><span class="doc">Export Data from Datavyu</span></a>
 section of the software guide tutorials demonstrates how to export data to a basic .csv
 file using the <em>Export File</em> function. The Ruby scripting API offers users more
 flexibility in specifying different output file formats for exporting data. This section
 covers two scripting approaches:</p>
 <ul class="simple">
-<li>A straight <em>frame-by-frame</em> dump detailing all observations
-associated with each frame.</li>
-<li>A <em>nested</em> export, which loops through each column and nests cells
-appropriately.</li>
+<li><p>A straight <em>frame-by-frame</em> dump detailing all observations
+associated with each frame.</p></li>
+<li><p>A <em>nested</em> export, which loops through each column and nests cells
+appropriately.</p></li>
 </ul>
 <p>If you wish to export data from multiple files, refer to the
-<a class="reference internal" href="perform-operations-on-multiple-files.html"><em>Batch Operations on Multiple Files</em></a> tutorial for guidance on operations
+<a class="reference internal" href="perform-operations-on-multiple-files.html"><span class="doc">Batch Operations on Multiple Files</span></a> tutorial for guidance on operations
 that involve multiple files.</p>
 <div class="section" id="method-frame-by-frame-export">
 <h3>Method : Frame-by-Frame Export<a class="headerlink" href="#method-frame-by-frame-export" title="Permalink to this headline">¶</a></h3>
@@ -156,27 +155,27 @@ folder under the “Favorites” folder.</p>
 <div class="figure align-center">
 <img alt="../../images/sample-nested-data.png" src="../../images/sample-nested-data.png" />
 </div>
-<p>A <em>nested export</em> exports data based on the nesting of <a class="reference internal" href="../../guide/reference/glossary.html#term-cell"><em class="xref std std-term">cells</em></a>. This is most useful for spreadsheets whose cells group together.
+<p>A <em>nested export</em> exports data based on the nesting of <a class="reference internal" href="../../guide/reference/glossary.html#term-cell"><span class="xref std std-term">cells</span></a>. This is most useful for spreadsheets whose cells group together.
 For instance, the following spreadsheet example has three columns:
-&#8220;id&#8221;, &#8220;trial&#8221;, and &#8220;foot&#8221;. &#8220;id&#8221; is a participant ID, which might include
-codes that describe the participant&#8217;s individual id code, gender,
-age, etc., &#8220;trial&#8221; is a column that marks each trial that occurred and
-&#8220;foot&#8221; is a column representing observations recorded during each trial.</p>
-<p>The cells, then, group together with an &#8220;id&#8221; cell covering the length of
+“id”, “trial”, and “foot”. “id” is a participant ID, which might include
+codes that describe the participant’s individual id code, gender,
+age, etc., “trial” is a column that marks each trial that occurred and
+“foot” is a column representing observations recorded during each trial.</p>
+<p>The cells, then, group together with an “id” cell covering the length of
 all trials. There are two trials in the example that occur within the time
-limits of the &#8220;id&#8221; cell and there are several &#8220;foot&#8221; cells that occur within
+limits of the “id” cell and there are several “foot” cells that occur within
 the time limits of each trial.</p>
 <p>To export data from this style of spreadsheet, we will use a series of
-<a class="reference internal" href="add-cells-to-a-column.html#loops"><em>loops</em></a>, exporting a row of tab-separated values for each cell in
-the &#8220;foot&#8221; column. Each row will include the &#8220;id&#8221; and &#8220;trial&#8221; data that
-the &#8220;foot&#8221; cell nests beside. This spreadsheet has only one &#8220;id&#8221; cell,
+<a class="reference internal" href="add-cells-to-a-column.html#loops"><span class="std std-ref">loops</span></a>, exporting a row of tab-separated values for each cell in
+the “foot” column. Each row will include the “id” and “trial” data that
+the “foot” cell nests beside. This spreadsheet has only one “id” cell,
 since all of the data in that spreadsheet is for a single participant.</p>
 <ol class="arabic">
-<li><p class="first">Set up the script, and then define where you are going to output the
+<li><p>Set up the script, and then define where you are going to output the
 file to. You need to define the location of the file (in this case,
-the Desktop, defined by <code class="docutils literal"><span class="pre">out_file</span></code>), and create a Ruby object to
-hold the new file&#8217;s data as it outputs it, which we&#8217;ll call <code class="docutils literal"><span class="pre">out</span></code>:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+the Desktop, defined by <code class="docutils literal notranslate"><span class="pre">out_file</span></code>), and create a Ruby object to
+hold the new file’s data as it outputs it, which we’ll call <code class="docutils literal notranslate"><span class="pre">out</span></code>:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 
 <span class="k">begin</span>
 
@@ -191,9 +190,9 @@ hold the new file&#8217;s data as it outputs it, which we&#8217;ll call <code cl
 </pre></div>
 </div>
 </li>
-<li><p class="first">Retrieve the columns you want to output from the spreadsheet, and
-assign them to <a class="reference internal" href="../reference/1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref rb rb-class docutils literal"><span class="pre">RColumn</span></code></a> objects:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Retrieve the columns you want to output from the spreadsheet, and
+assign them to <a class="reference internal" href="../reference/1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">RColumn</span></code></a> objects:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 
 <span class="k">begin</span>
 
@@ -209,9 +208,9 @@ assign them to <a class="reference internal" href="../reference/1.3.6/class/RCol
 </pre></div>
 </div>
 </li>
-<li><p class="first">Set up a series of <code class="docutils literal"><span class="pre">for</span></code> loops that we will use to iterate over
-each cell in the columns we&#8217;re interested in:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Set up a series of <code class="docutils literal notranslate"><span class="pre">for</span></code> loops that we will use to iterate over
+each cell in the columns we’re interested in:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 
 <span class="k">begin</span>
 
@@ -238,15 +237,15 @@ each cell in the columns we&#8217;re interested in:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Write an <code class="docutils literal"><span class="pre">if</span></code> clause that checks if cells are nested. In plain
-English, this <code class="docutils literal"><span class="pre">if</span></code> statement checks if the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> of the
-<code class="docutils literal"><span class="pre">foot</span></code> cell (<code class="docutils literal"><span class="pre">fcell</span></code>) occurs after the onset of the <code class="docutils literal"><span class="pre">trial</span></code>
-cell (<code class="docutils literal"><span class="pre">tcell</span></code>) and that the <a class="reference internal" href="../../guide/reference/glossary.html#term-offset"><em class="xref std std-term">offset</em></a> of the <code class="docutils literal"><span class="pre">fcell</span></code> occurs
-<em>before</em> the offset of the <code class="docutils literal"><span class="pre">tcell</span></code>. Or, in even plainer English,
-that the <code class="docutils literal"><span class="pre">fcell</span></code> occurs during the length of the <code class="docutils literal"><span class="pre">tcell</span></code>.</p>
-<p>If the clauses are met, write the cells&#8217; codes to the <code class="docutils literal"><span class="pre">out</span></code> file,
+<li><p>Write an <code class="docutils literal notranslate"><span class="pre">if</span></code> clause that checks if cells are nested. In plain
+English, this <code class="docutils literal notranslate"><span class="pre">if</span></code> statement checks if the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> of the
+<code class="docutils literal notranslate"><span class="pre">foot</span></code> cell (<code class="docutils literal notranslate"><span class="pre">fcell</span></code>) occurs after the onset of the <code class="docutils literal notranslate"><span class="pre">trial</span></code>
+cell (<code class="docutils literal notranslate"><span class="pre">tcell</span></code>) and that the <a class="reference internal" href="../../guide/reference/glossary.html#term-offset"><span class="xref std std-term">offset</span></a> of the <code class="docutils literal notranslate"><span class="pre">fcell</span></code> occurs
+<em>before</em> the offset of the <code class="docutils literal notranslate"><span class="pre">tcell</span></code>. Or, in even plainer English,
+that the <code class="docutils literal notranslate"><span class="pre">fcell</span></code> occurs during the length of the <code class="docutils literal notranslate"><span class="pre">tcell</span></code>.</p>
+<p>If the clauses are met, write the cells’ codes to the <code class="docutils literal notranslate"><span class="pre">out</span></code> file,
 separated by tabs:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 
 <span class="k">begin</span>
 
@@ -267,17 +266,17 @@ separated by tabs:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">If the <code class="docutils literal"><span class="pre">if</span></code> clause is met, write the cells&#8217; codes to the <code class="docutils literal"><span class="pre">out</span></code> file,
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">if</span></code> clause is met, write the cells’ codes to the <code class="docutils literal notranslate"><span class="pre">out</span></code> file,
 separated by tabs.</p>
 <p>As a refresher, cells have a series of codes: onset, offset, and
 ordinal by default, as well as any user-specified codes. To access
-the codes in one of our temporary Ruby variables (<code class="docutils literal"><span class="pre">icell</span></code>, <code class="docutils literal"><span class="pre">tcell</span></code>, and <code class="docutils literal"><span class="pre">fcell</span></code>),
-we use the format <code class="docutils literal"><span class="pre">cellName.codeName</span></code>. To access the &#8220;idnum&#8221; code
-in the &#8220;id&#8221; column, then, we&#8217;d request <code class="docutils literal"><span class="pre">icell.idnum</span></code>.</p>
-<p>Since the script is outputting <a class="reference internal" href="../../guide/reference/glossary.html#term-string"><em class="xref std std-term">strings</em></a>, we also need
-to convert the onset, offset, and ordinals from the <a class="reference internal" href="../../guide/reference/glossary.html#term-integer"><em class="xref std std-term">integer</em></a>
-format to the string format, using <code class="docutils literal"><span class="pre">to_s</span></code>.</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+the codes in one of our temporary Ruby variables (<code class="docutils literal notranslate"><span class="pre">icell</span></code>, <code class="docutils literal notranslate"><span class="pre">tcell</span></code>, and <code class="docutils literal notranslate"><span class="pre">fcell</span></code>),
+we use the format <code class="docutils literal notranslate"><span class="pre">cellName.codeName</span></code>. To access the “idnum” code
+in the “id” column, then, we’d request <code class="docutils literal notranslate"><span class="pre">icell.idnum</span></code>.</p>
+<p>Since the script is outputting <a class="reference internal" href="../../guide/reference/glossary.html#term-string"><span class="xref std std-term">strings</span></a>, we also need
+to convert the onset, offset, and ordinals from the <a class="reference internal" href="../../guide/reference/glossary.html#term-integer"><span class="xref std std-term">integer</span></a>
+format to the string format, using <code class="docutils literal notranslate"><span class="pre">to_s</span></code>.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 
 <span class="k">begin</span>
 
@@ -314,7 +313,7 @@ format to the string format, using <code class="docutils literal"><span class="p
 </div>
 <div class="section" id="video-example-of-running-an-export-script">
 <h2>Video Example of Running an Export Script<a class="headerlink" href="#video-example-of-running-an-export-script" title="Permalink to this headline">¶</a></h2>
-<p>This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an Excel file. Datavyu&#8217;s built-in export displays one Excel cell as one cell on the spreadsheet. This specific script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program.</p>
+<p>This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an Excel file. Datavyu’s built-in export displays one Excel cell as one cell on the spreadsheet. This specific script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program.</p>
 <video controls width="100%" height="auto">
 <source src="../../static/video/export-through-script-final.mp4" type="video/mp4">
 </video></div>
@@ -353,9 +352,7 @@ format to the string format, using <code class="docutils literal"><span class="p
 <li class="toctree-l3"><a class="reference internal" href="add-cells-to-a-column.html">Add Cells to a Column</a></li>
 <li class="toctree-l3"><a class="reference internal" href="check-for-coding-errors.html">Check for Coding Errors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="use-reliability-coding-to-check-data-accuracy.html">Check Inter-rater Reliability to Improve Data Accuracy</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Use Scripts to Export Data from Datavyu</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Use Scripts to Export Data from Datavyu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="convert-openshapa-script-to-datavyu.html">Convert an OpenSHAPA Script to the Datavyu Format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="perform-operations-on-multiple-files.html">Batch Operations on Multiple Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="convert-macshapa-to-datavyu.html">Convert MacSHAPA Files to Work in Datavyu</a></li>
@@ -387,30 +384,38 @@ format to the string format, using <code class="docutils literal"><span class="p
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -419,7 +424,8 @@ format to the string format, using <code class="docutils literal"><span class="p
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>

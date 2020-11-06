@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -72,10 +71,7 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
-					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
-				</li>
-				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -104,72 +100,75 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
   <div class="section" id="add-cells-to-a-column">
 <h1>Add Cells to a Column<a class="headerlink" href="#add-cells-to-a-column" title="Permalink to this headline">¶</a></h1>
-<p>Populating a Datavyu column with <a class="reference internal" href="../../guide/reference/glossary.html#term-cell"><em class="xref std std-term">cells</em></a> is another
+<p>Populating a Datavyu column with <a class="reference internal" href="../../guide/reference/glossary.html#term-cell"><span class="xref std std-term">cells</span></a> is another
 common task that you can automate with scripts.</p>
 <p>Suppose that you want to code behaviors within 1-minute long blocks.
 Rather than have the coder manually insert each cell, you can write a script
-that will insert a &#8220;block&#8221; cell every minute, with the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a>
+that will insert a “block” cell every minute, with the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a>
 set to the correct trial start time.</p>
 <ol class="arabic">
-<li><p class="first">Set up the script and create the Datavyu column you will be working
-with into a Ruby variable. We&#8217;ll call it <code class="docutils literal"><span class="pre">block</span></code> here, but you can
+<li><p>Set up the script and create the Datavyu column you will be working
+with into a Ruby variable. We’ll call it <code class="docutils literal notranslate"><span class="pre">block</span></code> here, but you can
 call it whatever you want to:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="c1"># Creste the block column</span>
    <span class="n">block</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Create the five cells using a loop.</p>
+<li><p>Create the five cells using a loop.</p>
 <div class="admonition-programming-101 admonition" id="loops">
-<p class="first admonition-title">Programming 101</p>
+<p class="admonition-title">Programming 101</p>
 <p><strong>Loops</strong> are types of code that tell Ruby to do something multiple
-times. Let&#8217;s break down the <code class="docutils literal"><span class="pre">for</span></code> loop from the following
-example for those who aren&#8217;t familiar with loops:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">4</span>
+times. Let’s break down the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop from the following
+example for those who aren’t familiar with loops:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">4</span>
    <span class="o">&lt;</span><span class="k">do</span> <span class="n">stuff</span><span class="o">&gt;</span>
 <span class="k">end</span>
 </pre></div>
 </div>
-<p>Essentially, this says, &#8220;let <code class="docutils literal"><span class="pre">i</span></code> = 0, &lt;do stuff&gt;, then, for
-<code class="docutils literal"><span class="pre">i</span></code> = 1, &lt;do stuff&gt;. Then again for <code class="docutils literal"><span class="pre">i</span></code> = 2, for <code class="docutils literal"><span class="pre">i</span></code> = 3, and for
-<code class="docutils literal"><span class="pre">i</span></code> = 4. Once i = 4, stop doing stuff.&#8221; The <code class="docutils literal"><span class="pre">0..4</span></code>
-represents &#8220;from 0 to 4, inclusive&#8221;.</p>
+<p>Essentially, this says, “let <code class="docutils literal notranslate"><span class="pre">i</span></code> = 0, &lt;do stuff&gt;, then, for
+<code class="docutils literal notranslate"><span class="pre">i</span></code> = 1, &lt;do stuff&gt;. Then again for <code class="docutils literal notranslate"><span class="pre">i</span></code> = 2, for <code class="docutils literal notranslate"><span class="pre">i</span></code> = 3, and for
+<code class="docutils literal notranslate"><span class="pre">i</span></code> = 4. Once i = 4, stop doing stuff.” The <code class="docutils literal notranslate"><span class="pre">0..4</span></code>
+represents “from 0 to 4, inclusive”.</p>
 <p>If you wanted to do something ten times, your loop could read
-<code class="docutils literal"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">0..9</span></code> or <code class="docutils literal"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">1..10</span></code>, or <code class="docutils literal"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">99..108</span></code>.</p>
-<p class="last">In this case, you will use the value of <code class="docutils literal"><span class="pre">i</span></code> to set the
-<a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> time of each cell, so having it start at 0 and go to
+<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">0..9</span></code> or <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">1..10</span></code>, or <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">99..108</span></code>.</p>
+<p>In this case, you will use the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to set the
+<a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> time of each cell, so having it start at 0 and go to
 4 makes sense.</p>
 </div>
-<p>Loop 5 times from 0 to 4, calculating the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><em class="xref std std-term">onset</em></a> time to
+<p>Loop 5 times from 0 to 4, calculating the <a class="reference internal" href="../../guide/reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> time to
 set for each new cell.</p>
 <ol class="loweralpha">
-<li><p class="first">Since Datavyu API uses times in milliseconds,
-convert <code class="docutils literal"><span class="pre">i</span></code> (the minute marker) to milliseconds:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Since Datavyu API uses times in milliseconds,
+convert <code class="docutils literal notranslate"><span class="pre">i</span></code> (the minute marker) to milliseconds:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="n">block</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">)</span>
 
-   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">4</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">4</span>
       <span class="c1"># Calculate the onset time in milliseconds</span>
       <span class="n">time</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Then, create the new cell using <code class="xref rb rb-meth docutils literal"><span class="pre">make_new_cell()</span></code> and
-store the cell as a Ruby object. For simplicity, we&#8217;ll call it
-<code class="docutils literal"><span class="pre">cell</span></code>:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Then, create the new cell using <code class="xref py py-meth docutils literal notranslate"><span class="pre">make_new_cell()</span></code> and
+store the cell as a Ruby object. For simplicity, we’ll call it
+<code class="docutils literal notranslate"><span class="pre">cell</span></code>:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
     <span class="n">block</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">)</span>
 
-   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">4</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">4</span>
       <span class="n">time</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span>
 
       <span class="c1"># Create a new cell, called ``cell``</span>
@@ -177,13 +176,13 @@ store the cell as a Ruby object. For simplicity, we&#8217;ll call it
 </pre></div>
 </div>
 </li>
-<li><p class="first">Set the onset of <code class="docutils literal"><span class="pre">cell</span></code> to the value of the <code class="docutils literal"><span class="pre">time</span></code> variable
-using <code class="xref rb rb-meth docutils literal"><span class="pre">change_code()</span></code>, and <code class="docutils literal"><span class="pre">end</span></code> the for loop:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Set the onset of <code class="docutils literal notranslate"><span class="pre">cell</span></code> to the value of the <code class="docutils literal notranslate"><span class="pre">time</span></code> variable
+using <code class="xref py py-meth docutils literal notranslate"><span class="pre">change_code()</span></code>, and <code class="docutils literal notranslate"><span class="pre">end</span></code> the for loop:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
     <span class="n">block</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">)</span>
 
-   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">4</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">4</span>
       <span class="n">time</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span>
       <span class="n">cell</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">make_new_cell</span><span class="p">()</span>
 
@@ -195,13 +194,13 @@ using <code class="xref rb rb-meth docutils literal"><span class="pre">change_co
 </li>
 </ol>
 </li>
-<li><p class="first">Now that the loop is complete, write the changes back to the Datavyu
-spreadsheet and <code class="docutils literal"><span class="pre">end</span></code> the script:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Now that the loop is complete, write the changes back to the Datavyu
+spreadsheet and <code class="docutils literal notranslate"><span class="pre">end</span></code> the script:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
     <span class="n">block</span> <span class="o">=</span> <span class="n">createColumn</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">)</span>
 
-   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">4</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">4</span>
       <span class="n">time</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span>
       <span class="n">cell</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">make_new_cell</span><span class="p">()</span>
       <span class="n">cell</span><span class="o">.</span><span class="n">change_code</span><span class="p">(</span><span class="s2">&quot;onset&quot;</span><span class="p">,</span> <span class="n">time</span><span class="p">)</span>
@@ -246,7 +245,7 @@ spreadsheet and <code class="docutils literal"><span class="pre">end</span></cod
 <li class="toctree-l2 current"><a class="reference internal" href="../tutorials.html">API Tutorials</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="add-a-new-column.html">Add a New Column</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add-codes-to-a-column.html">Add Codes to a Column</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Add Cells to a Column</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Add Cells to a Column</a></li>
 <li class="toctree-l3"><a class="reference internal" href="check-for-coding-errors.html">Check for Coding Errors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="use-reliability-coding-to-check-data-accuracy.html">Check Inter-rater Reliability to Improve Data Accuracy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="export-data-using-scripts.html">Use Scripts to Export Data from Datavyu</a></li>
@@ -281,30 +280,38 @@ spreadsheet and <code class="docutils literal"><span class="pre">end</span></cod
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -313,7 +320,8 @@ spreadsheet and <code class="docutils literal"><span class="pre">end</span></cod
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>

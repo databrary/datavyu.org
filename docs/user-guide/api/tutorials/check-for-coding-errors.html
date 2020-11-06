@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -72,10 +71,7 @@
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
 				</li>
 				<li class="">
-					<a href="https://github.com/databrary/datavyu/issues" title="Support">Support</a>
-				</li>
-				<li class="">
-					<a href="/support" title="Forum Archive">Archive</a>
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
 				</li>
 				<li class="">
 					<a href="/contact.html" title="Contact Us">Contact</a>
@@ -104,6 +100,9 @@
 
     <div class="cf">
         <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
 
 				
         
@@ -111,26 +110,26 @@
 <h1>Check for Coding Errors<a class="headerlink" href="#check-for-coding-errors" title="Permalink to this headline">¶</a></h1>
 <p>Datavyu scripts have the ability to check for coding errors to make up
 for potential human error. Inputting invalid codes is a common coding
-mistake. For example, a coder might accidentally input an &#8220;h&#8221;, when only
-&#8220;j&#8221; or &#8220;k&#8221; are acceptable values. Using scripts, coders can double-check
+mistake. For example, a coder might accidentally input an “h”, when only
+“j” or “k” are acceptable values. Using scripts, coders can double-check
 their work for errors and fix them early on.</p>
-<p>Datavyu API provides the <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> method to check for
-coder errors. <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> requires at least three
+<p>Datavyu API provides the <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> method to check for
+coder errors. <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> requires at least three
 arguments: the name of the column it will verify, the location that it
-will output the results to, and at least one <a class="reference internal" href="../../guide/reference/glossary.html#term-key-value-pair"><em class="xref std std-term">key-value pair</em></a>.
-Key-value pairs consist of a &#8220;key&#8221;, the name of a Datavyu code, and a
-&#8220;value&#8221;, which is an array of valid values for that code.
-<a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> then checks each code (key) against its list
+will output the results to, and at least one <a class="reference internal" href="../../guide/reference/glossary.html#term-key-value-pair"><span class="xref std std-term">key-value pair</span></a>.
+Key-value pairs consist of a “key”, the name of a Datavyu code, and a
+“value”, which is an array of valid values for that code.
+<a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> then checks each code (key) against its list
 of valid values (the values).</p>
-<p>The following examples check the <code class="docutils literal"><span class="pre">look</span></code> column against its codes. You
-can download the sample data used in this tutorial from <a class="reference download internal" href="../../downloads/SampleData-checkValidCodes.opf"><code class="xref download docutils literal"><span class="pre">here</span></code></a>.</p>
+<p>The following examples check the <code class="docutils literal notranslate"><span class="pre">look</span></code> column against its codes. You
+can download the sample data used in this tutorial from <a class="reference download internal" download="" href="../../downloads/b2075532696c573f9c52f697d4fe648e/SampleData-checkValidCodes.opf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <span class="target" id="checkvalidcodes-basic-format"></span><div class="section" id="check-code-validity-and-output-to-the-console">
 <h2>Check Code Validity and Output to the Console<a class="headerlink" href="#check-code-validity-and-output-to-the-console" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="basic-format">
 <h3>Basic Format<a class="headerlink" href="#basic-format" title="Permalink to this headline">¶</a></h3>
 <div class="admonition-example admonition">
-<p class="first admonition-title">Example</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<p class="admonition-title">Example</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="c1"># Check for errors. Notice the square brackets. These denote</span>
    <span class="c1"># lists. The basic format is: &quot;columnName&quot;, &quot;dumpFile&quot;,</span>
@@ -141,25 +140,25 @@ can download the sample data used in this tutorial from <a class="reference down
 <span class="k">end</span>
 </pre></div>
 </div>
-<p class="last">Breaking down the function call makes it easier to follow what is
-happening. Recall that <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> takes (at least) three
+<p>Breaking down the function call makes it easier to follow what is
+happening. Recall that <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> takes (at least) three
 arguments: the name of the Datavyu variable it will be checking, the
 location that it should direct the output to, and at least one key-value
 pair.</p>
 </div>
 <p>In the example, we have:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="n">checkValidCodes</span><span class="p">(</span><span class="s2">&quot;look&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;direction&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="o">]</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="o">]</span><span class="p">)</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="n">checkValidCodes</span><span class="p">(</span><span class="s2">&quot;look&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;direction&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="o">]</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="o">]</span><span class="p">)</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">&quot;look&quot;</span></code> is the name of the variable to check.</li>
-<li><code class="docutils literal"><span class="pre">&quot;&quot;</span></code> is the location that we want to export the output to. Using
-<code class="docutils literal"><span class="pre">&quot;&quot;</span></code> indicates that we do not want to write the results to a file,
-and that it should instead display in the Datavyu Scripting Console.</li>
-<li><code class="docutils literal"><span class="pre">&quot;direction&quot;,</span> <span class="pre">[&quot;l&quot;,</span> <span class="pre">&quot;r&quot;]</span></code> is the first key-value pair, which specifies
-that the &#8220;direction&#8221; Datavyu code should only have the values &#8220;l&#8221; or &#8220;r&#8221;.</li>
-<li><code class="docutils literal"><span class="pre">&quot;target&quot;</span> <span class="pre">,</span> <span class="pre">[&quot;a&quot;,</span> <span class="pre">&quot;b&quot;]</span></code> is the second key-value pair, which specifies
-that the &#8220;target&#8221; Datavyu code should only have the values &#8220;a&#8221; or &#8220;b&#8221;.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;look&quot;</span></code> is the name of the variable to check.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> is the location that we want to export the output to. Using
+<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> indicates that we do not want to write the results to a file,
+and that it should instead display in the Datavyu Scripting Console.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;direction&quot;,</span> <span class="pre">[&quot;l&quot;,</span> <span class="pre">&quot;r&quot;]</span></code> is the first key-value pair, which specifies
+that the “direction” Datavyu code should only have the values “l” or “r”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;target&quot;</span> <span class="pre">,</span> <span class="pre">[&quot;a&quot;,</span> <span class="pre">&quot;b&quot;]</span></code> is the second key-value pair, which specifies
+that the “target” Datavyu code should only have the values “a” or “b”.</p></li>
 </ul>
 <span class="target" id="checkvalidcodes-advanced-format"></span></div>
 <div class="section" id="advanced-format">
@@ -169,14 +168,14 @@ to objects. This makes it is easier for human readers to parse the
 script, and makes it easy to modify or update
 in the future.</p>
 <ol class="arabic">
-<li><p class="first">Set up the script:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Set up the script:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Assign each list of valid codes to a variable:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Assign each list of valid codes to a variable:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="c1"># Store each of the valid code arrays into a object first</span>
    <span class="c1"># so that it is easier to read</span>
@@ -185,9 +184,9 @@ in the future.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Check for coding errors using <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a>, replacing
+<li><p>Check for coding errors using <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a>, replacing
 the lists with your newly-created objects, and end the script:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="n">directionCodes</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="o">]</span>
    <span class="n">targetCodes</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;h&quot;</span><span class="p">,</span> <span class="s2">&quot;t&quot;</span><span class="o">]</span>
@@ -203,29 +202,29 @@ the lists with your newly-created objects, and end the script:</p>
 </div>
 <div class="section" id="check-code-validity-and-output-to-a-file">
 <h2>Check Code Validity and Output to a File<a class="headerlink" href="#check-code-validity-and-output-to-a-file" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> can write the results of its verification to a
-&#8220;dump file&#8221;. Datavyu will create an output file if you specify a path
-in the <code class="docutils literal"><span class="pre">dumpFile</span></code> parameter.</p>
+<p><a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> can write the results of its verification to a
+“dump file”. Datavyu will create an output file if you specify a path
+in the <code class="docutils literal notranslate"><span class="pre">dumpFile</span></code> parameter.</p>
 <ol class="arabic">
-<li><p class="first">Create an object that holds the path that it should output to using
-Ruby&#8217;s <a class="reference external" href="http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path">File.expand_path</a>
+<li><p>Create an object that holds the path that it should output to using
+Ruby’s <a class="reference external" href="http://www.ruby-doc.org/core-1.9.3/File.html#method-c-expand_path">File.expand_path</a>
 method, which converts a relative path,
-like <code class="docutils literal"><span class="pre">~/Desktop/file.txt</span></code> to an absolute path name, which contains
+like <code class="docutils literal notranslate"><span class="pre">~/Desktop/file.txt</span></code> to an absolute path name, which contains
 the root directory, and all sub-directories, like
-<code class="docutils literal"><span class="pre">/Users/alice/Desktop/file.txt</span></code></p>
-<p>The following commands create a variable called <code class="docutils literal"><span class="pre">output</span></code> that
+<code class="docutils literal notranslate"><span class="pre">/Users/alice/Desktop/file.txt</span></code></p>
+<p>The following commands create a variable called <code class="docutils literal notranslate"><span class="pre">output</span></code> that
 holds the absolute path to a file on the Desktop called
-<code class="docutils literal"><span class="pre">output.txt</span></code>:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<code class="docutils literal notranslate"><span class="pre">output.txt</span></code>:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
 
    <span class="n">output</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s2">&quot;~/Desktop/output.txt&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Call <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref rb rb-meth docutils literal"><span class="pre">checkValidCodes</span></code></a> on the &#8220;step&#8221; column, passing <code class="docutils literal"><span class="pre">output</span></code>
-as the argument for the <code class="docutils literal"><span class="pre">dumpFile</span></code> parameter:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
+<li><p>Call <a class="reference internal" href="../reference/1.3.4/checkValidCodes.html#checkValidCodes" title="checkValidCodes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">checkValidCodes()</span></code></a> on the “step” column, passing <code class="docutils literal notranslate"><span class="pre">output</span></code>
+as the argument for the <code class="docutils literal notranslate"><span class="pre">dumpFile</span></code> parameter:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;Datavyu_API.rb&#39;</span>
 <span class="k">begin</span>
    <span class="n">directionCodes</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="o">]</span>
    <span class="n">targetCodes</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="o">]</span>
@@ -241,10 +240,10 @@ as the argument for the <code class="docutils literal"><span class="pre">dumpFil
 </ol>
 <p>When the script ends, the output.txt file will be created on the
 Desktop, containing the results of the code checking. For the
-<a class="reference download internal" href="../../downloads/SampleData-checkValidCodes.opf"><code class="xref download docutils literal"><span class="pre">sample</span> <span class="pre">data</span></code></a>,
+<a class="reference download internal" download="" href="../../downloads/b2075532696c573f9c52f697d4fe648e/SampleData-checkValidCodes.opf"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span></code></a>,
 it should find one error, and the output should resemble:</p>
 <blockquote>
-<div><div class="highlight-sh"><div class="highlight"><pre>Code ERROR: Var: look   Ordinal: 2      Arg: direction     Val: rj
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Code ERROR: Var: look   Ordinal: <span class="m">2</span>      Arg: direction     Val: rj
 </pre></div>
 </div>
 </div></blockquote>
@@ -288,9 +287,7 @@ it should find one error, and the output should resemble:</p>
 <li class="toctree-l3"><a class="reference internal" href="add-a-new-column.html">Add a New Column</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add-codes-to-a-column.html">Add Codes to a Column</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add-cells-to-a-column.html">Add Cells to a Column</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Check for Coding Errors</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Check for Coding Errors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="use-reliability-coding-to-check-data-accuracy.html">Check Inter-rater Reliability to Improve Data Accuracy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="export-data-using-scripts.html">Use Scripts to Export Data from Datavyu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="convert-openshapa-script-to-datavyu.html">Convert an OpenSHAPA Script to the Datavyu Format</a></li>
@@ -324,30 +321,38 @@ it should find one error, and the output should resemble:</p>
 	<div class="wrap">
 		<div class="cf">
 			<nav id="footer_nav" class="footer_links">
-				<ul class="inline">
-					<li> <a href="//databrary.org/about/contact.html">Contact us</a>.</li>
-					<li>Stay informed with <a href="//databrary.org/about/newsletter.html">our newsletter</a>.</li>
-					<li><a href="//databrary.org/about/jobs.html">Join our team</a>.</li>
-				</ul>
-				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
 			</nav>
 			<aside class="footer_social">
 				<p>Find us on
-				        <a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
-                                        <a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook" src="/theme/img/social/facebook.png" alt="Facebook"></a>,
-					<a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>,
-					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter" src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
-					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github" src="/theme/img/social/github.png" alt="GitHub"></a>.
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
 				</p>
 			</aside>
 		</div>
 
 		<div class="cf legal">
-			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599 and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human Development.</p>
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
 
 			<p>
-				<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Databrary.org documentation</span> is licensed under a
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 			</p>
 
 			<ul class="inline grants">
@@ -356,7 +361,8 @@ it should find one error, and the output should resemble:</p>
 						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
 				</li>
 				<li>
-					<a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
 						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
 				</li>
 			</ul>
