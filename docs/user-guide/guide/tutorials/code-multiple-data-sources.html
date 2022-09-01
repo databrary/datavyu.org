@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,15 +86,6 @@
 <article id="page_user-guide_guide_tutorials_code-multiple-data-sources" class="hentry page page_user-guide_guide_tutorials_code-multiple-data-sources page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide.html" class="">Software Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide/tutorials.html" class="">Tutorials</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Code Multiple Data Sources at Once</h1>
@@ -106,28 +98,28 @@
 
 				
         
-  <div class="section" id="code-multiple-data-sources-at-once">
-<h1>Code Multiple Data Sources at Once<a class="headerlink" href="#code-multiple-data-sources-at-once" title="Permalink to this headline">¶</a></h1>
+  <section id="code-multiple-data-sources-at-once">
+<h1>Code Multiple Data Sources at Once<a class="headerlink" href="#code-multiple-data-sources-at-once" title="Permalink to this heading">¶</a></h1>
 <p>With Datavyu, you can code multiple data sources in one spreadsheet. For
 instance, if you have three different camera views of an experiment, you
 can bring them together into Datavyu, and code them as one.</p>
 <p>Adding multiple data sources is easy, but aligning them perfectly can
 take some effort. The following sections guide you through the process.</p>
-<div class="section" id="add-multiple-data-sources">
-<h2>Add Multiple Data Sources<a class="headerlink" href="#add-multiple-data-sources" title="Permalink to this headline">¶</a></h2>
+<section id="add-multiple-data-sources">
+<h2>Add Multiple Data Sources<a class="headerlink" href="#add-multiple-data-sources" title="Permalink to this heading">¶</a></h2>
 <p>To add multiple data sources, simply add a data source using the Data
 Viewer Controller’s <span class="guilabel">Add Data</span> button. You can add as many
 data sources as you desire.</p>
-<div class="figure align-center">
-<img alt="Screenshot of the Controller, with annotations indicating the tracks, and add data" src="../../images/dvc-annotated-multiple-sources.png" />
-</div>
+<figure class="align-center">
+<img alt="Screenshot of the Controller, with annotations indicating the tracks, and add data" src="../../_images/dvc-annotated-multiple-sources.png" />
+</figure>
 <p>Each data source has its own line in the <span class="guilabel">tracks</span> area
 of the Controller. You can select an individual data
 source by clicking on its blue bar. When selected, the bar will turn
 green.</p>
-</div>
-<div class="section" id="align-tracks">
-<h2>Align Tracks<a class="headerlink" href="#align-tracks" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="align-tracks">
+<h2>Align Tracks<a class="headerlink" href="#align-tracks" title="Permalink to this heading">¶</a></h2>
 <p>To code your multiple data sources, you need to
 align them so that times recorded in the spreadsheet are accurate
 for all data sources.</p>
@@ -135,8 +127,8 @@ for all data sources.</p>
 the basis for synchronizing your sources. For example, if the lights
 flashed during the experiment, you could align the tracks at that
 point.</p>
-<div class="section" id="align-tracks-manually">
-<h3>Align Tracks Manually<a class="headerlink" href="#align-tracks-manually" title="Permalink to this headline">¶</a></h3>
+<section id="align-tracks-manually">
+<h3>Align Tracks Manually<a class="headerlink" href="#align-tracks-manually" title="Permalink to this heading">¶</a></h3>
 <p>To align your data sources, select one and drag it to align with the
 other source. Increasing the zoom using the <span class="guilabel">slider bar</span> in
 the Controller can give you more granular control, and
@@ -146,9 +138,9 @@ All</span>. This prevents you from accidentally desynchronizing the
 tracks. You can also lock a single track by clicking on its
 <span class="guilabel">lock</span> icon to the left of the time slider. This can be
 helpful while synchronizing multiple tracks.</p>
-</div>
-<div class="section" id="align-tracks-using-bookmarks">
-<h3>Align Tracks Using Bookmarks<a class="headerlink" href="#align-tracks-using-bookmarks" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="align-tracks-using-bookmarks">
+<h3>Align Tracks Using Bookmarks<a class="headerlink" href="#align-tracks-using-bookmarks" title="Permalink to this heading">¶</a></h3>
 <p>You can also use bookmarks to help synchronize tracks. If you identify
 a distinct synchronization point, navigate to that point in the first
 track, and click the <span class="guilabel">Add Bookmark</span> button. This will create
@@ -159,17 +151,17 @@ both bookmarks.</p>
 <p>You can repeat this process with all the tracks that you need to
 synchronize, and then select the <span class="guilabel">Lock All</span> button to lock
 their arrangement.</p>
-</div>
-</div>
-<div class="section" id="saving-between-datavyu-uses">
-<h2>Saving Between Datavyu Uses<a class="headerlink" href="#saving-between-datavyu-uses" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="saving-between-datavyu-uses">
+<h2>Saving Between Datavyu Uses<a class="headerlink" href="#saving-between-datavyu-uses" title="Permalink to this heading">¶</a></h2>
 <p>When working with multiple data sources, Datavyu saves the data source
 synchronization and bookmarks when you save the spreadsheet. This way,
 when you reopen the spreadsheet to do more coding, or to work with the
 data, you will not need to re-synchronize the data sources. This also
 helps ensure consistency between coding passes and reliability coders.</p>
-</div>
-</div>
+</section>
+</section>
 
 
     

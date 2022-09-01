@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,15 +86,6 @@
 <article id="page_user-guide_best-practices_codes_theory" class="hentry page page_user-guide_best-practices_codes_theory page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/best-practices.html" class="">Best Practices for Coding Behavioral Data from Video</a>
-								</li>
-								<li>
-									<a href="/user-guide/best-practices/codes.html" class="">Step 2: Codes—Design a Formal Coding Scheme</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Coding Theory and Practice</h1>
@@ -106,10 +98,10 @@
 
 				
         
-  <div class="section" id="coding-theory-and-practice">
-<h1>Coding Theory and Practice<a class="headerlink" href="#coding-theory-and-practice" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="useful-definitions">
-<h2>Useful Definitions<a class="headerlink" href="#useful-definitions" title="Permalink to this headline">¶</a></h2>
+  <section id="coding-theory-and-practice">
+<h1>Coding Theory and Practice<a class="headerlink" href="#coding-theory-and-practice" title="Permalink to this heading">¶</a></h1>
+<section id="useful-definitions">
+<h2>Useful Definitions<a class="headerlink" href="#useful-definitions" title="Permalink to this heading">¶</a></h2>
 <p>You may want to reference <a class="reference internal" href="../../guide.html"><span class="doc">Datavyu’s User Guide</span></a> to gain deeper understanding of various key terms.</p>
 <p>A <a class="reference internal" href="../../guide/reference/glossary.html#term-code"><span class="xref std std-term">code</span></a> tags a section of video with an identifier.
 Codes for outcome measures typically reflect the expression or non-expression of particular behaviors or traits.
@@ -147,9 +139,9 @@ In Datavyu, it is possible for the “onset” time to be later than the “offs
 In these cases, Datavyu will display the cell with a red line (don’t worry, the red line is only a tag; it does not mean that you made a mistake unless your code does not allow offset times to precede onset times).</p>
 <p>In Datavyu, a <a class="reference internal" href="../../guide/reference/glossary.html#term-script"><span class="xref std std-term">script</span></a> is a routine written in the Ruby programming language that allows you to manipulate the data in your spreadsheet, add/delete codes from your spreadsheet, insert or delete cells in your spreadsheet, insert or delete columns in your spreadsheet, conduct analyses on your codes, import data into the spreadsheet, and export spreadsheet data in whatever format you desire.
 Scripts can operate on a single spreadsheet or on all of the spreadsheets in a file (e.g., 100s of spreadsheets simultaneously).</p>
-</div>
-<div class="section" id="coding-criteria-and-types-of-codes">
-<h2>Coding Criteria and Types of Codes<a class="headerlink" href="#coding-criteria-and-types-of-codes" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="coding-criteria-and-types-of-codes">
+<h2>Coding Criteria and Types of Codes<a class="headerlink" href="#coding-criteria-and-types-of-codes" title="Permalink to this heading">¶</a></h2>
 <p>Behavioral codes lie along a continuum.
 Implicit (sometimes called “subjective”) codes are at one end of the continuum and explicit (sometimes called “objective”) codes are at the other end of the continuum.
 The difference between the two types of codes is whether the behavioral criteria for codes are implicit or explicit.
@@ -162,11 +154,6 @@ With an explicit code for “falling,” coders must use explicit criteria such 
 With an implicit code for “negative affect,” coders use their own judgment to decide whether a child feels distress or anger.
 With an explicit code, coders must use explicit criteria such as whether the child’s brows were knit, lip was jutted, mouth was in a square shape, or crying/tears were expressed.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 47%" />
-<col style="width: 47%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Type</p></th>
 <th class="head"><p>Implicit Coding Criteria</p></th>
@@ -206,8 +193,8 @@ Implicit and explicit codes can refer to durations (involving onset and offset t
 For example, you can type in or import information about participant demographics, the observational setting, various conditions and independent variables, and so on.
 Non-video data can be imported into Datavyu if you use our code and Ruby API.
 You can import your own data into Datavyu and use it to identify interesting sections of video or you can use the video to identify interesting sections of other synchronized data streams.</p>
-</div>
-</div>
+</section>
+</section>
 
 
     

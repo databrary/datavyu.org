@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,15 +86,6 @@
 <article id="page_user-guide_best-practices_workflow_coding" class="hentry page page_user-guide_best-practices_workflow_coding page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/best-practices.html" class="">Best Practices for Coding Behavioral Data from Video</a>
-								</li>
-								<li>
-									<a href="/user-guide/best-practices/workflow.html" class="">Step 4: Workflow—Establish a Workflow and Code Videos</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Coding Workflow</h1>
@@ -106,27 +98,27 @@
 
 				
         
-  <div class="section" id="coding-workflow">
-<h1>Coding Workflow<a class="headerlink" href="#coding-workflow" title="Permalink to this headline">¶</a></h1>
+  <section id="coding-workflow">
+<h1>Coding Workflow<a class="headerlink" href="#coding-workflow" title="Permalink to this heading">¶</a></h1>
 <p>Create a workflow that suits the operation of your lab.
 In general, an efficient workflow minimizes errors and maximizes coder’s time on task.</p>
-<div class="section" id="first-coder-code-and-check-errors">
-<h2>First Coder Code and Check Errors<a class="headerlink" href="#first-coder-code-and-check-errors" title="Permalink to this headline">¶</a></h2>
+<section id="first-coder-code-and-check-errors">
+<h2>First Coder Code and Check Errors<a class="headerlink" href="#first-coder-code-and-check-errors" title="Permalink to this heading">¶</a></h2>
 <p>You will have a primary coder or set of coders for each pass.
 The primary coder will code the pass through the entire video file.
 When finished, before shutting the spreadsheet, the coder will run the check error script for that pass.
 The coder will correct all of the identified careless errors.
 Then the coder will note in your formal records that the pass is finished and ready for the reliability coder.</p>
-</div>
-<div class="section" id="reliability-coder-code-and-check-errors">
-<h2>Reliability Coder Code and Check Errors<a class="headerlink" href="#reliability-coder-code-and-check-errors" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="reliability-coder-code-and-check-errors">
+<h2>Reliability Coder Code and Check Errors<a class="headerlink" href="#reliability-coder-code-and-check-errors" title="Permalink to this heading">¶</a></h2>
 <p>The reliability coder will code a subset of the video file (25% or so) for that pass.
 In Datavyu, the reliability coder scores data into a new column and the codes from the primary coder’s column are “hidden.” When finished, before shutting the spreadsheet, the reliability coder will run the check error script for that pass.
 The coder will correct all of the identified careless errors.
 Then the coder will note in the records that the reliability pass is finished.</p>
-</div>
-<div class="section" id="check-inter-rater-reliability">
-<h2>Check Inter-Rater Reliability<a class="headerlink" href="#check-inter-rater-reliability" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="check-inter-rater-reliability">
+<h2>Check Inter-Rater Reliability<a class="headerlink" href="#check-inter-rater-reliability" title="Permalink to this heading">¶</a></h2>
 <p>Now the coders will check their inter-rater reliability.
 In Datavyu, to check inter-rater reliability, you will run a script that identifies times, codes, or trials where coders disagreed.
 The rate of disagreements must be reported in the published report of the study.
@@ -137,13 +129,13 @@ However, known errors need not be entered into the primary data analyses conduct
 Instead, if the coders determine after discussing each disagreement that the error was committed by the primary coder, they could swap the codes between the primary and reliability coders (thereby retaining the same inter-rater reliability), noting the swap if desired.
 In this way, known errors are eliminated from the final analyses on the primary coder’s data.
 Note that if errors are eliminated in this way, you must keep a record of the original disagreement so that you do not inflate your reliability statistics.</p>
-</div>
-<div class="section" id="export-data">
-<h2>Export Data<a class="headerlink" href="#export-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="export-data">
+<h2>Export Data<a class="headerlink" href="#export-data" title="Permalink to this heading">¶</a></h2>
 <p>In Datavyu, data can be exported incrementally after each file is coded (using the File Export function or a script), after an entire coding pass is completed across the entire set of video files (using a script to complete export in one button press), and/or after all of the coding passes are completed.
 Researchers may prefer to analyze one set of variables as they become available rather than waiting until the entire study is completely coded.</p>
-</div>
-</div>
+</section>
+</section>
 
 
     

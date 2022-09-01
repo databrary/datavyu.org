@@ -14,8 +14,8 @@ capabilities, watch the spreadsheet walkthrough video:
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../static/video/edit-spreadsheet.mp4" type="video/mp4">
-   <source src="../static/video/edit-spreadsheet.webm" type="video/webm">
+   <source src="../_static/video/edit-spreadsheet.mp4" type="video/mp4">
+   <source src="../_static/video/edit-spreadsheet.webm" type="video/webm">
    </video>
 
 Each user-defined column has its own column in the spreadsheet.
@@ -178,8 +178,8 @@ highlights the differences between active and inactive temporal alignment:
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../static/video/temporal-alignment.mp4" type="video/mp4">
-   <source src="../static/video/temporal-alignment.webm" type="video/webm">
+   <source src="../_static/video/temporal-alignment.mp4" type="video/mp4">
+   <source src="../_static/video/temporal-alignment.webm" type="video/webm">
    </video>
 
 Temporal alignment allows you to visualize what occurred at what time

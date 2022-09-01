@@ -37,6 +37,6 @@ This video displays one example of a Coding Manual that outlines the different c
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../../static/video/trial-coding-manual-2.mp4" type="video/mp4">
+   <source src="../../_static/video/trial-coding-manual-2.mp4" type="video/mp4">
    </video>
 
