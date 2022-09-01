@@ -1,0 +1,691 @@
+<!doctype html>
+<html>
+<head>
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- title -->
+	<title>Release Notes || Datavyu: Video coding and data visualization tool</title>
+
+	<!--GTM tracking for databrary-->
+	
+	<!--GTM tracking for datavyu-->
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NFNQ3MV');</script>
+		<!-- End Google Tag Manager -->
+
+	<!-- optimize -->
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- network -->
+	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+	<!-- feeds -->    
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="/theme/css/normalize.css">
+	<link rel="stylesheet" href="/theme/css/common.css">
+
+	<!-- js -->
+	<script src="/theme/js/jquery-1.11.1.min.js"></script>
+	<script src="/theme/js/common.js"></script>
+</head>
+
+<body>
+		<!-- Google Tag Manager (noscript) -->	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNQ3MV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+<header id="site_header" class="site_header">
+	<div class="wrap">
+		<h1>
+			<a href="/" title="Datavyu: Video coding and data visualization tool"><img id="logo" src="/theme/img/logo/datavyu.png" alt="Datavyu: Video coding and data visualization tool"></a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li class="">
+					<a href="/features.html" title="Discover Datavyu">Features</a>
+				</li>
+				<li class="current">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
+				<li class="">
+					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
+				</li>
+				<li class="">
+					<a href="https://forms.gle/ZqdwbBLJ3GRgiX8g6" title="Support">Support</a>
+				</li>
+				<li class="">
+					<a href="/contact.html" title="Contact Us">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<main id="site_main" class="site_main">
+		<div class="wrap">
+<article id="page_download_release-notes" class="hentry page page_download_release-notes ">
+<nav class="breadcrumbs cf">
+	<ul class="cf">
+								<li>
+									<a href="/download.html" class="">Download Datavyu</a>
+								</li>
+	</ul>
+</nav>
+    <h1 class="entry-title"><span></span>Release Notes</h1>
+
+    <div class="cf">
+        <div class="entry-content col_with_nav">
+			<!--  -->
+
+			<!-- Handle change of directory structure in 2020-07 -->
+
+				<h2 id="datavyu-151-rc3-development-release-notes">Datavyu 1.5.1-RC3 Development Release Notes</h2>
+<h3 id="11202019">11/20/2019</h3>
+<h4 id="notable-changes">Notable Changes</h4>
+<ul>
+<li>(Playback) Replaced steps per second by a new Shortcut to jump forward by time ( SHIFT - )</li>
+<li>(Playback) Replaced "Steps per Second" by "Frame Rate".</li>
+<li>(Playback) Disabled "Frame Rate" field and Added FPS label for each track.</li>
+<li>(Playback) Faster FFmpeg player frames rendering.</li>
+<li>(Playback) Improved FFmpeg player seeks accuracy.</li>
+<li>(Ruby API) Improved ability to add and remove videos.</li>
+</ul>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li>(Playback) Fixed resizing video via the controller.</li>
+<li>(Playback) Fixed Native OSX player speed transitions.</li>
+<li>(Playback) Fixed Native OSX jogging when track offset is positive.</li>
+<li>(Playback) Fixed crashes when destroying FFmpeg player.</li>
+<li>(Playback) Fixed FFmpeg player seeks to end of the video.</li>
+<li>(General) Fixed Datavyu crashes when no Internet connection.</li>
+<li>(General) Fixed Datavyu Mac menubar highlight on mouse hover.</li>
+<li>(General) Fixed OPFs backward compatibility with previous Native OSX plugins.</li>
+<li>(General) Removed ghost window opening up with mac FFmpeg player.</li>
+<li>(General) Show mouse cursor on FFmpeg plugin video window.</li>
+<li>(General) Select correct cell's code when highlight and focus is enabled.</li>
+</ul>
+<h4 id="known-issues">Known Issues</h4>
+<h3 id="shortcuts-not-working-on-mac-ffmpeg-window">* Shortcuts not working on Mac FFMPEG Window.</h3>
+<h2 id="datavyu-150-release-notes">Datavyu 1.5.0 Release Notes</h2>
+<h3 id="07262019">07/26/2019</h3>
+<h4 id="notable-changes_1">Notable Changes</h4>
+<ul>
+<li>Removed JavaFX plugin.</li>
+<li>Removed MPV plugin.</li>
+<li>Major improvements to FFMPEG plugin.</li>
+<li>Add FFMPEG as default plugin for Mac and Windows</li>
+<li>Users will receive a deprecation notice when opening Datavyu files which
+  were using removed plugins. Videos will automatically re-open using FFMPEG.</li>
+<li>Re-work highlight and highlight and focus for more intuitive use.</li>
+<li>New installations will prompt users to share usage data.</li>
+<li>(ruby api) add function to save and load track information to/from a spreadsheet column.</li>
+</ul>
+<h4 id="bug-fixes_1">Bug Fixes</h4>
+<ul>
+<li>(general) fix crashing when VLC is installed.</li>
+<li>(general) fix memory leaks when removing videos.</li>
+<li>(general) fix startup crash when no network connection is available.</li>
+<li>(playback) fix jogging outside of locked region.</li>
+<li>(ruby api) compute_kappa won't crash on edge case.</li>
+<li>(ruby api) fix sanitization of code names when they start with a number.</li>
+</ul>
+<h4 id="known-issues_1">Known Issues</h4>
+<ul>
+<li>Controller track video resize buttons do not work.</li>
+<li>Mouse disappears in video window.</li>
+<li>Ghost window opens up on Mac FFMPEG.</li>
+<li>Shortcuts not working on Mac FFMPEG Window.</li>
+</ul>
+<hr />
+<h2 id="datavyu-142-release-notes">Datavyu 1.4.2 Release Notes</h2>
+<h3 id="11192018">11/19/2018</h3>
+<h4 id="new-features">New Features</h4>
+<ul>
+<li>Introduced MPV plugin for Windows:<ul>
+<li>Added support for 1080p Resolution.</li>
+<li>Playback speed from -32x to +32x for Images and Audio.</li>
+<li>Accurate and consistent seeks.</li>
+<li>Stepping frame by frame forward and backward.</li>
+</ul>
+</li>
+<li>FFmpeg plugin new features:<ul>
+<li>Added support for 1080p Resolution.</li>
+<li>Added support for playback speeds from 0x to 32x for Images and Audio.</li>
+<li>Improved the seek accuracy.</li>
+<li>Stepping frame by frame forward and backward.</li>
+<li>Keep aspect ratio when resizing FFmpeg plugin window.</li>
+</ul>
+</li>
+<li>Added new Ruby API function to load a video from a script.</li>
+<li>Re-arrange column from the Code Editor dialog.</li>
+</ul>
+<h4 id="bug-fixes_2">Bug Fixes</h4>
+<ul>
+<li>Fixed installation issues on older Mac OS versions.</li>
+<li>Fixed unselected spreadsheet cells when clicking on the Video Controller window.</li>
+<li>Load the correct plugin from the OPF file.</li>
+<li>Fixed incorrect time when inserting cells on subsequently locked regions.</li>
+<li>Seek to cells' onset when snapping the cell.</li>
+<li>Fixed delete column from the menu bar.</li>
+<li>FFmpeg plugin for Windows<ul>
+<li>Fixed FFmpeg plugin crashes when stressed.</li>
+<li>Display the first image when the video is loaded.</li>
+<li>Update images when seeking and the stream is stopped.</li>
+<li>Enable seeks before the first play.</li>
+<li>Fixed Synchronization problems between audio and images.</li>
+</ul>
+</li>
+</ul>
+<h4 id="known-issues_2">Known Issues</h4>
+<ul>
+<li>FFmpeg plugin for Windows<ul>
+<li>Backward playback is not performing as expected.</li>
+<li>The Plugin will not update the image when seeking to the end of the track.</li>
+<li>Seeking (either through Find or synchronization when stopping) does not always produce same frame. May seek to adjacent frame.</li>
+<li>Inconsistent frame reporting between plugins. We suggest using the same plugin when coding to maintain consistency.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="datavyu-141-release-notes">Datavyu 1.4.1 Release Notes</h2>
+<h3 id="06282018">06/28/2018</h3>
+<h4 id="new-features_1">New Features</h4>
+<ul>
+<li>FFMPEG plugin for Windows.<ul>
+<li>Upgraded to FFmpeg 4.0 version.</li>
+<li>Added Support for 720p Resolution.</li>
+<li>Plugin still under development, expect performance issues with high-resolution videos.</li>
+</ul>
+</li>
+<li>Enabled cells editing when highlight and focus is enabled and video is stopped.</li>
+<li>Changed JavaFX plugin icon.</li>
+<li>Improved Cell highlighting while seeking.</li>
+<li>Added Undo feature for cells created using Quick Key mode.</li>
+</ul>
+<h4 id="bug-fixes_3">Bug Fixes</h4>
+<ul>
+<li>Fixed flickering issues when clicking on Hidden Columns.</li>
+<li>Fixed <code>CMD+L</code> and <code>CMD+R</code> bug for corner cases.</li>
+<li>Fixed add cell to left/right columns not working.</li>
+<li>Fixed Video Controller back button not working for corner cases.</li>
+<li>Fixed unresponsive Spreadsheet when using the Menu on Windows.</li>
+<li>Keep track of code position when moving through cells within a column.</li>
+<li>Fixed choppy backward playback with Native OSX Plugin.</li>
+<li>Fixed cycling through codes in a cell bug.</li>
+<li>Fixed FFmpeg plugin Windows not resizing on Windows.</li>
+<li>Fixed FFmpeg seek issue.</li>
+<li>Display the correct Frame Rate per Second (FPS) for the javaFX plugin.</li>
+<li>Fixed Dialog windows appearing behind the video.</li>
+</ul>
+<h4 id="known-issues_3">Known Issues</h4>
+<ul>
+<li>
+<h5 id="when-using-the-ffmpeg-plugin">When using the ffmpeg plugin:</h5>
+<ul>
+<li>sound only plays back when playing at 1x.</li>
+<li>jumping to random locations within the stream may take 1-2sec</li>
+<li>the sound after a stop/jump and playback may be a bit distorted when opening multiple streams and the ffmpeg as 2nd, 3rd it might get stuck after playing for some time</li>
+<li>Inconsistent frame reporting between plugins. We suggest using the same plugin when coding to maintain consistency.</li>
+</ul>
+</li>
+<li>
+<h5 id="delete-column-menubar-function-does-not-work-use-the-code-editor-to-delete-columns">Delete column menubar function does not work. Use the Code Editor to delete columns.</h5>
+</li>
+</ul>
+<hr />
+<h2 id="datavyu-140-release-notes">Datavyu 1.4.0 Release Notes</h2>
+<h3 id="04262018">04/26/2018</h3>
+<h4 id="new-features_2">New Features</h4>
+<ul>
+<li>FFMPEG plugin for Windows.</li>
+<li>Still under development. Currently only supports 480p video. Expect performance issues with higher quality files.</li>
+<li>Removed plugins not being maintained (e.g., VLC, MPlayer).</li>
+<li>Move left and right across columns using <code>CMD + Left Arrow</code> and <code>CMD + Right Arrow</code> on Mac and <code>CTRL + Left Arrow</code> and <code>CTRL + Right Arrow</code> on Windows.</li>
+<li>Import/Export coding passes from/to JSON format.</li>
+<li>Display foreign language characters (can not input through keystrokes yet).</li>
+<li><code>CMD + W</code>, <code>CTRL + W</code> closes currently open spreadsheet on Mac and Windows, respectively.</li>
+<li>Updated dependencies for R and Ruby script plugins</li>
+</ul>
+<h4 id="bug-fixes_4">Bug Fixes</h4>
+<ul>
+<li>Allows to save filenames with non-ascii characters, e.g. Umlaut in German</li>
+<li>Fixed plugin loading error for NativeOSX plugin.</li>
+<li>OSX plugin playback more responsive to jogs, cell locking, and seeks.</li>
+<li>Fixed flickering during Cell Highlighting.</li>
+<li>Fixed delete cell shortcut not working on Windows.</li>
+<li>Fixed Code Editor not properly editing code/column names.</li>
+<li>Recognize playback keys even when Spreadsheet window is not in focus.</li>
+<li>
+<h6 id="ruby-api">Ruby API</h6>
+</li>
+<li>Fixed <code>show_columns</code> crash.</li>
+<li>Fixed <code>save_db</code> crash.</li>
+</ul>
+<h4 id="known-issues_4">Known Issues</h4>
+<ul>
+<li>
+<h5 id="when-using-the-ffmpeg-plugin_1">When using the ffmpeg plugin:</h5>
+</li>
+<li>the window can't be resized</li>
+<li>sound only plays back when playing at 1x</li>
+<li>jumping to random locations within the stream may take 1-2sec</li>
+<li>the sound after a stop/jump and playback may be a bit distorted</li>
+<li>when opening multiple streams and the ffmpeg as 2nd, 3rd it might
+    get stuck after playing for some time</li>
+<li>Inconsistent frame reporting between plugins. We suggest using the same plugin when coding to maintain consistency.</li>
+<li>
+<h5 id="ruby-api_1">Ruby API</h5>
+</li>
+<li>Scripts may crash unexpectedly with error reported in <code>getAllVariables</code> functions. We suggest re-running the script and if the problem persists, re-opening Datavyu.</li>
+</ul>
+<hr />
+<h2 id="datavyu-137-release-notes">Datavyu 1.3.7 Release Notes</h2>
+<h3 id="07182017">07/18/2017</h3>
+<h4 id="new-features_3">New Features</h4>
+<ul>
+<li>Larger column header and drag-and-drop boundary.</li>
+</ul>
+<h4 id="bug-fixes_5">Bug Fixes</h4>
+<ul>
+<li>Fix code editor issues with editing and deleting codes.</li>
+<li>Fix data playback outside of locked region.</li>
+<li>UI updates properly after saving.</li>
+</ul>
+<h4 id="known-issues_5">Known Issues</h4>
+<ul>
+<li>There is still an issue with saving, but it should be very rare.
+  As a workaround, use the sample script <a href="https://github.com/databrary/Datavyu-Example-Scripts/blob/master/Misc/SaveFile.rb">SaveFile</a>
+  to save files when encountering this issue.</li>
+</ul>
+<hr />
+<h2 id="datavyu-136-release-notes">Datavyu 1.3.6 Release Notes</h2>
+<h3 id="432017">4/3/2017</h3>
+<h4 id="new-features_4">New Features</h4>
+<ul>
+<li>Highlight and focus mode<ul>
+<li>Cells with highlight green when the playback timer is within a cell,
+and red when the playback timer is past a cell.</li>
+<li>Enables easy visualization of which cells are active and which are
+not at the current playback time.</li>
+</ul>
+</li>
+<li>Quick key mode<ul>
+<li>Select a column and enable quick key mode. Now, whenever you press an
+alphanumeric key, a cell will be added to that column at the current time
+with the first code filled in with the key that you pressed.</li>
+<li>Makes doing quick passes over a column easier than ever!</li>
+</ul>
+</li>
+<li>Default OSX media player is now based on AVFoundation instead of QTKit,
+improves performance and allows GPU acceleration</li>
+</ul>
+<h4 id="bug-fixes_6">Bug Fixes</h4>
+<ul>
+<li>Fixed some issues with playback speed on OSX when backwards shuttling</li>
+<li>On old versions of OSX, the QTKit player will be loaded instead of the
+AVFoundation player to ensure that playback still works (pre-10.6).</li>
+<li>Other small tweaks.</li>
+</ul>
+<h4 id="ruby-api-136-release-notes">Ruby API 1.3.6 release notes</h4>
+<ul>
+<li>Added standalone functions:<ul>
+<li>check_valid_codes2</li>
+<li>check_valid_codes3</li>
+<li>combine_columns</li>
+<li>compute_kappa</li>
+<li>get_datavyu_files_from</li>
+<li>get_datavyu_version</li>
+<li>hide_columns</li>
+<li>merge_columns</li>
+<li>show_columns</li>
+</ul>
+</li>
+<li>Added functions to RCell:<ul>
+<li>get_codes</li>
+<li>overlapping_region</li>
+<li>overlaps</li>
+<li>overlaps_range</li>
+<li>spans</li>
+</ul>
+</li>
+<li>Added functions to RColumn:<ul>
+<li>resample</li>
+</ul>
+</li>
+<li>Renamed RVariable to RColumn</li>
+<li>Renamed 'arg' to 'code'</li>
+<li>Renamed 'variable' to 'column'</li>
+<li>Added CTable class (used for computing kappa score).</li>
+<li>Renamed functions for internal consistency and to follow Ruby Style Guide.<ul>
+<li>snake-case; e.g. new_column() instead of newColumn()</li>
+<li>Previous names should work as well. If they do not please report them
+on the <a href="http://datavyu.org/support">support forum</a> or e-mail info@datavyu.org</li>
+</ul>
+</li>
+</ul>
+<p>See the <a href="http://datavyu.com/user-guide/api/reference.html">reference page for more information</a></p>
+<h4 id="bug-fixes_7">Bug Fixes</h4>
+<ul>
+<li>create_mutually_exclusive prints a single line of output to scripting
+console instead of three lines</li>
+<li>load_macshapa_db sanitizes code names and substitutes '#' with 'number'
+and '&amp;' with 'and'</li>
+</ul>
+<hr />
+<h2 id="datavyu-133-pre-release-notes">Datavyu 1.3.3 Pre-Release Notes</h2>
+<h3 id="07142015">07/14/2015</h3>
+<h4 id="additions">Additions</h4>
+<ul>
+<li>Datavyu should start up faster</li>
+</ul>
+<h4 id="bug-fixes_8">Bug Fixes</h4>
+<ul>
+<li>Datavyu's Export File by Frame script now works on files with empty columns</li>
+<li>Drag and drop onto the application is fixed since 1.3.1</li>
+<li>New improvements to the undo feature</li>
+<li>Locking into a cell now stops the video at the offset</li>
+</ul>
+<h4 id="known-issues_6">Known Issues</h4>
+<ul>
+<li>Dragging and dropping a file onto the application on PC's creates a new Datavyu window</li>
+</ul>
+<hr />
+<h2 id="datavyu-13-pre-release-notes">Datavyu 1.3 Pre-Release Notes</h2>
+<h3 id="3162015">3/16/2015</h3>
+<h4 id="additions_1">Additions</h4>
+<ul>
+<li>Datavyu's packaging now includes Java so users no longer have to download it separately</li>
+<li>Added a progress bar to the video conversion tool</li>
+<li>Highlighting can now show you where your video is playing across the spreadsheet. Enable highlighting on the Controller.</li>
+<li>Check out Karen Adolph's <a href="http://datavyu.org/user-guide/best-practices.html">Best Practices for Coding Behavioral Data</a> on our User Guide</li>
+</ul>
+<h4 id="bug-fixes_9">Bug Fixes</h4>
+<ul>
+<li>Datavyu now works on OS X 10.10 Yosemite!</li>
+<li>Adding a coded spreadsheet to Datavyu will replace the Untitled Blank document to eliminate potential saving issues</li>
+<li>Closing tabs no longer requires additional saving</li>
+<li>Adding cells to the right or left keeps the spreadsheet focus</li>
+<li>Windows: initial video frame should be seen on the video</li>
+</ul>
+<h4 id="known-issues_7">Known issues</h4>
+<ul>
+<li>Hitting undo after running a script causes the spreadsheet to delete data</li>
+<li>Video lag might occur with high definition videos. Please try out the different video plugins to see which works best for your videos.</li>
+</ul>
+<h2 id="announcements">Announcements</h2>
+<h3 id="1202015">1/20/2015</h3>
+<ul>
+<li>
+<p>Yosemite no longer supports Java QuickTime and so Datavyu is not curently compatible. We apologize for the inconvenience     and advise our users to be aware of the situation before deciding to upgrade to Yosemite.</p>
+</li>
+<li>
+<p>If you try to download Datavyu and receive a pop up saying: "Datavyu is damaged and should be moved to the trash," please    check your security settings to allow the download of the software. Please go to System Preferences/Security/General tab     and then check "Allow apps to be downloaded from: anywhere."</p>
+</li>
+<li>
+<p>Can't seem to hold down jog while navigating your video? All you have to do is go to your Terminal (found in your Hard       Drive/Applications/Utilities folder) and enter the following: defaults write -g ApplePressAndHoldEnabled -bool false</p>
+</li>
+</ul>
+<hr />
+<h2 id="datavyu-122-pre-release-notes">Datavyu 1.2.2 Pre-release Notes</h2>
+<h3 id="92514">9/25/14</h3>
+<h4 id="additions_2">Additions</h4>
+<ul>
+<li>We added a sample video and spreadsheet to our download page so users can practice coding</li>
+<li>The user guide is now in PDF form</li>
+<li>Opening a spreadsheet replaces the original blank spreadsheet on windows and soon on mac</li>
+<li>Keyboard shortcuts list is available in the help drop down menu of datavyu</li>
+</ul>
+<h4 id="bug-fixes_10">Bug Fixes</h4>
+<ul>
+<li>You can have a file, save it as a different name and open both files in datavyu</li>
+<li>Point cell no longer changes the previous cell’s offset</li>
+<li>Undo history works when adding a cell</li>
+<li>You can no longer open two of the same spreadsheets at once</li>
+</ul>
+<h4 id="known-issues_8">Known Issues</h4>
+<ul>
+<li>Locking into a cell sometime doesn’t work</li>
+<li>Adding and closing multiple spreadsheets in datavyu sometimes makes you save an extra time</li>
+<li>Temporal alignment sometimes aligns cells that are a few milliseconds off</li>
+</ul>
+<hr />
+<h2 id="datavyu-12-release-notes">Datavyu 1.2 Release Notes</h2>
+<h3 id="06302014">06/30/2014</h3>
+<h4 id="additions_3">Additions</h4>
+<ul>
+<li>Choose your own favourites folder: will determine contents of bottom-left file panel, script dropdown menu</li>
+<li>Frame-by-frame export is now available in the drop down menu</li>
+<li>You can now open multiple spreadsheets in datavyu! Each spreadsheet has its own corresponding controller. Tabs at the top of the spreadsheet are used to navigate between open spreadsheets.</li>
+<li>We have added our user guide, release notes, and developer notes to the application folder.</li>
+<li>You can manually set the jog rate of a video on the Controller. Please double click on “Steps per second”, type in your new frame rate and then click “Enter”.</li>
+<li>When you “Add Data” with the controller, it defaults to finding “Video Files”. If you cannot find your desired file, you can simply change the format to “All Files”.</li>
+<li>New hidden column count on the spreadsheet</li>
+<li>Up and down arrow keys allow you to move up and down cells</li>
+<li>Stable name restrictions in code editor and spreadsheet</li>
+</ul>
+<h4 id="bug-fixes_11">Bug Fixes</h4>
+<ul>
+<li>Undo works correctly for column deletions</li>
+<li>Application title bar now always reflects the name of the current project</li>
+<li>Fixes to scripting API: mutex, transfer columns</li>
+<li>Combine columns script function works</li>
+</ul>
+<h4 id="known-issues_9">Known Issues</h4>
+<ul>
+<li>When renaming a file with "Save as" and trying to open the original file, loading sometimes fails with a wrongful "This file is already open" error.</li>
+<li>VLC is not fully implemented. Please try playing your videos in QuickTime.</li>
+<li>Undo for cell creation is not reliable</li>
+<li>PC's with CPU's of less than 2.67 GHz have choppy video playback when playing at full speed</li>
+<li>You can drag a code name within a cell but it does not influence the code itself and it does not save. Please save your file and reopen it.</li>
+<li>Scripting output sometimes does not give you the proper output. You can cross check your scripts in OpenSHAPA.</li>
+</ul>
+<hr />
+<h2 id="datavyu-11-release-notes">Datavyu 1.1 Release Notes</h2>
+<h3 id="03102014">03/10/2014</h3>
+<h4 id="additions_4">Additions</h4>
+<ul>
+<li>Created more prompts to save to prevent accidental data loss.</li>
+<li>Minimizing the spreadsheet window will minimize all Datavyu windows.</li>
+</ul>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>The names of some software features were changed to adhere to a more intuitive naming scheme:<ul>
+<li>"Vocab Editor" --&gt; "Code Editor"</li>
+<li>"Observation" --&gt; "Cell"</li>
+<li>"Argument" --&gt; "Code"</li>
+<li>"Temporal Ordering" --&gt; "Temporal Alignment"</li>
+<li>"Variable" --&gt; "Column"</li>
+<li>"Data Viewer" --&gt; "Media Player"</li>
+<li>"Data Viewer Controller" --&gt; "Controller"</li>
+</ul>
+</li>
+<li>Quicktime 7.7.5 no longer includes java libraries, but you can easily include them in your download. For new installs and for Quicktime updates, please follow the steps provided on the <a href="http://www.datavyu.org/user-guide/images/install-quicktime-special.png">installation page</a>.</li>
+<li>The <a href="http://www.datavyu.org/user-guide/images/keypad-add-data-button.png">Controller</a> has a new format that is no standard between PC and Mac keyboards.</li>
+<li>Users are now restricted to Matrix-style columns. Text and nominal columns can no longer be created but pre-existing instances from saved files are still supported. Since it is now the only type of column, matrices are now referred to simply as columns.</li>
+<li>Restrictions on column names have been enforced to prevent problems in the scripting interface.<ul>
+<li>Column names must begin with a letter.</li>
+<li>Only letters, numbers and underscores are allowed in column names.</li>
+<li>Previously created columns that do not adhere to these restrictions will continue to work, but new column names (or name changes) will be restricted.</li>
+<li>We have provided a script in favorites folder that will turn periods into underscores in existing columns to aid the transition.</li>
+</ul>
+</li>
+<li>Datavyu is no longer uses Mongo DB. Eliminating this outside dependency means:<ul>
+<li>Datavyu is less memory intensive.</li>
+<li>The Datavyu application is smaller.</li>
+<li>Startup and file loading are faster.</li>
+<li>Errors when closing Datavyu on Windows machines have been fixed.</li>
+</ul>
+</li>
+</ul>
+<h4 id="bug-fixes_12">Bug Fixes</h4>
+<ul>
+<li>Fixed issues causing cells to overlap when temporal alignment is turned on.</li>
+<li>When running scripts, more informative status messages are printed to the console window.</li>
+<li>You no longer have to scroll when you code a long spreadsheet.</li>
+<li>Column location in the spreadsheet is saved.</li>
+<li>Hide/Show columns list is saved.</li>
+</ul>
+<h4 id="known-issues_10">Known Issues</h4>
+<ul>
+<li>The arrow keys do not always allow you to move from code to code in the code editor and spreadsheet but the tab and shift tab keys have the same function.</li>
+<li>Undo history is not always accurate.</li>
+<li>You can click, hold down, and drag a code name within a cell but it does not influence the code itself and it does not save. Please save your file and reopen it.</li>
+<li>Occasionally, running a script will produce no output when in fact, the script did work.</li>
+<li>The changed file marker (*) doesn't always disappear on save.</li>
+<li>VLC cannot accurately determine frame rates of our videos and thus is unsupported in Datavyu.</li>
+</ul>
+<h2 id="datavyu-104rev3-release-notes">Datavyu 1.04rev3 Release Notes</h2>
+<h3 id="12112013">12/11/2013</h3>
+<h4 id="additions_5">Additions</h4>
+<ul>
+<li>Added file association support in Mac and Windows. Double-clicking on a .opf file will now open the file in Datavyu.</li>
+</ul>
+<h4 id="changes_1">Changes</h4>
+<ul>
+<li>"Variables" have been renamed "columns" and "matrix arguments" have been renamed "codes" throughout the user interface.</li>
+<li>All API functions have been renamed to use the words "column" and "code", however, API functions using the old naming scheme will continue to work so that scripts do not need to be revised.</li>
+<li>Scripts now allow the user to overwrite an existing column. Previously, trying to set a column back to the spreadsheet caused an error if the columns shared the same name.</li>
+</ul>
+<h4 id="bug-fixes_13">Bug Fixes</h4>
+<ul>
+<li>Fixed an issue with Datavyu failing to close completely (preventing the user from being able to reopen the program).</li>
+<li>Corrected a case where setting the offset of a cell changed the offset of the previous cell in a column</li>
+<li>Fixed the create_mutually_exclusive script to correct an error where the final cell was not written to the spreadsheet.</li>
+<li>Fixed a bug that was preventing output from being written to the scripting console.</li>
+<li>Improved video playback performance issues on Windows and Mac.</li>
+<li>Fixed some cases where cells failed to display correctly when temporal alignment is active.</li>
+</ul>
+<h4 id="known-issues_11">Known Issues</h4>
+<ul>
+<li>In some cases, the asterisk in the title bar indicating that changes have been made to the file may not appear/disappear correctly</li>
+<li>Hidden variables may be listed as shown in the variable list</li>
+<li>Temporal alignment displays cells incorrectly in rare cases</li>
+<li>Windows will not correctly handle opening a file by double clicking it once Datavyu is already open.</li>
+</ul>
+<h2 id="datavyu-103-release-notes">Datavyu 1.0.3 Release Notes</h2>
+<h3 id="9192013">9/19/2013</h3>
+<h4 id="additions_6">Additions</h4>
+<ul>
+<li>Datavyu automatically checks for updates when opened</li>
+<li>On file open, a window pops up to display file open progress</li>
+<li>Ruby scripting API is documented on the support wiki</li>
+<li>Errors print to the scripting console window</li>
+<li>A message prints to scripting console window to indicate that a script is running</li>
+</ul>
+<h4 id="changes_2">Changes</h4>
+<ul>
+<li>Scripts must not include the entire API at the top of the file. Instead, add the line <em>require ‘Datavyu_API.rb'</em> to the top of the file before the <em>begin</em> command. Please see the support wiki for details.</li>
+</ul>
+<h4 id="bug-fixes_14">Bug Fixes</h4>
+<ul>
+<li>Fixed change_arg and make_rel functions in the scripting API</li>
+<li>Prevented Datavyu from writing special characters that made files unreadable in OpenSHAPA</li>
+<li>Fixed a bug where some offsets would be set to 00:00:000 when the file was saved</li>
+<li>Fixed the delete cell command</li>
+<li>Performance improvements when opening files</li>
+<li>Fixed memory issues that caused a drop in video playback performance</li>
+</ul>
+<h4 id="known-issues_12">Known Issues</h4>
+<ul>
+<li>Video playback on Windows may be laggy</li>
+<li>In some cases, the asterisk in the title bar indicating that changes have been made to the file may not appear/disappear correctly</li>
+<li>Hidden variables may be listed as shown in the variable list</li>
+<li>Temporal alignment displays cells incorrectly in rare cases</li>
+</ul>
+
+        </div>
+
+<nav class="col_nav page_sidebar">
+  <h2>
+    <a href="/download.html" class="">Download Datavyu</a>
+  </h2>
+
+  <ul>
+    <li>
+      <a href="/download/data-collection-policy.html" class="">Data Collection Policy</a>
+    </li>
+    <li>
+      <a href="/download/release-notes.html" class="current">Release Notes</a>
+      
+    </li>
+  </ul>
+
+</nav>
+    </div>
+
+</article>
+		</div>
+	</main>
+
+<footer id="site_footer" class="site_footer">
+	<div class="wrap">
+		<div class="cf">
+			<nav id="footer_nav" class="footer_links">
+				<p>
+					Copyright &copy; 2014-2020 | <a href="https://databrary.org/about/policies/terms.html">Terms of
+						Use</a> | <a href="https://databrary.org/about/policies/privacy.html">Privacy Policy</a>
+				</p>
+				<!-- 				<figure class="footer_fig"><a href="http://databrary.org" title="Databrary: An Open Data Library for Developmental Science"><img src="/theme/img/logo/databrary-nav.png" alt="Databrary" /></a><figcaption>An Open Data Library for Developmental Science</figcaption></figure>
+ -->
+			</nav>
+			<aside class="footer_social">
+				<p>Find us on
+					<a href="https://www.linkedin.com/company/databrary-project" target="_blank" class="img"><img
+							id="linkedin" src="/theme/img/social/linkedin.png" alt="LinkedIn"></a>,
+					<a href="https://www.facebook.com/databrary" target="_blank" class="img"><img id="facebook"
+							src="/theme/img/social/facebook.png" alt="Facebook"></a>,
+					<!-- <a href="https://plus.google.com/u/1/111083162045777800330/posts" target="_blank" class="img"><img id="google-plus" src="/theme/img/social/google-plus.png" alt="Google+"></a>, -->
+					<a href="https://twitter.com/databrary" target="_blank" class="img"><img id="twitter"
+							src="/theme/img/social/twitter.png" alt="Twitter"></a>, and
+					<a href="https://github.com/databrary/" target="_blank" class="img"><img id="github"
+							src="/theme/img/social/github.png" alt="GitHub"></a>.
+				</p>
+			</aside>
+		</div>
+
+		<div class="cf legal">
+			<p>This material is based on work supported by the National Science Foundation under Grant No. BCS-1238599
+				and the Eunice Kennedy Shriver National Institute of Child Health and Human Development under
+				Cooperative Agreement U01-HD-076595. Any opinions, findings, and conclusions or recommendations
+				expressed in this material are those of the author(s) and do not necessarily reflect the views of the
+				National Science Foundation or the Eunice Kennedy Shriver National Institute of Child Health and Human
+				Development.</p>
+
+			<p>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+			</p>
+
+			<ul class="inline grants">
+				<li>
+					<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false">
+						<img src="/theme/img/grants/nsf.png" class="nsf"> BCS-1238599 </a>
+				</li>
+				<li>
+					<a
+						href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC">
+						<img src="/theme/img/grants/nih.png" class="nih"> U01-HD-076595 </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer></body>
+</html>

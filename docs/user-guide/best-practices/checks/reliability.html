@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,15 @@
 <article id="page_user-guide_best-practices_checks_reliability" class="hentry page page_user-guide_best-practices_checks_reliability page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices.html" class="">Best Practices for Coding Behavioral Data from Video</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices/checks.html" class="">Step 3: Checks—Check for Careless Errors, Inter-Rater Reliability, and Design the Format to Export Your Data</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Check Inter-Rater Reliability</h1>
@@ -98,8 +106,8 @@
 
 				
         
-  <section id="check-inter-rater-reliability">
-<h1>Check Inter-Rater Reliability<a class="headerlink" href="#check-inter-rater-reliability" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="check-inter-rater-reliability">
+<h1>Check Inter-Rater Reliability<a class="headerlink" href="#check-inter-rater-reliability" title="Permalink to this headline">¶</a></h1>
 <p>A second kind of error is an error in judgment.
 One coder thinks that the child touched an object but a second coder does not think that the child touched the object.
 One coder interprets the child’s facial expression as distress but the other coder sees it as neutral.
@@ -109,8 +117,8 @@ So, before you commit yourself to a coding scheme, test inter-rater reliability.
 If it is too low, you may need to revise your coding scheme or retrain your coders.
 Disagreements among coders are inevitable, even those who are practiced and familiar with the coding scheme.
 The question is whether the inter-rater reliability is sufficiently high to warrant confidence in the coded data.</p>
-<section id="how-to-test-reliability-formally">
-<h2>How To Test Reliability Formally<a class="headerlink" href="#how-to-test-reliability-formally" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="how-to-test-reliability-formally">
+<h2>How To Test Reliability Formally<a class="headerlink" href="#how-to-test-reliability-formally" title="Permalink to this headline">¶</a></h2>
 <p>What level of agreement is sufficient to consider a code to be reliable.
 The literature has no gold standard, but labs typically have their own gold standards.
 Generally, for categorical codes, you should use Kappas (which control for the base rate of the behaviors) rather than percent agreement.
@@ -121,9 +129,9 @@ For continuously scored behaviors, you can use the Kappa statistic to check inte
 For isolated events, you can use a Pearson correlation coefficient.
 You can estimate Kappas in Datavyu using scripts and the R interface, or you can estimate Kappas using statistical software after you export your data.
 Regardless, disagreements among coders are serious and must be reported in the write-up of the research.</p>
-</section>
-<section id="rules-of-thumb">
-<h2>Rules of Thumb<a class="headerlink" href="#rules-of-thumb" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="rules-of-thumb">
+<h2>Rules of Thumb<a class="headerlink" href="#rules-of-thumb" title="Permalink to this headline">¶</a></h2>
 <p>By definition, careless errors will lower inter-rater reliability.
 Therefore it is important to check for and eliminate careless errors before you test for inter-rater reliability.</p>
 <p>Coders will experience “drift,” meaning that their coding will change slightly as they become increasingly experienced at looking at particular behaviors.
@@ -137,14 +145,14 @@ In some cases, particular trials or segments of video are especially important.
 In these cases, the reliability coder can score a larger percentage of the data—up to 100%.</p>
 <p>Spread your best eyes over the entire dataset.
 For a large amount of data where several people will split the job of coding a particular pass, have your most experienced and knowledgeable coder score reliability so that your “best pair of eyes” is looking at representative data over the entire dataset.</p>
-</section>
-<section id="video-example">
-<h2>Video Example<a class="headerlink" href="#video-example" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="video-example">
+<h2>Video Example<a class="headerlink" href="#video-example" title="Permalink to this headline">¶</a></h2>
 <p>This video displays one way to check for inter-rater reliability for a single column in a spreadsheet.</p>
 <video controls width="100%" height="auto">
-<source src="../../_static/video/check-reliability.mp4" type="video/mp4">
-</video></section>
-</section>
+<source src="../../static/video/check-reliability.mp4" type="video/mp4">
+</video></div>
+</div>
 
 
     

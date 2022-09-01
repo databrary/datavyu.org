@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,12 @@
 <article id="page_user-guide_api_introduction-to-scripting" class="hentry page page_user-guide_api_introduction-to-scripting page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Introduction to Scripting</h1>
@@ -98,29 +103,27 @@
 
 				
         
-  <section id="introduction-to-scripting">
-<h1>Introduction to Scripting<a class="headerlink" href="#introduction-to-scripting" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="introduction-to-scripting">
+<h1>Introduction to Scripting<a class="headerlink" href="#introduction-to-scripting" title="Permalink to this headline">¶</a></h1>
 <p>This detailed guide describes how to write Ruby scripts to automate
 tasks in Datavyu and to ensure reliable <a class="reference internal" href="../guide/reference/glossary.html#term-code"><span class="xref std std-term">coding</span></a>.</p>
 <p><a class="reference internal" href="overview.html"><span class="doc">Classes, Methods, and Parameters</span></a> provides an overview of the <a class="reference internal" href="../guide/reference/glossary.html#term-method"><span class="xref std std-term">methods</span></a> and <a class="reference internal" href="../guide/reference/glossary.html#term-class"><span class="xref std std-term">classes</span></a> of the Datavyu API. For a more
 in-depth discussion of each particular method and function, refer to
 the <a class="reference internal" href="reference.html"><span class="doc">Reference</span></a> documentation.</p>
-<section id="recommended-text-editors">
-<h2>Recommended Text Editors<a class="headerlink" href="#recommended-text-editors" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="recommended-text-editors">
+<h2>Recommended Text Editors<a class="headerlink" href="#recommended-text-editors" title="Permalink to this headline">¶</a></h2>
 <p>Ruby scripts are simply text files with a <code class="docutils literal notranslate"><span class="pre">.rb</span></code> file extension. You
 can write scripts in any text editor, including built-in ones like
 Notepad or TextEdit.  However, while those programs are adequate for
 scripting purposes, modern text editors make scripts much easier to
 read by providing syntax highlighting, which can make a world of
 difference when attempting to debug an issue.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/syntax-highlighting-comparison.png"><img alt="comparison of Ruby scripts viewed in TextEdit (Mac OS X) and TextMate 2" src="../_images/syntax-highlighting-comparison.png" style="width: 1100px;" /></a>
-<figcaption>
-<p><span class="caption-text">At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with “Mac
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../images/syntax-highlighting-comparison.png"><img alt="comparison of Ruby scripts viewed in TextEdit (Mac OS X) and TextMate 2" src="../images/syntax-highlighting-comparison.png" style="width: 1100px;" /></a>
+<p class="caption"><span class="caption-text">At left: TextEdit (Mac OS X). At right: TextMate 2 (Mac OS X) with “Mac
 Classic” theme. Note that <code class="docutils literal notranslate"><span class="pre">add-cells-to-variable.rb</span></code> is open in
 each editor.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+</div>
 <p>To take advantage of syntax highlighting and coding support, we
 recommend installing and using one of the following programs for
 editing Ruby scripts:</p>
@@ -151,9 +154,9 @@ editing Ruby scripts:</p>
 based on the file extension. Please ensure that your Ruby script files
 end with the “.rb” extension so you see syntax highlighting.</p>
 </div>
-</section>
-<section id="general-principles">
-<h2>General Principles<a class="headerlink" href="#general-principles" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="general-principles">
+<h2>General Principles<a class="headerlink" href="#general-principles" title="Permalink to this headline">¶</a></h2>
 <p>Each cell that you create with the Datavyu API has three inherent
 <a class="reference internal" href="../guide/reference/glossary.html#term-code"><span class="xref std std-term">codes</span></a>: <code class="docutils literal notranslate"><span class="pre">onset</span></code>, <code class="docutils literal notranslate"><span class="pre">offset</span></code>, and <code class="docutils literal notranslate"><span class="pre">ordinal</span></code>. Each
 cell also has at least one user-specified code.</p>
@@ -196,9 +199,9 @@ see the difference.</p>
 </pre></div>
 </div>
 </div>
-</section>
-<section id="basic-script-format">
-<h2>Basic Script Format<a class="headerlink" href="#basic-script-format" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="basic-script-format">
+<h2>Basic Script Format<a class="headerlink" href="#basic-script-format" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Scripts are very sensitive! When programming, every quotation mark,
@@ -237,8 +240,8 @@ use comments extensively.</p>
 </div>
 <p>Now that you are grounded in the Datavyu Ruby API mechanics,
 consider the <a class="reference internal" href="tutorials.html"><span class="doc">API Tutorials</span></a> or <a class="reference internal" href="reference.html"><span class="doc">Datavyu Ruby API Reference</span></a>.</p>
-</section>
-</section>
+</div>
+</div>
 
 
     

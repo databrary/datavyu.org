@@ -52,8 +52,8 @@ Modifying Columns & Font Size
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/edit-spreadsheet.mp4" type="video/mp4">
-   <source src="_static/video/edit-spreadsheet.webm" type="video/webm">
+   <source src="static/video/edit-spreadsheet.mp4" type="video/mp4">
+   <source src="static/video/edit-spreadsheet.webm" type="video/webm">
    </video>
 
 See how to create, rename, and move columns. Learn how to increase and decrease font size on cell codes by “zooming.”
@@ -64,8 +64,8 @@ Modifying Codes with the Code Editor
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/code-editor.mp4" type="video/mp4">
-   <source src="_static/video/code-editor.webm" type="video/webm">
+   <source src="static/video/code-editor.mp4" type="video/mp4">
+   <source src="static/video/code-editor.webm" type="video/webm">
    </video>
 
 See how the Code Editor can be used to create new columns and codes, rename codes, and change code order.
@@ -76,8 +76,8 @@ Spreadsheet Temporal Alignment
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/temporal-alignment.mp4" type="video/mp4">
-   <source src="_static/video/temporal-alignment.webm" type="video/webm">
+   <source src="static/video/temporal-alignment.mp4" type="video/mp4">
+   <source src="static/video/temporal-alignment.webm" type="video/webm">
    </video>
 
 Watch how cells can be viewed relative to their duration across columns using temporal alignment in the coding spreadsheet.
@@ -88,8 +88,8 @@ Modifying Columns with a Script
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/run-a-script.mp4" type="video/mp4">
-   <source src="_static/video/run-a-script.webm" type="video/webm">
+   <source src="static/video/run-a-script.mp4" type="video/mp4">
+   <source src="static/video/run-a-script.webm" type="video/webm">
    </video>
 
 See an example of how scripts can be used to modify coding spreadsheets. Learn about scrips with :doc:`Ruby API documentation </api>`

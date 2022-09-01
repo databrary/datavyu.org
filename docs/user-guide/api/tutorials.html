@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,12 @@
 <article id="page_user-guide_api_tutorials" class="hentry page page_user-guide_api_tutorials page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>API Tutorials</h1>
@@ -98,13 +103,13 @@
 
 				
         
-  <section id="api-tutorials">
-<h1>API Tutorials<a class="headerlink" href="#api-tutorials" title="Permalink to this heading">¶</a></h1>
-<section id="before-you-start">
-<h2>Before You Start<a class="headerlink" href="#before-you-start" title="Permalink to this heading">¶</a></h2>
-<section id="sample-data">
-<h3>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this heading">¶</a></h3>
-<p>Most of the following tutorials use <a class="reference download internal" download="" href="../_downloads/5d725cbafc9e45221ad38cde471931d1/Example-Template.opf"><code class="xref download docutils literal notranslate"><span class="pre">Example-Template.opf</span></code></a> as their basic data file.</p>
+  <div class="section" id="api-tutorials">
+<h1>API Tutorials<a class="headerlink" href="#api-tutorials" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="before-you-start">
+<h2>Before You Start<a class="headerlink" href="#before-you-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sample-data">
+<h3>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h3>
+<p>Most of the following tutorials use <a class="reference download internal" download="" href="../downloads/5d725cbafc9e45221ad38cde471931d1/Example-Template.opf"><code class="xref download docutils literal notranslate"><span class="pre">Example-Template.opf</span></code></a> as their basic data file.</p>
 <p>The example template contains two <a class="reference internal" href="../guide/reference/glossary.html#term-column"><span class="xref std std-term">columns</span></a>: “id”,
 whose codes describe basic information such as <em>subject number</em>,
 <em>test date</em>, <em>birth date</em>, and <em>condition</em>, and “trial”, which has two
@@ -117,9 +122,9 @@ Open and selecting the file from your hard drive).</p>
 <p>Most Datavyu scripts begin by loading a column from Datavyu using the
 <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getColumn()</span></code></a> method. Before moving on to the larger tutorial
 list, you should familiarize yourself with loading Datavyu columns.</p>
-</section>
-<section id="load-datavyu-columns">
-<h3>Load Datavyu Columns<a class="headerlink" href="#load-datavyu-columns" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="load-datavyu-columns">
+<h3>Load Datavyu Columns<a class="headerlink" href="#load-datavyu-columns" title="Permalink to this headline">¶</a></h3>
 <p>To load columns, Datavyu provides the
 <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getColumn()</span></code></a> method. <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getColumn()</span></code></a> takes one
 argument, the name of the column in Datavyu, and returns the Ruby
@@ -137,50 +142,50 @@ spreadsheet and assigns it to an <a class="reference internal" href="reference/1
 <p>The left side of the method is the name of the Ruby object;
 the “trial” in the parentheses is the argument passed to
 <a class="reference internal" href="reference/1.3.4/getColumn.html#getColumn" title="getColumn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getColumn()</span></code></a> (the name of the Datavyu column).</p>
-<a class="reference internal image-reference" href="../_images/method-call-explanation.png"><img alt='mapping of trial = getColumn("trial") to its components' class="align-center" src="../_images/method-call-explanation.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../images/method-call-explanation.png"><img alt="mapping of trial = getColumn(&quot;trial&quot;) to its components" class="align-center" src="../images/method-call-explanation.png" style="width: 500px;" /></a>
 <p>Now that you’re familiar with the sample data and know how to acquire
 data from Datavyu, you’re ready to start scripting. The following
 tutorials will guide you through common tasks.</p>
-</section>
-</section>
-<section id="tutorials">
-<span id="id1"></span><h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
-<section id="id2">
-<h3><a class="reference external" href="tutorials/add-a-new-column.html">Add a New Column</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+</div>
+</div>
+<div class="section" id="tutorials">
+<span id="id1"></span><h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3><a class="reference external" href="tutorials/add-a-new-column.html">Add a New Column</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Add a column to create a new coding pass or a new set of codes.</p>
-</section>
-<section id="id3">
-<h3><a class="reference external" href="tutorials/add-codes-to-a-column.html">Add Codes to a Column</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id3">
+<h3><a class="reference external" href="tutorials/add-codes-to-a-column.html">Add Codes to a Column</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Add codes to a column to prompt coders which behaviors to score.</p>
-</section>
-<section id="id4">
-<h3><a class="reference external" href="tutorials/add-cells-to-a-column.html">Add Cells to a Column</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3><a class="reference external" href="tutorials/add-cells-to-a-column.html">Add Cells to a Column</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Add cells to a column while coding or annotating a video file.</p>
-</section>
-<section id="id5">
-<h3><a class="reference external" href="tutorials/check-for-coding-errors.html">Check for Coding Errors</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3><a class="reference external" href="tutorials/check-for-coding-errors.html">Check for Coding Errors</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Check for coding errors such as typos, impossible vlaues, unlikely values, etc.</p>
-</section>
-<section id="id6">
-<h3><a class="reference external" href="tutorials/use-reliability-coding-to-check-data-accuracy.html">Use Reliability Coding to Check Data Accuracy</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id6">
+<h3><a class="reference external" href="tutorials/use-reliability-coding-to-check-data-accuracy.html">Use Reliability Coding to Check Data Accuracy</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Check Inter-rater Reliability to Improve Data Accuracy
 to determine whether more than one coder would score the data the same way.</p>
-</section>
-<section id="id7">
-<h3><a class="reference external" href="tutorials/export-data-using-scripts.html">Export Data Using Scripts</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3><a class="reference external" href="tutorials/export-data-using-scripts.html">Export Data Using Scripts</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>Use scripts to export data from Datavyu into a text file or a spreadsheet.
 for statistical analyses.</p>
-</section>
-<section id="id8">
-<h3><a class="reference external" href="tutorials/convert-openshapa-script-to-datavyu.html">Convert an OpenShapa Script to Datavyu</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3><a class="reference external" href="tutorials/convert-openshapa-script-to-datavyu.html">Convert an OpenShapa Script to Datavyu</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Convert an OpenSHAPA script to the Datavyu format to update an old file.</p>
-</section>
-<section id="id9">
-<h3><a class="reference external" href="tutorials/perform-operations-on-multiple-files.html">Perform Operations on Multiple Files</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id9">
+<h3><a class="reference external" href="tutorials/perform-operations-on-multiple-files.html">Perform Operations on Multiple Files</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Batch operations on multiple files to do the same operation on more than one file.</p>
-</section>
-<section id="id10">
-<h3><a class="reference external" href="tutorials/convert-macshapa-to-datavyu.html">Convert a MacShapa file to Datavyu</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="id10">
+<h3><a class="reference external" href="tutorials/convert-macshapa-to-datavyu.html">Convert a MacShapa file to Datavyu</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Convert MacSHAPA files to work in Datavyu so that you can use the new, supported software.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -195,9 +200,9 @@ for statistical analyses.</p>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/convert-macshapa-to-datavyu.html">Convert MacSHAPA Files to Work in Datavyu</a></li>
 </ul>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
     

@@ -13,8 +13,8 @@ Datavyu enables researchers to record events and build on prior analyses.
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="_static/video/coding-example.mp4" type="video/mp4">
-   <source src="_static/video/coding-example.webm" type="video/webm">
+   <source src="static/video/coding-example.mp4" type="video/mp4">
+   <source src="static/video/coding-example.webm" type="video/webm">
    </video>
 
 This guide provides all the information you need to start using Datavyu,

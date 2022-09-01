@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,15 @@
 <article id="page_user-guide_best-practices_checks_export" class="hentry page page_user-guide_best-practices_checks_export page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices.html" class="">Best Practices for Coding Behavioral Data from Video</a>
+								</li>
+								<li>
+									<a href="/user-guide/best-practices/checks.html" class="">Step 3: Checks—Check for Careless Errors, Inter-Rater Reliability, and Design the Format to Export Your Data</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Export the Data in a Format Appropriate for Your Analyses</h1>
@@ -98,22 +106,22 @@
 
 				
         
-  <section id="export-the-data-in-a-format-appropriate-for-your-analyses">
-<h1>Export the Data in a Format Appropriate for Your Analyses<a class="headerlink" href="#export-the-data-in-a-format-appropriate-for-your-analyses" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="export-the-data-in-a-format-appropriate-for-your-analyses">
+<h1>Export the Data in a Format Appropriate for Your Analyses<a class="headerlink" href="#export-the-data-in-a-format-appropriate-for-your-analyses" title="Permalink to this headline">¶</a></h1>
 <p>From the beginning of the coding process, keep in mind the data you want to analyze and how you want your data formatted for analyses.
 Your coded data are what you will analyze.
 So, you should be sure that the way you code your data is compatible with the way that you will analyze it.
 Think about how you want your data to look when you export it from Datavyu to analyze it elsewhere (e.g., Excel, SPSS).</p>
-<section id="variable-types">
-<h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="variable-types">
+<h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this headline">¶</a></h2>
 <p>Although we recommend using alphabet letters as codes rather than numbers, most researchers prefer to analyze numeric data rather than strings.
 Although onset and offset times contain the information you need to understand timing relations, most researchers prefer to analyze durations rather than relative times.</p>
 <p>Datavyu’s Export File function will export the strings and raw onset/offset times from the spreadsheet.
 You can convert these data into numeric and durations in your analysis spreadsheet (with simple compute functions in Excel or SPSS, for example).
 But you can also export the data in these formats using Datavyu scripts.</p>
-</section>
-<section id="spreadsheet-format">
-<h2>Spreadsheet Format<a class="headerlink" href="#spreadsheet-format" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="spreadsheet-format">
+<h2>Spreadsheet Format<a class="headerlink" href="#spreadsheet-format" title="Permalink to this headline">¶</a></h2>
 <p>Most researchers like to analyze their data in square spreadsheet formats.
 Many researchers organize the data with one row for the smallest unit of analysis (e.g., a trial, a look, a touch, a facial gesture) and many rows for each participant.
 Some researchers maintain one row per participant and organize tasks or trials across columns.
@@ -128,14 +136,14 @@ Although Datavyu has an automatic Export File function, it will not repeat infor
 There is no need to repeat participant ID or condition labels across every trial, however, because you can request this with a script for exporting the data.
 Moreover, Datavyu’s automatic Export File function will not carve overlapping and interleaved events into mutually exclusive categorical combinations (e.g., of talking, touching, and looking).
 You will need to do this with an export script.</p>
-</section>
-<section id="video-example">
-<h2>Video Example<a class="headerlink" href="#video-example" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="video-example">
+<h2>Video Example<a class="headerlink" href="#video-example" title="Permalink to this headline">¶</a></h2>
 <p>This video displays a user running a script to export data in a specific way. It exports all of the columns of one spreadsheet into an Excel file. Instead of just exporting one cell from a Datavyu spreadsheet, into one cell in Excel, it makes it possible to repeat important information that you want to store in multiple cells. In this example, participant metadata (id, birthdate, testdate) is stored in only one cell in a Datavyu spreadsheet but it is information that gets repeated down multiple rows of data to make it potentially easier to analyze in a statistical program.</p>
 <video controls width="100%" height="auto">
-<source src="../../_static/video/export-through-script-final.mp4" type="video/mp4">
-</video></section>
-</section>
+<source src="../../static/video/export-through-script-final.mp4" type="video/mp4">
+</video></div>
+</div>
 
 
     

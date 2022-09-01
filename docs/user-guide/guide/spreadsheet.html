@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,12 @@
 <article id="page_user-guide_guide_spreadsheet" class="hentry page page_user-guide_guide_spreadsheet page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/guide.html" class="">Software Guide</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Spreadsheet Overview</h1>
@@ -98,44 +103,42 @@
 
 				
         
-  <section id="spreadsheet-overview">
-<h1>Spreadsheet Overview<a class="headerlink" href="#spreadsheet-overview" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="spreadsheet-overview">
+<h1>Spreadsheet Overview<a class="headerlink" href="#spreadsheet-overview" title="Permalink to this headline">¶</a></h1>
 <p>The Datavyu Spreadsheet is where coders record <a class="reference internal" href="reference/glossary.html#term-observation"><span class="xref std std-term">observations</span></a>. The spreadsheet is the core of Datavyu. Coders can record
 observations and link them directly to timestamps in the data source when they
 <a class="reference internal" href="tutorials/configure-datavyu-codes.html"><span class="doc">Configure Columns and Codes</span></a>.</p>
 <p>For a brief introduction to some of the spreadsheet’s components and
 capabilities, watch the spreadsheet walkthrough video:</p>
 <video controls width="100%" height="auto">
-<source src="../_static/video/edit-spreadsheet.mp4" type="video/mp4">
-<source src="../_static/video/edit-spreadsheet.webm" type="video/webm">
+<source src="../static/video/edit-spreadsheet.mp4" type="video/mp4">
+<source src="../static/video/edit-spreadsheet.webm" type="video/webm">
 </video><p>Each user-defined column has its own column in the spreadsheet.
 <a class="reference internal" href="reference/glossary.html#term-cell"><span class="xref std std-term">Cells</span></a> are column entries, boxes in the column, where
 coders record their observation data as <a class="reference internal" href="reference/glossary.html#term-code"><span class="xref std std-term">codes</span></a>. Cells
 follow each other in sequence: looking vertically down a column shows
 the sequence of observations for that column.</p>
-<figure class="align-center" id="id5">
-<img alt="Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell" src="../_images/spreadsheet-annotated.png" />
-<figcaption>
-<p><span class="caption-text">A typical Datavyu spreadsheet with an example of five columns and Temporal Alignment turned on.
+<div class="figure align-center" id="id5">
+<img alt="Image of a Datavyu spreadsheet with 6 columns, and annotations labeling a column, cell, and codes within a cell" src="../images/spreadsheet-annotated.png" />
+<p class="caption"><span class="caption-text">A typical Datavyu spreadsheet with an example of five columns and Temporal Alignment turned on.
 Note the <span class="guilabel">plus</span> icon in the top right, which you use to add new
 <a class="reference internal" href="reference/glossary.html#term-column"><span class="xref std std-term">columns</span></a>.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+</div>
 <p>Datavyu automatically links the times coded in the spreadsheet to the
 current time in the data source. This allows coders to record
 the <a class="reference internal" href="reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> and <a class="reference internal" href="reference/glossary.html#term-offset"><span class="xref std std-term">offset</span></a> times of events in
 the spreadsheet. Coders can also jump to a relevant time in the data source by
 selecting a specific cell in the spreadsheet and pressing find (+) on the Controller.</p>
-<section id="spreadsheet-tabs">
-<span id="variable-types"></span><span id="column-types"></span><span id="columns"></span><h2>Spreadsheet Tabs<a class="headerlink" href="#spreadsheet-tabs" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="spreadsheet-tabs">
+<span id="variable-types"></span><span id="column-types"></span><span id="columns"></span><h2>Spreadsheet Tabs<a class="headerlink" href="#spreadsheet-tabs" title="Permalink to this headline">¶</a></h2>
 <p>Datavyu allows users to open multiple spreadsheets at one time. When the program opens,
 it opens a blank spreadsheet. This spreadsheet can be used to create a new file or it can be
 closed if you are working on pre-coded spreadsheets. Feel free to open as many spreadsheets as desired.</p>
 <p>Users can work on multiple spreadsheets at one time. When finished with coding, please be sure to save each
 individual spreadsheet.</p>
-</section>
-<section id="id1">
-<h2>Columns<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="id1">
+<h2>Columns<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Datavyu uses columns to group together related observations. In
 general, coders will code the data source column-by-column meaning
 that they code one entire column before coding a new column.</p>
@@ -152,8 +155,8 @@ as is and ignore the &lt;code01&gt; prompt.</p>
 (but numbers and underscores cannot be the first character of the name) to eliminate potential
 confusion in scripting and SPSS analyses. The <a class="reference internal" href="tutorials/configure-datavyu-codes.html"><span class="doc">column configuration</span></a> tutorial provides
 instructions for configuring columns.</p>
-<section id="hide-and-show-columns">
-<span id="hide-show-columns"></span><h3>Hide and Show Columns<a class="headerlink" href="#hide-and-show-columns" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="hide-and-show-columns">
+<span id="hide-show-columns"></span><h3>Hide and Show Columns<a class="headerlink" href="#hide-and-show-columns" title="Permalink to this headline">¶</a></h3>
 <p>To hide a column, select the column by clicking on its name at the top of
 the spreadsheet. The selected column will have a blue background.
 You can select multiple columns by <code class="docutils literal notranslate"><span class="pre">Cmd</span></code> -clicking (on Mac) or
@@ -166,15 +169,15 @@ the columns in the current spreadsheet, and includes a checkbox, which you can
 use to toggle column visibility.</p>
 <p>If you wish to show all columns you can do so with the <span class="guilabel">Show
 All Columns</span> menu option from the <span class="guilabel">Spreadsheet</span> menu.</p>
-</section>
-<section id="rearrange-columns">
-<span id="id2"></span><h3>Rearrange Columns<a class="headerlink" href="#rearrange-columns" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="rearrange-columns">
+<span id="id2"></span><h3>Rearrange Columns<a class="headerlink" href="#rearrange-columns" title="Permalink to this headline">¶</a></h3>
 <p>To rearrange the order of columns within the spreadsheet, simply click the column’s
 name and drag it left or right to the desired location.</p>
-</section>
-</section>
-<section id="cell-explanation">
-<span id="cells"></span><span id="id3"></span><h2>Cells<a class="headerlink" href="#cell-explanation" title="Permalink to this heading">¶</a></h2>
+</div>
+</div>
+<div class="section" id="cell-explanation">
+<span id="cells"></span><span id="id3"></span><h2>Cells<a class="headerlink" href="#cell-explanation" title="Permalink to this headline">¶</a></h2>
 <p>Each cell represents an observation
 scored by the coder.</p>
 <p>Minimally, Datavyu displays three values for each cell, but you can ignore
@@ -196,15 +199,15 @@ automatically coded and updated as you code your data source. You
 will never need to set the ordinal.</p></li>
 </ul>
 <p>The following image labels each component within a Datavyu cell.</p>
-<img alt="Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal." class="align-center" src="../_images/cell-zoomin.png" />
-</section>
-<section id="spreadsheet-customization">
-<h2>Spreadsheet Customization<a class="headerlink" href="#spreadsheet-customization" title="Permalink to this heading">¶</a></h2>
+<img alt="Zoomed-in view of a Datavyu cell, labeling its codes, onset, offset, and ordinal." class="align-center" src="../images/cell-zoomin.png" />
+</div>
+<div class="section" id="spreadsheet-customization">
+<h2>Spreadsheet Customization<a class="headerlink" href="#spreadsheet-customization" title="Permalink to this headline">¶</a></h2>
 <p>Datavyu allows you to modify the spreadsheet
 by including options that you can activate or deactivate, depending on
 your needs.</p>
-<section id="zoom">
-<h3>Zoom<a class="headerlink" href="#zoom" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="zoom">
+<h3>Zoom<a class="headerlink" href="#zoom" title="Permalink to this headline">¶</a></h3>
 <p>By default, the Datavyu spreadsheet uses one font size for the
 user-input codes in cells. You can increase this font size by choosing
 <span class="guilabel">Zoom</span> from the <span class="guilabel">Spreadsheet</span> menu. However, the font
@@ -215,44 +218,47 @@ size for the onset and offset times do not change.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">-</span></code> / <code class="docutils literal notranslate"><span class="pre">alt</span> <span class="pre">-</span></code> zooms out</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">0</span></code> / <code class="docutils literal notranslate"><span class="pre">alt</span> <span class="pre">0</span></code> resets the zoom to the default level</p></li>
 </ul>
-</section>
-<section id="temporal-alignment">
-<span id="temporal-ordering"></span><span id="id4"></span><h3>Temporal Alignment<a class="headerlink" href="#temporal-alignment" title="Permalink to this heading">¶</a></h3>
+</div>
+<div class="section" id="temporal-alignment">
+<span id="temporal-ordering"></span><span id="id4"></span><h3>Temporal Alignment<a class="headerlink" href="#temporal-alignment" title="Permalink to this headline">¶</a></h3>
 <p>Temporal alignment is an important feature of Datavyu. When temporal
 alignment is active, Datavyu groups cells based on their onsets and
 offsets, visually representing the period of time each cell occupies.
 This Temporal Alignment video
 highlights the differences between active and inactive temporal alignment:</p>
 <video controls width="100%" height="auto">
-<source src="../_static/video/temporal-alignment.mp4" type="video/mp4">
-<source src="../_static/video/temporal-alignment.webm" type="video/webm">
+<source src="../static/video/temporal-alignment.mp4" type="video/mp4">
+<source src="../static/video/temporal-alignment.webm" type="video/webm">
 </video><p>Temporal alignment allows you to visualize what occurred at what time
 so you can compare event sequences across columns. When coding, you should
 ensure that temporal alignment is active.</p>
-<figure class="align-center" id="id6">
-<img alt="comparison of two identical spreadsheets, one of which has temporal alignment active, and the other with temporal alignment disabled" src="../_images/temporal-alignment-comparison.png" />
-<figcaption>
-<p><span class="caption-text">At left is a spreadsheet with temporal alignment enabled; at right is
+<div class="figure align-center" id="id6">
+<img alt="comparison of two identical spreadsheets, one of which has temporal alignment active, and the other with temporal alignment disabled" src="../images/temporal-alignment-comparison.png" />
+<p class="caption"><span class="caption-text">At left is a spreadsheet with temporal alignment enabled; at right is
 the same spreadsheet with temporal alignment disabled. Note that the
 cells contain the same information, it is only their presentation
 changes. Note also that enabling temporal alignment makes it
 easier to code and alllows you to visualize the relative length of events
 and their relations across columns.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-<section id="toggle-temporal-alignment">
-<h4>Toggle Temporal Alignment<a class="headerlink" href="#toggle-temporal-alignment" title="Permalink to this heading">¶</a></h4>
+</div>
+<div class="section" id="toggle-temporal-alignment">
+<h4>Toggle Temporal Alignment<a class="headerlink" href="#toggle-temporal-alignment" title="Permalink to this headline">¶</a></h4>
 <p>You can toggle temporal alignment using the <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">T</span></code>
 keyboard shortcut, or by selecting <span class="guilabel">Temporal Alignment</span>
 from the <span class="guilabel">Spreadsheet</span> menu.</p>
-</section>
-<section id="keyboard-shortcuts">
-<h4>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this heading">¶</a></h4>
+</div>
+<div class="section" id="keyboard-shortcuts">
+<h4>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h4>
 <p>We have provided a simple list of the major shortcuts used in the Datavyu Spreadsheet.</p>
-<figure class="align-center">
-<img alt="Image of a keyboard shortcus" src="../_images/keyboard-shortcuts.png" />
-</figure>
+<div class="figure align-center">
+<img alt="Image of a keyboard shortcus" src="../images/keyboard-shortcuts.png" />
+</div>
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 24%" />
+<col style="width: 28%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Action</p></th>
 <th class="head"><p>Mac</p></th>
@@ -314,10 +320,10 @@ from the <span class="guilabel">Spreadsheet</span> menu.</p>
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 
     

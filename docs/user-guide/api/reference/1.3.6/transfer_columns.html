@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,18 @@
 <article id="page_user-guide_api_reference_1.3.6_transfer_columns" class="hentry page page_user-guide_api_reference_1.3.6_transfer_columns page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/reference.html" class="">Datavyu Ruby API Reference</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/reference/1.3.6.html" class="">Version 1.3.6</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>transfer_columns()</h1>
@@ -98,11 +109,11 @@
 
 				
         
-  <section id="transfer-columns">
-<h1>transfer_columns()<a class="headerlink" href="#transfer-columns" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="transfer-columns">
+<h1>transfer_columns()<a class="headerlink" href="#transfer-columns" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="transfer_columns">
-<span class="sig-name descname"><span class="pre">transfer_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">varnames</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfer_columns" title="Permalink to this definition">¶</a></dt>
+<dt id="transfer_columns">
+<code class="sig-name descname">transfer_columns</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db1</span></em>, <em class="sig-param"><span class="n">db2</span></em>, <em class="sig-param"><span class="n">remove</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">varnames</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfer_columns" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transfers columns between spreadsheets. Replacing <code class="docutils literal notranslate"><span class="pre">db1</span></code> or <code class="docutils literal notranslate"><span class="pre">db2</span></code> with the
 empty string “”, will refer instead to the currently open spreadsheet in Datavyu.</p>
 <p>Thus, if you want to transfer a column into the GUI, set <code class="docutils literal notranslate"><span class="pre">db2</span></code> to ‘’,
@@ -114,11 +125,11 @@ transfer a column from the GUI into a file, set <code class="docutils literal no
 <p>Setting <code class="docutils literal notranslate"><span class="pre">remove</span></code> to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> will <strong>DELETE THE COLUMNS YOU ARE
 TRANSFERRING FROM DB1</strong>.</p>
 </div>
-<table class="docutils align-default">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col style="width: 18.2%" />
-<col style="width: 36.4%" />
-<col style="width: 45.5%" />
+<col style="width: 18%" />
+<col style="width: 36%" />
+<col style="width: 45%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -170,7 +181,7 @@ test.opf to the GUI and leaves test.opf intact and unmodified.</p>
 </div>
 </dd></dl>
 
-</section>
+</div>
 
 
     

@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,12 @@
 <article id="page_user-guide_api_overview" class="hentry page page_user-guide_api_overview page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Classes, Methods, and Parameters</h1>
@@ -98,12 +103,12 @@
 
 				
         
-  <section id="classes-methods-and-parameters">
-<h1>Classes, Methods, and Parameters<a class="headerlink" href="#classes-methods-and-parameters" title="Permalink to this heading">¶</a></h1>
+  <div class="section" id="classes-methods-and-parameters">
+<h1>Classes, Methods, and Parameters<a class="headerlink" href="#classes-methods-and-parameters" title="Permalink to this headline">¶</a></h1>
 <p>Ruby, the programming language that the Datavyu API uses, is an object-
 oriented language.</p>
-<section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <p>Object-oriented languages represent concepts, like
 Datavyu’s columns or cells, for instance, as “objects”. Objects come in
 different types, or “classes”. For example, objects that represent numbers,
@@ -119,9 +124,9 @@ Datavyu API works. The Datavyu API includes two classes to represent
 Datavyu concepts: <a class="reference internal" href="reference/1.3.6/class/RColumn.html#RColumn" title="RColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">RColumn</span></code></a> describes Datavyu’s
 <a class="reference internal" href="../guide/reference/glossary.html#term-column"><span class="xref std std-term">columns</span></a>, and <a class="reference internal" href="reference/1.3.6/class/RCell.html#RCell" title="RCell"><code class="xref py py-class docutils literal notranslate"><span class="pre">RCell</span></code></a> describes Datavyu’s
 <a class="reference internal" href="../guide/reference/glossary.html#term-cell"><span class="xref std std-term">cells</span></a>.</p>
-</section>
-<section id="methods-and-their-parameters">
-<h2>Methods and Their Parameters<a class="headerlink" href="#methods-and-their-parameters" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="methods-and-their-parameters">
+<h2>Methods and Their Parameters<a class="headerlink" href="#methods-and-their-parameters" title="Permalink to this headline">¶</a></h2>
 <p>While classes describe objects and their attributes, <a class="reference internal" href="../guide/reference/glossary.html#term-method"><span class="xref std std-term">methods</span></a> define actions
 that you can perform on an object. The Datavyu API defines numerous methods to help
 you manipulate, modify, add, and delete data in the Datavyu spreadsheets.</p>
@@ -153,10 +158,10 @@ parameter, and <code class="docutils literal notranslate"><span class="pre">&quo
 <code class="docutils literal notranslate"><span class="pre">*codes</span></code> parameter. <code class="docutils literal notranslate"><span class="pre">column</span></code> and <code class="docutils literal notranslate"><span class="pre">code</span></code> are specified in the
 <a class="reference internal" href="reference/1.3.6/add_codes_to_column.html#add_codes_to_column" title="add_codes_to_column"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_codes_to_column()</span></code></a> method definition, and “arm”, “leftHand”,
 and “rightHand” are your user-specified arguments.</p>
-<img alt="../_images/parameters-arguments.png" class="align-center" src="../_images/parameters-arguments.png" />
-</section>
-<section id="standalone-methods-and-class-methods">
-<h2>Standalone Methods and Class Methods<a class="headerlink" href="#standalone-methods-and-class-methods" title="Permalink to this heading">¶</a></h2>
+<img alt="../images/parameters-arguments.png" class="align-center" src="../images/parameters-arguments.png" />
+</div>
+<div class="section" id="standalone-methods-and-class-methods">
+<h2>Standalone Methods and Class Methods<a class="headerlink" href="#standalone-methods-and-class-methods" title="Permalink to this headline">¶</a></h2>
 <p>There are two different types of methods: standalone methods and
 <a class="reference internal" href="../guide/reference/glossary.html#term-class-method"><span class="xref std std-term">class methods</span></a>. Class methods act directly upon
 an instance of a specific class. Standalone methods
@@ -178,20 +183,20 @@ code to the “trial” <a class="reference internal" href="reference/1.3.6/clas
 </pre></div>
 </div>
 <p>Comparing them side-by-side can help highlight the difference:</p>
-<img alt="../_images/standalone-versus-class-methods.png" class="align-center" src="../_images/standalone-versus-class-methods.png" />
+<img alt="../images/standalone-versus-class-methods.png" class="align-center" src="../images/standalone-versus-class-methods.png" />
 <p>Understanding the difference between standalone and class methods
 will make it easier for you to easily use the methods included in the
 Datavyu API.</p>
-</section>
-<section id="next-steps">
-<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have a grounding in the difference between classes
 and methods, parameters and arguments, and know how to
 invoke both standalone and class methods, consider our
 <a class="reference internal" href="introduction-to-scripting.html"><span class="doc">Introduction to Scripting</span></a> for tips before diving into the
 <a class="reference internal" href="tutorials.html"><span class="doc">API Tutorials</span></a>.</p>
-</section>
-</section>
+</div>
+</div>
 
 
     

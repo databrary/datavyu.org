@@ -28,8 +28,7 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
-
+	<!-- feeds -->    
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -62,11 +61,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
+				<li class="">
+					<a href="/download.html" title="Download Datavyu">Download</a>
+				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
-				</li>
-				<li class="">
-					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -86,6 +85,15 @@
 <article id="page_user-guide_api_tutorials_export-data-using-scripts" class="hentry page page_user-guide_api_tutorials_export-data-using-scripts page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
+								<li>
+									<a href="/user-guide/index.html" class="">User Guide</a>
+								</li>
+								<li>
+									<a href="/user-guide/api.html" class="">Ruby API</a>
+								</li>
+								<li>
+									<a href="/user-guide/api/tutorials.html" class="">API Tutorials</a>
+								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Use Scripts to Export Data from Datavyu</h1>
@@ -98,10 +106,10 @@
 
 				
         
-  <section id="use-scripts-to-export-data-from-datavyu">
-<h1>Use Scripts to Export Data from Datavyu<a class="headerlink" href="#use-scripts-to-export-data-from-datavyu" title="Permalink to this heading">¶</a></h1>
-<section id="export-methods">
-<h2>Export Methods<a class="headerlink" href="#export-methods" title="Permalink to this heading">¶</a></h2>
+  <div class="section" id="use-scripts-to-export-data-from-datavyu">
+<h1>Use Scripts to Export Data from Datavyu<a class="headerlink" href="#use-scripts-to-export-data-from-datavyu" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="export-methods">
+<h2>Export Methods<a class="headerlink" href="#export-methods" title="Permalink to this headline">¶</a></h2>
 <p>Datavyu supports numerous data export methods. The <a class="reference internal" href="../../guide/tutorials/export-data.html"><span class="doc">Export Data from Datavyu</span></a>
 section of the software guide tutorials demonstrates how to export data to a basic .csv
 file using the <em>Export File</em> function. The Ruby scripting API offers users more
@@ -116,8 +124,8 @@ appropriately.</p></li>
 <p>If you wish to export data from multiple files, refer to the
 <a class="reference internal" href="perform-operations-on-multiple-files.html"><span class="doc">Batch Operations on Multiple Files</span></a> tutorial for guidance on operations
 that involve multiple files.</p>
-<section id="method-frame-by-frame-export">
-<h3>Method : Frame-by-Frame Export<a class="headerlink" href="#method-frame-by-frame-export" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="method-frame-by-frame-export">
+<h3>Method : Frame-by-Frame Export<a class="headerlink" href="#method-frame-by-frame-export" title="Permalink to this headline">¶</a></h3>
 <p>A frame-by-frame export prints a row for every video frame in the spreadsheet
 and looks across every column and code and writes the values for that frame.
 This method is particularly useful for free-form coding projects that contain
@@ -130,9 +138,9 @@ Datavyu. Once the spreadsheet has loaded, select the Script menu and then select
 “Favorites/Export Data by Frame.rb”. That’s it! The script will output a .csv file
 to your desktop called “framebyframe_export.csv” that contains all of the data from
 the spreadsheet that can be opened in the statistical package of your choice.</p>
-<figure class="align-center">
-<img alt="../../_images/frame-by-frame.png" src="../../_images/frame-by-frame.png" />
-</figure>
+<div class="figure align-center">
+<img alt="../../images/frame-by-frame.png" src="../../images/frame-by-frame.png" />
+</div>
 <p>If you would like to export multiple files frame-by-frame, there is a script included
 for that as well (“Export Data by Frame – Multiple.rb”). Simply create a folder on your
 desktop called “datavyu_files” and place the files you want to export in that folder.
@@ -141,12 +149,12 @@ Please note that the files should contain the same columns and codes to export c
 if you want to tailor the scripts for your own purposes (e.g., changing the output file,
 input folder, or delimiter), you can find the script files in your Datavyu installation
 folder under the “Favorites” folder.</p>
-</section>
-<section id="method-nested-export">
-<h3>Method : Nested Export<a class="headerlink" href="#method-nested-export" title="Permalink to this heading">¶</a></h3>
-<figure class="align-center">
-<img alt="../../_images/sample-nested-data.png" src="../../_images/sample-nested-data.png" />
-</figure>
+</div>
+<div class="section" id="method-nested-export">
+<h3>Method : Nested Export<a class="headerlink" href="#method-nested-export" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<img alt="../../images/sample-nested-data.png" src="../../images/sample-nested-data.png" />
+</div>
 <p>A <em>nested export</em> exports data based on the nesting of <a class="reference internal" href="../../guide/reference/glossary.html#term-cell"><span class="xref std std-term">cells</span></a>. This is most useful for spreadsheets whose cells group together.
 For instance, the following spreadsheet example has three columns:
 “id”, “trial”, and “foot”. “id” is a participant ID, which might include
@@ -301,15 +309,15 @@ format to the string format, using <code class="docutils literal notranslate"><s
 </div>
 </li>
 </ol>
-</section>
-</section>
-<section id="video-example-of-running-an-export-script">
-<h2>Video Example of Running an Export Script<a class="headerlink" href="#video-example-of-running-an-export-script" title="Permalink to this heading">¶</a></h2>
+</div>
+</div>
+<div class="section" id="video-example-of-running-an-export-script">
+<h2>Video Example of Running an Export Script<a class="headerlink" href="#video-example-of-running-an-export-script" title="Permalink to this headline">¶</a></h2>
 <p>This video displays a user running a script to export data in a specific way. This export script exports all of the columns of one spreadsheet into an Excel file. Datavyu’s built-in export displays one Excel cell as one cell on the spreadsheet. This specific script repeats all the participant information such as the id number, test date, birthdate, and sex, for all of the data making it more useful when you import into a statistical analysis program.</p>
 <video controls width="100%" height="auto">
-<source src="../../_static/video/export-through-script-final.mp4" type="video/mp4">
-</video></section>
-</section>
+<source src="../../static/video/export-through-script-final.mp4" type="video/mp4">
+</video></div>
+</div>
 
 
     
