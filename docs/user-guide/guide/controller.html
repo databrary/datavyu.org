@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,12 +86,6 @@
 <article id="page_user-guide_guide_controller" class="hentry page page_user-guide_guide_controller page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide.html" class="">Software Guide</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Controller Overview</h1>
@@ -103,18 +98,18 @@
 
 				
         
-  <div class="section" id="controller-overview">
-<h1>Controller Overview<a class="headerlink" href="#controller-overview" title="Permalink to this headline">¶</a></h1>
+  <section id="controller-overview">
+<h1>Controller Overview<a class="headerlink" href="#controller-overview" title="Permalink to this heading">¶</a></h1>
 <p>The Controller enables users to manipulate the playback of
 their data source, and create new cells as they record their observations.</p>
-<img alt="Image of the Controller indicating the track and keypad area" class="align-center" src="../images/controller-annotated.png" />
+<img alt="Image of the Controller indicating the track and keypad area" class="align-center" src="../_images/controller-annotated.png" />
 <p>The Controller has two main areas: the keypad on the left,
 which maps directly to your keyboard, and the <span class="guilabel">Timeslider</span> on
 the right, which represents the current playback position.</p>
 <p>The following sections describe the two areas in detail, and provide
 a useful reference for working with the Controller.</p>
-<div class="section" id="keypad">
-<h2>Keypad<a class="headerlink" href="#keypad" title="Permalink to this headline">¶</a></h2>
+<section id="keypad">
+<h2>Keypad<a class="headerlink" href="#keypad" title="Permalink to this heading">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>You cannot use the number keypad for inputting numbers into Datavyu. It will
@@ -130,8 +125,8 @@ rather than a <code class="docutils literal notranslate"><span class="pre">clear
 keyboards into account and simplifies the keys as much as possible.
 Familiarize yourself with both the Datavyu controls and your
 keypad to maximize coding efficiency.</p>
-<div class="section" id="playback-controls">
-<span id="id1"></span><h3>Playback Controls<a class="headerlink" href="#playback-controls" title="Permalink to this headline">¶</a></h3>
+<section id="playback-controls">
+<span id="id1"></span><h3>Playback Controls<a class="headerlink" href="#playback-controls" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><span class="guilabel">jog left</span> (<code class="docutils literal notranslate"><span class="pre">1</span></code>): moves the playhead back one frame. If the
 <a class="reference internal" href="reference/glossary.html#term-frame-rate"><span class="xref std std-term">frame rate</span></a> is not set, <span class="guilabel">jog</span> will move the playhead
@@ -169,14 +164,16 @@ following command:</p>
 <p>To undo the change, run the same command but with <code class="docutils literal notranslate"><span class="pre">-bool</span> <span class="pre">true</span></code>
 rather than <code class="docutils literal notranslate"><span class="pre">-bool</span> <span class="pre">false</span></code>.</p>
 </div>
-<div class="figure align-right" id="id4" style="width: 300px">
-<img alt="../images/keypad-annotated.png" src="../images/keypad-annotated.png" />
-<p class="caption"><span class="caption-text">The keys highlighted in green are <em>playback controls</em>. The keys
+<figure class="align-right" id="id4" style="width: 300px">
+<img alt="../_images/keypad-annotated.png" src="../_images/keypad-annotated.png" />
+<figcaption>
+<p><span class="caption-text">The keys highlighted in green are <em>playback controls</em>. The keys
 highlighted in blue are <em>coding-controls</em>.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="coding-controls">
-<span id="id2"></span><h3>Coding Controls<a class="headerlink" href="#coding-controls" title="Permalink to this headline">¶</a></h3>
+</figcaption>
+</figure>
+</section>
+<section id="coding-controls">
+<span id="id2"></span><h3>Coding Controls<a class="headerlink" href="#coding-controls" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><span class="guilabel">set cell onset</span> (7): sets the <a class="reference internal" href="reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> for the current
 cell.</p></li>
@@ -200,10 +197,10 @@ adding a new cell with this key sets the previous cell’s
 <li><p><span class="guilabel">new cell and set current onset</span> (<code class="docutils literal notranslate"><span class="pre">Enter</span></code>): creates a new cell and sets
 its <a class="reference internal" href="reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a> to the playhead’s current time.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="tracks">
-<h2>Tracks<a class="headerlink" href="#tracks" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="tracks">
+<h2>Tracks<a class="headerlink" href="#tracks" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The tracks walkthrough video
@@ -211,8 +208,8 @@ is a good way to familiarize yourself with this area of the
 Controller:</p>
 </div>
 <video controls width="100%" height="auto">
-<source src="../static/video/dvc-tracks-area.mp4" type="video/mp4">
-<source src="../static/video/dvc-tracks-area.webm" type="video/webm">
+<source src="../_static/video/dvc-tracks-area.mp4" type="video/mp4">
+<source src="../_static/video/dvc-tracks-area.webm" type="video/webm">
 </video><p>The <span class="guilabel">Tracks</span> area of the Controller helps you
 visualize where you are within a data source’s playback. You can
 control the scale using the slider bar in the top right: moving it to
@@ -221,9 +218,9 @@ than would otherwise be feasible. You can also zoom in on a selected
 region by clicking on the <span class="guilabel">magnifying glass</span> icon next to
 the slider bar. The red <a class="reference internal" href="reference/glossary.html#term-playhead"><span class="xref std std-term">playhead</span></a> shows the current playback
 position.</p>
-<div class="figure align-center">
-<img alt="annotated image of the Controller&#x27;s tracks region" src="../images/tracks-region-annotated.png" />
-</div>
+<figure class="align-center">
+<img alt="annotated image of the Controller's tracks region" src="../_images/tracks-region-annotated.png" />
+</figure>
 <p>You can choose to focus on a single region by moving the green region
 boundaries. Datavyu will start playback from the leftmost boundary’s position,
 and stop at the rightmost boundary.</p>
@@ -242,10 +239,10 @@ also use the <code class="docutils literal notranslate"><span class="pre">ctrl</
 <li><p><span class="guilabel">Magnifying Glass</span> icon: zooms in on the
 timeslider to focus exclusively on the snapped region.</p></li>
 </ul>
-</div>
-<div class="section" id="add-data">
-<span id="add-data-source"></span><span id="id3"></span><h2>Add Data<a class="headerlink" href="#add-data" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../images/keypad-add-data-button.png"><img alt="image of keypad with arrow indicating the &quot;add data&quot; button" class="align-right" src="../images/keypad-add-data-button.png" style="width: 300px;" /></a>
+</section>
+<section id="add-data">
+<span id="add-data-source"></span><span id="id3"></span><h2>Add Data<a class="headerlink" href="#add-data" title="Permalink to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/keypad-add-data-button.png"><img alt='image of keypad with arrow indicating the "add data" button' class="align-right" src="../_images/keypad-add-data-button.png" style="width: 300px;" /></a>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Do not use the VLC plugin because it is not fully implemented and tested. It has frame accuracy problems and therefore is not suggested. Please use Quicktime instead. If your videos do not play smoothly in Quicktime, please convert your videos if you would still like to use Datavyu.</p>
@@ -283,8 +280,8 @@ frame rate. Please press <cite>Enter</cite> and Datavyu will use your new frame 
 <li><p><a class="reference internal" href="tutorials.html"><span class="doc">Tutorials</span></a></p></li>
 </ul>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
     

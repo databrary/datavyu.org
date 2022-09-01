@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,15 +86,6 @@
 <article id="page_user-guide_guide_tutorials_export-data" class="hentry page page_user-guide_guide_tutorials_export-data page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide.html" class="">Software Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide/tutorials.html" class="">Tutorials</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Export Data from Datavyu</h1>
@@ -106,15 +98,15 @@
 
 				
         
-  <div class="section" id="export-data-from-datavyu">
-<h1>Export Data from Datavyu<a class="headerlink" href="#export-data-from-datavyu" title="Permalink to this headline">¶</a></h1>
+  <section id="export-data-from-datavyu">
+<h1>Export Data from Datavyu<a class="headerlink" href="#export-data-from-datavyu" title="Permalink to this heading">¶</a></h1>
 <p>Datavyu provides an integrated export tool for exporting Datavyu data.
 To export your data, select the <span class="guilabel">File</span> menu, and then
 select <span class="guilabel">Export File</span>. This outputs data to a CSV file that
 has one column for every code in the spreadsheet: <a class="reference internal" href="../reference/glossary.html#term-ordinal"><span class="xref std std-term">ordinal</span></a>,
 <a class="reference internal" href="../reference/glossary.html#term-onset"><span class="xref std std-term">onset</span></a>, and <a class="reference internal" href="../reference/glossary.html#term-offset"><span class="xref std std-term">offset</span></a>, as well as user-configured codes.</p>
 <video controls width="100%" height="auto">
-<source src="../../static/video/export-thru-menu.mp4" type="video/mp4">
+<source src="../../_static/video/export-thru-menu.mp4" type="video/mp4">
 </video><p>If this format does not work for the analyses you need to perform, Datavyu supports
 Ruby scripting, which you can use to create a script that exports the data in your desired format.</p>
 <p>For a detailed guide to exporting data using Ruby scripts, see:
@@ -125,7 +117,7 @@ documentation.</p>
 <p><a class="reference internal" href="use-scripts-to-automate-tasks.html"><span class="doc">Use Scripts to Automate Tasks</span></a> for
 instructions on running scripts within Datavyu.</p>
 </div>
-</div>
+</section>
 
 
     

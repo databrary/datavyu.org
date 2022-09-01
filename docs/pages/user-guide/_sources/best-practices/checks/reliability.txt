@@ -53,5 +53,5 @@ This video displays one way to check for inter-rater reliability for a single co
 .. raw:: html
 
    <video controls width="100%" height="auto">
-   <source src="../../static/video/check-reliability.mp4" type="video/mp4">
+   <source src="../../_static/video/check-reliability.mp4" type="video/mp4">
    </video>

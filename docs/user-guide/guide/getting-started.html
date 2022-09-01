@@ -28,7 +28,8 @@
 	<!-- network -->
 	<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
 
-	<!-- feeds -->    
+	<!-- feeds -->    	<link href="http://datavyu.org/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Datavyu: Video coding and data visualization tool Full RSS Feed"/>
+
 
 	<!-- icons -->
 	<link rel="shortcut icon" href="/ico/favicon.png">
@@ -61,11 +62,11 @@
 				<li class="">
 					<a href="/features.html" title="Discover Datavyu">Features</a>
 				</li>
-				<li class="">
-					<a href="/download.html" title="Download Datavyu">Download</a>
-				</li>
 				<li class="current">
 					<a href="/user-guide/index.html" title="User Guide">User Guide</a>
+				</li>
+				<li class="">
+					<a href="https://github.com/databrary/datavyu/releases" title="Download Datavyu">Download</a>
 				</li>
 				<li class="">
 					<a href="https://github.com/databrary/Datavyu-Example-Scripts" title="Example Scripts">Scripts</a>
@@ -85,12 +86,6 @@
 <article id="page_user-guide_guide_getting-started" class="hentry page page_user-guide_guide_getting-started page_sphinx">
 <nav class="breadcrumbs cf">
 	<ul class="cf">
-								<li>
-									<a href="/user-guide/index.html" class="">User Guide</a>
-								</li>
-								<li>
-									<a href="/user-guide/guide.html" class="">Software Guide</a>
-								</li>
 	</ul>
 </nav>
     <h1 class="entry-title"><span></span>Getting Started</h1>
@@ -103,15 +98,15 @@
 
 				
         
-  <div class="section" id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h1>
 <p>Datavyu is a powerful tool that enables behavioral researchers to code
 observations from their video for analysis. Designed by researchers for
 researchers, Datavyu provides an intuitive interface for working with data
 sources and recording observations, and includes <a class="reference internal" href="../api.html"><span class="doc">an API</span></a>
 for more advanced data manipulation.</p>
-<div class="section" id="the-datavyu-interface">
-<h2>The Datavyu Interface<a class="headerlink" href="#the-datavyu-interface" title="Permalink to this headline">¶</a></h2>
+<section id="the-datavyu-interface">
+<h2>The Datavyu Interface<a class="headerlink" href="#the-datavyu-interface" title="Permalink to this heading">¶</a></h2>
 <p>When you first open Datavyu, Datavyu will check if you have the latest
 version. If there has been a new release, Datavyu will prompt you to
 <a class="reference internal" href="install.html#update-datavyu"><span class="std std-ref">update your version</span></a>.</p>
@@ -119,11 +114,11 @@ version. If there has been a new release, Datavyu will prompt you to
 <span class="guilabel">Controller</span>, and a blank spreadsheet. If you add
 a data source, a third window containing the data source will appear.</p>
 <p>The following sections describe each component of the Datavyu interface.</p>
-<div class="section" id="media-player">
-<h3>Media Player<a class="headerlink" href="#media-player" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-center">
-<img alt="../images/movie-viewer.png" src="../images/movie-viewer.png" />
-</div>
+<section id="media-player">
+<h3>Media Player<a class="headerlink" href="#media-player" title="Permalink to this heading">¶</a></h3>
+<figure class="align-center">
+<img alt="../_images/movie-viewer.png" src="../_images/movie-viewer.png" />
+</figure>
 <p>The <span class="guilabel">Media Player</span> is the window that presents the data
 source that the user is working with.</p>
 <p>Adding a video or other data source to Datavyu is as easy as
@@ -133,16 +128,16 @@ detailed overview of adding data sources see:
 <a class="reference internal" href="controller.html#add-data"><span class="std std-ref">Add Data</span></a>.</p>
 <p>Once you’ve added a data source, it’s time to add columns, create
 observations, and write scripts. The <a class="reference internal" href="tutorials.html#guide-core-tutorials"><span class="std std-ref">tutorials</span></a> are there to guide you.</p>
-</div>
-<div class="section" id="controller">
-<h3>Controller<a class="headerlink" href="#controller" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="controller">
+<h3>Controller<a class="headerlink" href="#controller" title="Permalink to this heading">¶</a></h3>
 <p>The <span class="guilabel">Controller</span> allows users to control the
 playback of their data source and create observations in the
 spreadsheet. Quite literally, it controls the <span class="guilabel">Media Player</span>,
 the window that contains the video data.</p>
-<div class="figure align-center">
-<img alt="Image of the Controller" src="../images/data-viewer-controller.png" />
-</div>
+<figure class="align-center">
+<img alt="Image of the Controller" src="../_images/data-viewer-controller.png" />
+</figure>
 <p>The keypad can be found on the left side of the controller. This section maps directly to the
 number pad on your keyboard, or to an external number pad if your
 keyboard does not have one and you’ve connected one to your computer.
@@ -151,16 +146,18 @@ create new cells and navigate within the data source. The
 <span class="guilabel">Add Data…</span> button enables you to <a class="reference internal" href="controller.html#add-data"><span class="std std-ref">add a data source</span></a>.</p>
 <p>For more about the Controller, and a detailed description of
 its functionality and features, see <a class="reference internal" href="controller.html"><span class="doc">Controller Overview</span></a>.</p>
-</div>
-<div class="section" id="spreadsheet">
-<h3>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="spreadsheet">
+<h3>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">¶</a></h3>
 <p>The <span class="guilabel">Datavyu spreadsheet</span> is where users record
 <a class="reference internal" href="reference/glossary.html#term-observation"><span class="xref std std-term">observations</span></a> from the data source.</p>
-<div class="figure align-center" id="id1">
-<img alt="Image of a filled-out Datavyu spreadsheet" src="../images/base-screenshot-MomBaby.png" />
-<p class="caption"><span class="caption-text">This spreadsheet has four columns: “MomSpeech”, “InfantSpeech”,
+<figure class="align-center" id="id1">
+<img alt="Image of a filled-out Datavyu spreadsheet" src="../_images/base-screenshot-MomBaby.png" />
+<figcaption>
+<p><span class="caption-text">This spreadsheet has four columns: “MomSpeech”, “InfantSpeech”,
 “MomObject”, “BabyObject”. Each column has numerous coded cells.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 <p>Being able to <a class="reference internal" href="tutorials/configure-datavyu-codes.html"><span class="doc">Configure Columns and Codes</span></a> enables
 coders to record observations and link them
 directly to timestamps in the data source. Each user-defined column is
@@ -177,9 +174,9 @@ the observations occurred.</p>
 <li class="toctree-l1"><a class="reference internal" href="spreadsheet.html">Spreadsheet Overview</a></li>
 </ul>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
     
